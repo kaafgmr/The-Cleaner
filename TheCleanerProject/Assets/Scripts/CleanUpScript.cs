@@ -26,31 +26,14 @@ public class CleanUpScript : MonoBehaviour
 
         Transform[] everything = ParentToClean.GetComponentsInChildren<Transform>();
 
-        List<GameObject> all = new List<GameObject>();
-
         for (int i = 0; i < everything.Length; i++)
         {
-            if (everything[i].transform.position.y < transform.position.y)
+            if (everything[i].name.Contains("Floor"))
             {
-                if (everything[i].name.Contains("Foundation"))
-                {
-                    all.Add(everything[i].gameObject);
-                }
+                BoxCollider a = everything[i].gameObject.AddComponent<BoxCollider>();
+                a.size = new Vector3(a.size.x, 0.01f, a.size.z);
+                everything[i].gameObject.layer = 3;
             }
-        }
-
-        GameObject[] select = new GameObject[all.Count];
-
-        for (int i = 0; i < all.Count; i++)
-        {
-            select[i] = all[i];
-        }
-
-        Selection.objects = select;
-
-        if (select.Length == 0)
-        {
-            Selection.activeObject = gameObject;
         }
     }
 }
