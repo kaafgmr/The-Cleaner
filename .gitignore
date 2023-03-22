@@ -72,3 +72,14 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 *.log
+*.log
+TheCleanerProject/Logs/AssetImportWorker0.log
+TheCleanerProject/Logs/AssetImportWorker1.log
+TheCleanerProject/Logs/AssetImportWorker2.log
+TheCleanerProject/Logs/AssetImportWorker3.log
+TheCleanerProject/Logs/AssetImportWorker4.log
+TheCleanerProject/Logs/shadercompiler-AssetImportWorker0.log
+TheCleanerProject/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+TheCleanerProject/Logs/shadercompiler-UnityShaderCompiler.exe1.log
+TheCleanerProject/Logs/shadercompiler-UnityShaderCompiler.exe2.log
+TheCleanerProject/Logs/shadercompiler-UnityShaderCompiler.exe3.log
