@@ -8,16 +8,16 @@ using UnityEngine.UI;
 public class MenuControl : MonoBehaviour
 {
     public static MenuControl instance;
-    public GameObject LoadScreenPanel;
-    public TextMeshProUGUI ProgressPercentage;
-    public Slider ProgressBar;
+    public GameObject loadScreenPanel;
+    public TextMeshProUGUI progressPercentage;
+    public Slider progressBar;
 
     private void Awake()
     {
         instance = this;
-        if(LoadScreenPanel != null)
+        if(loadScreenPanel != null)
         {
-            LoadScreenPanel.SetActive(false);
+            loadScreenPanel.SetActive(false);
         }
     }
 
@@ -40,15 +40,15 @@ public class MenuControl : MonoBehaviour
     {
         AsyncOperation loader = SceneManager.LoadSceneAsync(SceneName);
 
-        LoadScreenPanel.SetActive(true);
+        loadScreenPanel.SetActive(true);
         while(!loader.isDone)
         {
             //change the value so it goes from 0 to 1 instead of 0 to 0.9f
             float progress = Mathf.Clamp01(loader.progress / 0.9f);
-            ProgressBar.value = progress;
+            if (progressBar != null) { progressBar.value = progress; }
             //change the value so it goes from 0 to 100 with 2 decimal places
             progress = Mathf.Round(progress * 10000) / 100;
-            ProgressPercentage.text = progress + "%";
+            if (progressPercentage != null) { progressPercentage.text = progress + "%"; }
             yield return null;
         }
     }
