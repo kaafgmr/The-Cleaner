@@ -536,9 +536,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 801ece1f74504654085042904df09623, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadScreenPanel: {fileID: 0}
-  ProgressPercentage: {fileID: 0}
-  ProgressBar: {fileID: 0}
+  loadScreenPanel: {fileID: 0}
+  progressPercentage: {fileID: 0}
+  progressBar: {fileID: 0}
 --- !u!1 &1225380344
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,17 +935,17 @@ PrefabInstance:
     - target: {fileID: 6539009789785306708, guid: d6fc0793ebf62574e9868752b928b2d5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.3897715
+      value: 6.296
       objectReference: {fileID: 0}
     - target: {fileID: 6539009789785306708, guid: d6fc0793ebf62574e9868752b928b2d5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1070386
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6539009789785306708, guid: d6fc0793ebf62574e9868752b928b2d5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.2033846
+      value: -1.927
       objectReference: {fileID: 0}
     - target: {fileID: 6539009789785306708, guid: d6fc0793ebf62574e9868752b928b2d5,
         type: 3}

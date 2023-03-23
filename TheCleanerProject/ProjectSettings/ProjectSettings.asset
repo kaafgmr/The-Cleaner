@@ -165,7 +165,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.WxlfGames.TheCleanerProject
-    Standalone: com.UnityTechnologies.com.unity.template-starter-kit
+    Standalone: com.WxlfGames.TheCleanerProject
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -527,8 +527,12 @@ PlayerSettings:
     Android: 1
     iPhone: 1
     tvOS: 1
-  m_BuildTargetGroupLightmapEncodingQuality: []
-  m_BuildTargetGroupHDRCubemapEncodingQuality: []
+  m_BuildTargetGroupLightmapEncodingQuality:
+  - m_BuildTarget: Standalone
+    m_EncodingQuality: 0
+  m_BuildTargetGroupHDRCubemapEncodingQuality:
+  - m_BuildTarget: Standalone
+    m_EncodingQuality: 0
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetNormalMapEncoding: []
   m_BuildTargetDefaultTextureCompressionFormat:
@@ -794,6 +798,7 @@ PlayerSettings:
   platformArchitecture: {}
   scriptingBackend:
     Android: 1
+    Standalone: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel: {}
