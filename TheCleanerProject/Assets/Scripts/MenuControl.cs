@@ -21,14 +21,14 @@ public class MenuControl : MonoBehaviour
         }
     }
 
-    public void LoadLevel(int levelNumber)
-    {
-        SceneManager.LoadScene("Level" + levelNumber);
-    }
-
     public void LoadScene(string name, LoadSceneMode loadMode = LoadSceneMode.Single)
     {
         SceneManager.LoadScene(name, loadMode);
+    }
+
+    public void LoadLevel(int levelNumber, LoadSceneMode loadMode = LoadSceneMode.Single)
+    {
+        LoadScene("Level" + levelNumber, loadMode);
     }
 
     public void LoadWithProgressBar(string sceneName)
@@ -51,6 +51,16 @@ public class MenuControl : MonoBehaviour
             if (progressPercentage != null) { progressPercentage.text = progress + "%"; }
             yield return null;
         }
+    }
+
+    public void UnloadSceneASYNC(string name)
+    {
+        SceneManager.UnloadSceneAsync(name);
+    }
+
+    public void UnloadLevel(int number)
+    {
+        UnloadSceneASYNC("Level" + number);
     }
 
     public void Exit()

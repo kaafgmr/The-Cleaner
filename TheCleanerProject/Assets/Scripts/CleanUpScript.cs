@@ -21,18 +21,20 @@ public class CleanUpScript : MonoBehaviour
     void CleanUP()
     {
         if (Activate == false) return;
-
         Activate = false;
-
         Transform[] everything = ParentToClean.GetComponentsInChildren<Transform>();
 
         for (int i = 0; i < everything.Length; i++)
         {
-            if (everything[i].name.Contains("Floor"))
+            if (everything[i].name.Contains("WallIn_A_3x_doordouble"))
             {
-                BoxCollider a = everything[i].gameObject.AddComponent<BoxCollider>();
-                a.size = new Vector3(a.size.x, 0.01f, a.size.z);
-                everything[i].gameObject.layer = 3;
+                BoxCollider bc = everything[i].AddComponent<BoxCollider>();
+                bc.center = new Vector3(-0.5f, 1.4f, 0);
+                bc.size = new Vector3(1, 2.8f, 0.3f);
+
+                bc = everything[i].AddComponent<BoxCollider>();
+                bc.center = new Vector3(-2.5f, 1.4f, 0);
+                bc.size = new Vector3(1, 2.8f, 0.3f);
             }
         }
     }
