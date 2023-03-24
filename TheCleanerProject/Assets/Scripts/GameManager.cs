@@ -25,6 +25,15 @@ public class GameManager : MonoBehaviour
         player = FindObjectOfType<XROrigin>().gameObject;
     }
 
+
+    private void Start()
+    {
+        MenuControl.instance.LoadScene("Kelson", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        MenuControl.instance.LoadScene("Victor", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        MenuControl.instance.LoadScene("Galvez", UnityEngine.SceneManagement.LoadSceneMode.Additive);
+    }
+
+
     public GameObject GetPlayer()
     {
         return player;

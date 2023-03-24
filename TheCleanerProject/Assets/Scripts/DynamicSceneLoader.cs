@@ -24,24 +24,24 @@ public class DynamicSceneLoader : MonoBehaviour
     void Start()
     {
         testSceneNumber = 0;
-        ChangeSceneTo(firstSceneToLoad);
+        //ChangeSceneTo(firstSceneToLoad);
     }
 
     int testSceneNumber;
     bool once = false;
-    private void Update()
-    {
-        if (PlayerInput.instance.rightController.activateAction.action.IsPressed() && !once)
-        {
-            testSceneNumber = testSceneNumber + 1 >= ScenePointsList.Length ? 0 : testSceneNumber + 1;
-            ChangeSceneTo(ScenePointsList[testSceneNumber].sceneToLoad);
-            once = true;
-        }
-        else
-        {
-            once = false;
-        }
-    }
+    //private void Update()
+    //{
+    //    if (PlayerInput.instance.rightController.activateAction.action.IsPressed() && !once)
+    //    {
+    //        testSceneNumber = testSceneNumber + 1 >= ScenePointsList.Length ? 0 : testSceneNumber + 1;
+    //        ChangeSceneTo(ScenePointsList[testSceneNumber].sceneToLoad);
+    //        once = true;
+    //    }
+    //    else
+    //    {
+    //        once = false;
+    //    }
+    //}
 
     void ChangeSceneTo(string name)
     {
