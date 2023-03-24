@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 6539009789785306714}
   - component: {fileID: 6539009789429928549}
   - component: {fileID: 6539009789429928550}
+  - component: {fileID: 4138205705222499371}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -235,7 +236,7 @@ Transform:
   m_Children:
   - {fileID: 6539009789379544667}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6539009789785306709
 MonoBehaviour:
@@ -265,13 +266,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 1.6
+  m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!114 &6539009789785306714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +314,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4138205705222499371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6539009789785306711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9fbf3695058d2b48bf6c3ca3932c9fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftController: {fileID: 6539009790392157660}
+  rightController: {fileID: 6539009790430847406}
 --- !u!1 &6539009789956611765
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +387,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 1000
+  far clip plane: 25
   field of view: 60
   orthographic: 0
   orthographic size: 5

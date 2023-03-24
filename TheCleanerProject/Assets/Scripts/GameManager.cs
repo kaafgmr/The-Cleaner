@@ -1,14 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    void Start()
+    public static GameManager instance;
+
+
+    private GameObject player;
+
+    private void Awake()
     {
-        //MenuControl.instance.LoadScene("Victor", LoadSceneMode.Additive);
-        //MenuControl.instance.LoadScene("Kelson", LoadSceneMode.Additive);
-        //MenuControl.instance.LoadScene("Galvez", LoadSceneMode.Additive);
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+
+
+        player = FindObjectOfType<XROrigin>().gameObject;
+    }
+
+    public GameObject GetPlayer()
+    {
+        return player;
     }
 }
