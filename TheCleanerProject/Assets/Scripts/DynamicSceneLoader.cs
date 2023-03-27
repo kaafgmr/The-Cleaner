@@ -52,7 +52,9 @@ public class DynamicSceneLoader : MonoBehaviour
         if (scenesToLoad.Length < 0) return;
         for (int i = 0; i < scenesToLoad.Length; i++)
         {
-            MenuControl.instance.LoadScene(scenesToLoad[i], UnityEngine.SceneManagement.LoadSceneMode.Additive);
+            if (MenuControl.instance.IsAreadyLoaded(scenesToLoad[i])) return;
+            
+            MenuControl.instance.LoadScene(scenesToLoad[i], UnityEngine.SceneManagement.LoadSceneMode.Additive);    
         }
     }
 
@@ -60,8 +62,10 @@ public class DynamicSceneLoader : MonoBehaviour
     {
         if (scenesToUnload.Length < 0) return;
 
-        for (int i = 0; i < scenesToLoad.Length; i++)
+        for (int i = 0; i < scenesToUnload.Length; i++)
         {
+            if (!MenuControl.instance.IsAreadyLoaded(scenesToUnload[i])) return;
+
             MenuControl.instance.UnloadSceneASYNC(scenesToUnload[i]);
         }
     }

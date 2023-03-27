@@ -53,6 +53,40 @@ public class MenuControl : MonoBehaviour
         }
     }
 
+    public int GetSceneCount()
+    {
+        return SceneManager.sceneCount;
+    }
+
+    public Scene GetLoadedSceneByID(int index)
+    {
+        return SceneManager.GetSceneAt(index);
+    }
+
+    public bool IsAreadyLoaded(Scene scene)
+    {
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            if (SceneManager.GetSceneAt(i).name == scene.name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool IsAreadyLoaded(string sceneName)
+    {
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            if (SceneManager.GetSceneAt(i).name == sceneName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void UnloadSceneASYNC(string name)
     {
         SceneManager.UnloadSceneAsync(name);
