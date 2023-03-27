@@ -2,55 +2,67 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class DynamicSceneLoader : MonoBehaviour
 {
-    [SerializeField] string firstSceneToLoad;
-    [SerializeField] float distanceToLoad;
-    [SerializeField] SceneLoadPoint[] ScenePointsList;
+    [Header("Loading")]
+    public string[] scenesToLoad;
 
-    [Serializable]
-    public struct SceneLoadPoint
+    [Header("*Opcional* unload")]
+    public bool unloadForwards = false;
+    public string[] scenesToUnload;
+
+    bool forwards
     {
-        public string sceneToLoad;
-        public Transform transform;
-    }
-
-    string currentScene;
-
-
-
-    void Start()
-    {
-        testSceneNumber = 0;
-        //ChangeSceneTo(firstSceneToLoad);
-    }
-
-    int testSceneNumber;
-    bool once = false;
-    //private void Update()
-    //{
-    //    if (PlayerInput.instance.rightController.activateAction.action.IsPressed() && !once)
-    //    {
-    //        testSceneNumber = testSceneNumber + 1 >= ScenePointsList.Length ? 0 : testSceneNumber + 1;
-    //        ChangeSceneTo(ScenePointsList[testSceneNumber].sceneToLoad);
-    //        once = true;
-    //    }
-    //    else
-    //    {
-    //        once = false;
-    //    }
-    //}
-
-    void ChangeSceneTo(string name)
-    {
-        if (currentScene != null)
+        get
         {
-            MenuControl.instance.UnloadSceneASYNC(currentScene);
-        }
+            Vector2 joystickRaw = PlayerInput.input.LeftHand.Joystick.ReadValue<Vector2>();
 
-        MenuControl.instance.LoadScene(name, UnityEngine.SceneManagement.LoadSceneMode.Additive);
-        currentScene = name;
+            Vector3 joystickDir = new Vector3(joystickRaw.x, 0, joystickRaw.y);
+            return Vector3.Dot(transform.forward, joystickDir) > 0;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!forwards) return;
+        
+        LoadScenes();
+
+        if (unloadForwards)
+        {
+            UnloadScenes();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (forwards) return;
+        
+        LoadScenes();
+
+        if (!unloadForwards)
+        {
+            UnloadScenes();
+        }
+    }
+
+    void LoadScenes()
+    {
+        if (scenesToLoad.Length < 0) return;
+        for (int i = 0; i < scenesToLoad.Length; i++)
+        {
+            MenuControl.instance.LoadScene(scenesToLoad[i], UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        }
+    }
+
+    void UnloadScenes()
+    {
+        if (scenesToUnload.Length < 0) return;
+
+        for (int i = 0; i < scenesToLoad.Length; i++)
+        {
+            MenuControl.instance.UnloadSceneASYNC(scenesToUnload[i]);
+        }
     }
 }

@@ -13,15 +13,33 @@ public class FPSCounter : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI textFPS;
 
+    float timer;
 
     private void Start()
     {
-        StartCoroutine(UpdateFPSAndDisplay());
+        timer = updateDelay;
     }
 
     private void Update()
     {
         CalcFPS();
+
+        timer -= Time.unscaledDeltaTime;
+
+        if (timer <= 0)
+        {
+            if (currentFPS >= targetFPS)
+            {
+                textFPS.color = Color.green;
+            }
+            else
+            {
+                textFPS.color = Color.red;
+            }
+
+            textFPS.text = "FPS: " + currentFPS.ToString(".0");
+            timer += updateDelay;
+        }
     }
 
     public void CalcFPS()
@@ -35,24 +53,6 @@ public class FPSCounter : MonoBehaviour
         else
         {
             currentFPS = 1f / 0.0001f;
-        }
-    }
-
-    private IEnumerator UpdateFPSAndDisplay()
-    {
-        while (true)
-        {
-            if (currentFPS >= targetFPS)
-            {
-                textFPS.color = Color.green;
-            }
-            else
-            {
-                textFPS.color = Color.red;
-            }
-
-            textFPS.text = "FPS: " + currentFPS.ToString(".0");
-            yield return new WaitForSeconds(updateDelay);
         }
     }
 }
