@@ -10,6 +10,7 @@ using UnityEngine;
 public class CleanUpScript : MonoBehaviour
 {
     public GameObject ParentToClean;
+    public string NameToSelect;
     public bool Activate = false;
 
     private void Update()
@@ -30,9 +31,9 @@ public class CleanUpScript : MonoBehaviour
 
         for (int i = 0; i < everything.Length; i++)
         {
-            if (everything[i].name.Contains("Floor") && everything[i].GetComponent<BoxCollider>() != null)
+            if (everything[i].name.Contains(NameToSelect))
             {
-                all.Add(everything[i].gameObject);
+                all.Add(everything[i].gameObject);   
             }
         }
 
