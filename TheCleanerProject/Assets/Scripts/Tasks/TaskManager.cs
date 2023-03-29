@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TaskManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public List<Task> tasksList;
     void Start()
     {
         

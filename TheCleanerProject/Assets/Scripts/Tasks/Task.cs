@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class Task 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public enum TaskType { waterTask, electricityTask, windTask, cleanTask }
+    public float taskDuration;
+    public UnityEvent onTaskFinished;
+    public abstract void UpdateTask();
+    public abstract void DoTask();
 
-    // Update is called once per frame
-    void Update()
+    private void FinishTask()
     {
-        
+        onTaskFinished.Invoke();
     }
 }
