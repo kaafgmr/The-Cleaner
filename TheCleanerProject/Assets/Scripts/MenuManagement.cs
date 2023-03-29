@@ -8,10 +8,12 @@ public class MenuManagement : MonoBehaviour
     public GameObject optionsPanel;
     public GameObject creditsPanel;
     public GameObject menuPanel;
+    public GameObject confirmationPanel;
     bool optionsOpen;
     bool creditsOpen;
+    bool confirmationOpen;
 
-    private void Start()
+    private void Awake()
     {
         Close();
     }
@@ -25,7 +27,7 @@ public class MenuManagement : MonoBehaviour
         }
     }
 
-public void Options()
+    public void Options()
     {
         if (optionsPanel != null && menuPanel != null && !optionsOpen)
         {
@@ -53,10 +55,24 @@ public void Options()
     {
         optionsPanel.SetActive(false);
         creditsPanel.SetActive(false);
+        confirmationPanel.SetActive(false);
         menuPanel.SetActive(true);
-        
+
         optionsOpen = false;
         creditsOpen = false;
+        confirmationOpen = false;
+    }
+
+    public void Confirmation()
+    {
+        if (confirmationPanel != null && menuPanel != null && !confirmationOpen)
+        {
+            menuPanel.SetActive(false);
+            confirmationPanel.SetActive(true);
+
+            confirmationOpen = true;
+            Debug.Log("Open Confirmation");
+        }
     }
 }
 
