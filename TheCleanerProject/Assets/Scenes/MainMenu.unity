@@ -18,7 +18,7 @@ RenderSettings:
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -26,8 +26,8 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubtractiveShadowColor: {r: 0.44705883, g: 0.52632767, b: 0.5764706, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d62e971e27f88ab43939db9bba9502c6, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09185619, g: 0.114059426, b: 0.14945388, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.019670557, g: 0.014189979, b: 0.0060069733, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -99,7 +99,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 89c92ee1e58af524797fa77ba45d3e73,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: c94dadd14e1223244ac72a1b5b6f0a25,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -23731,6 +23731,9 @@ MonoBehaviour:
   loadScreenPanel: {fileID: 0}
   progressPercentage: {fileID: 0}
   progressBar: {fileID: 0}
+  OnSceneLoaded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1982220975
 MonoBehaviour:
   m_ObjectHideFlags: 0
