@@ -1,5 +1,5 @@
 {
-    "name": "KelsonInputActions",
+    "name": "PlayerInputActions",
     "maps": [
         {
             "name": "LeftHand",
@@ -100,6 +100,15 @@
                     "type": "PassThrough",
                     "id": "b03a3b69-81ef-4c13-9ada-5cdf07c79097",
                     "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Menu",
+                    "type": "Button",
+                    "id": "78561706-fbbe-4399-bf74-50df55385635",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -290,6 +299,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Haptic Device",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e082424-01bd-4f27-80ad-4673b4302704",
+                    "path": "<XRController>{LeftHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Menu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

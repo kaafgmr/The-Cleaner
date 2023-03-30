@@ -125,6 +125,15 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Menu"",
+                    ""type"": ""Button"",
+                    ""id"": ""78561706-fbbe-4399-bf74-50df55385635"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -312,6 +321,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Haptic Device"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5e082424-01bd-4f27-80ad-4673b4302704"",
+                    ""path"": ""<XRController>{LeftHand}/menu"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Menu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -675,6 +695,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         m_LeftHand_Rotation = m_LeftHand.FindAction("Rotation", throwIfNotFound: true);
         m_LeftHand_TrackingState = m_LeftHand.FindAction("Tracking State", throwIfNotFound: true);
         m_LeftHand_HapticDevice = m_LeftHand.FindAction("Haptic Device", throwIfNotFound: true);
+        m_LeftHand_Menu = m_LeftHand.FindAction("Menu", throwIfNotFound: true);
         // RightHand
         m_RightHand = asset.FindActionMap("RightHand", throwIfNotFound: true);
         m_RightHand_Primarybutton = m_RightHand.FindAction("Primarybutton", throwIfNotFound: true);
@@ -762,6 +783,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
     private readonly InputAction m_LeftHand_Rotation;
     private readonly InputAction m_LeftHand_TrackingState;
     private readonly InputAction m_LeftHand_HapticDevice;
+    private readonly InputAction m_LeftHand_Menu;
     public struct LeftHandActions
     {
         private @PlayerInputActions m_Wrapper;
@@ -777,6 +799,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         public InputAction @Rotation => m_Wrapper.m_LeftHand_Rotation;
         public InputAction @TrackingState => m_Wrapper.m_LeftHand_TrackingState;
         public InputAction @HapticDevice => m_Wrapper.m_LeftHand_HapticDevice;
+        public InputAction @Menu => m_Wrapper.m_LeftHand_Menu;
         public InputActionMap Get() { return m_Wrapper.m_LeftHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -819,6 +842,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @HapticDevice.started -= m_Wrapper.m_LeftHandActionsCallbackInterface.OnHapticDevice;
                 @HapticDevice.performed -= m_Wrapper.m_LeftHandActionsCallbackInterface.OnHapticDevice;
                 @HapticDevice.canceled -= m_Wrapper.m_LeftHandActionsCallbackInterface.OnHapticDevice;
+                @Menu.started -= m_Wrapper.m_LeftHandActionsCallbackInterface.OnMenu;
+                @Menu.performed -= m_Wrapper.m_LeftHandActionsCallbackInterface.OnMenu;
+                @Menu.canceled -= m_Wrapper.m_LeftHandActionsCallbackInterface.OnMenu;
             }
             m_Wrapper.m_LeftHandActionsCallbackInterface = instance;
             if (instance != null)
@@ -856,6 +882,9 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 @HapticDevice.started += instance.OnHapticDevice;
                 @HapticDevice.performed += instance.OnHapticDevice;
                 @HapticDevice.canceled += instance.OnHapticDevice;
+                @Menu.started += instance.OnMenu;
+                @Menu.performed += instance.OnMenu;
+                @Menu.canceled += instance.OnMenu;
             }
         }
     }
@@ -1027,6 +1056,7 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
         void OnRotation(InputAction.CallbackContext context);
         void OnTrackingState(InputAction.CallbackContext context);
         void OnHapticDevice(InputAction.CallbackContext context);
+        void OnMenu(InputAction.CallbackContext context);
     }
     public interface IRightHandActions
     {
