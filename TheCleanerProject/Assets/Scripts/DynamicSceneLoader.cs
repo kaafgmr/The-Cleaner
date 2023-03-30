@@ -56,6 +56,8 @@ public class DynamicSceneLoader : MonoBehaviour
             
             MenuControl.instance.LoadScene(scenesToLoad[i], UnityEngine.SceneManagement.LoadSceneMode.Additive);    
         }
+
+        CalculateBounds.instance.Recalculate();
     }
 
     void UnloadScenes()
@@ -68,5 +70,7 @@ public class DynamicSceneLoader : MonoBehaviour
 
             MenuControl.instance.UnloadSceneASYNC(scenesToUnload[i]);
         }
+
+        CalculateBounds.instance.Recalculate();
     }
 }

@@ -25,44 +25,33 @@ public class CalculateBounds : MonoBehaviour
             Destroy(this);
         }
 
-        GameManager.instance.OnAllScenesLoaded.AddListener(Init);
+        StartCoroutine(CheckFloors());
+    }
+
+    IEnumerator CheckFloors()
+    {
+        while (!InitFloorsList())
+        {
+            yield return null;
+        }
+        Init();
     }
 
     public void Init()
     {
-        InitFloorsList();
-        if (Floors.Length > 0)
-        {
-            CalculateBound(Floors);
-        }
-
+        CalculateBound(Floors);
         OnInit.Invoke();
     }
 
-    void InitFloorsList()
+    public bool InitFloorsList()
     {
         GameObject[] initialList = GameObject.FindGameObjectsWithTag("Floor");
         if (initialList.Length > 0)
         {
             Floors = initialList;
+            return true;
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        if (recalculate)
-        {
-            InitFloorsList();
-            recalculate = false;
-        }
-
-        if (Floors?.Length > 0)
-        {
-            CalculateBound(Floors);
-            Gizmos.color = Color.red;
-            Vector3 scale = bounds.size;
-            Gizmos.DrawWireCube(bounds.center, scale);
-        }
+        return false;
     }
 
     public static Vector3 CalculatePointInsideBounds(Bounds bounds)
@@ -97,5 +86,29 @@ public class CalculateBounds : MonoBehaviour
             return midPoint / objects.Length;
         }
         return Vector3.zero;
+    }
+
+    public void Recalculate()
+    {
+        InitFloorsList();
+        CalculateBound(Floors);
+    }
+
+
+    private void OnDrawGizmosSelected()
+    {
+        if (recalculate)
+        {
+            InitFloorsList();
+            recalculate = false;
+        }
+
+        if (Floors?.Length > 0)
+        {
+            CalculateBound(Floors);
+            Gizmos.color = Color.red;
+            Vector3 scale = bounds.size;
+            Gizmos.DrawWireCube(bounds.center, scale);
+        }
     }
 }

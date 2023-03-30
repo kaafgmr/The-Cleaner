@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Noslek : Ghost
 {
+    [SerializeField] float distanceToUpdate = 0.5f;
     NavMeshAgent agent;
     FieldOfView FOV;
 
@@ -81,7 +82,7 @@ public class Noslek : Ghost
     public void MoveToRandomPoint()
     {
         ResumeMovement();
-        if (agent.remainingDistance > 0.5f) return;
+        if (agent.remainingDistance > distanceToUpdate) return;
 
         Vector3 pointInsideBounds = CalculateBounds.CalculatePointInsideBounds(CalculateBounds.bounds);
         NavMesh.SamplePosition(pointInsideBounds, out NavMeshHit hit, 100, NavMesh.AllAreas);
@@ -100,7 +101,7 @@ public class Noslek : Ghost
 
     void UpdateVision()
     {
-        if (agent.remainingDistance > 0.5f) return;
+        if (agent.remainingDistance > distanceToUpdate) return;
         MovingTowardsPlayer = false;
     }
 }

@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnAllScenesLoaded;
     
     private GameObject player;
+    private Transform playerTransform;
+    private float playerFOV;
     public static GameManager instance;
 
     private void Awake()
@@ -27,6 +29,9 @@ public class GameManager : MonoBehaviour
         }
 
         player = FindObjectOfType<XROrigin>().gameObject;
+        playerTransform = Camera.main.transform;
+        playerFOV = Camera.main.fieldOfView;
+
     }
 
 
@@ -40,27 +45,19 @@ public class GameManager : MonoBehaviour
         InitGame.Invoke();
     }
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.T))
-    //    {
-    //        Debug.Log("AAAAAAA");
-    //    }
-    //}
-
-    public IEnumerator CheckAllScenesLoaded()
-    {
-        while (SceneManager.sceneCount < ScenesToLoadOnStart.Length)
-        {
-            yield return null;
-        }
-        OnAllScenesLoaded.Invoke();
-
-    }
-
 
     public GameObject GetPlayer()
     {
         return player;
+    }
+
+    public float GetPlayerFOV()
+    {
+        return playerFOV;
+    }
+
+    public Transform GetPlayerTransform()
+    {
+        return playerTransform;
     }
 }

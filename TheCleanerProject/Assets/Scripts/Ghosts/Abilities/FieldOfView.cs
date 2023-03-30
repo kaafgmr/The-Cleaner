@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Networking;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class FieldOfView : MonoBehaviour
     public UnityEvent OnStopBeingViewed;
 
     GameObject player;
+    float playerFOV;
+    Transform playerTransform;
     bool wandering = false;
 
     [Header("Debug")]
@@ -23,16 +26,18 @@ public class FieldOfView : MonoBehaviour
     private void Start()
     {
         player = GameManager.instance.GetPlayer();
+        playerFOV = GameManager.instance.GetPlayerFOV();
+        playerTransform = GameManager.instance.GetPlayerTransform();
     }
 
     private void FixedUpdate()
     {
-        Vector3 myDir = (player.transform.position - transform.position).normalized;
+        Vector3 myDir = (playerTransform.position - transform.position).normalized;
 
         if (ICouldBeSeenBy(player, myDir))
         {
             Vector3 itsDir = -myDir;
-            if (ImInsideItsFOV(itsDir, player.transform.forward, 60))
+            if (ImInsideItsFOV(itsDir, playerTransform.forward, playerFOV))
             {
                 OnStartBeingViewed.Invoke();
                 wandering = false;
@@ -41,7 +46,7 @@ public class FieldOfView : MonoBehaviour
             {
                 if (IsInsideMyFOV(myDir))
                 {
-                    OnViewedByMe.Invoke(player.transform);
+                    OnViewedByMe.Invoke(playerTransform);
                     wandering = false;
                 }
                 else
@@ -73,10 +78,13 @@ public class FieldOfView : MonoBehaviour
         return (Vector3.Angle(dir, itsForward) < (itsFOV * 0.5f));
     }
 
+    Vector3 debugRay = Vector3.zero;
     bool ICouldBeSeenBy(GameObject obj, Vector3 dir)
     {
+        
         if(Physics.Raycast(transform.position, dir, out RaycastHit hit, 1000, collisionLayer))
         {
+            debugRay = hit.point;
             if (hit.collider.gameObject == obj)
             {
                 return true;
@@ -89,7 +97,12 @@ public class FieldOfView : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         DrawFOV();
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawRay(transform.position, debugRay);
     }
+
+
 
     void DrawFOV()
     {
