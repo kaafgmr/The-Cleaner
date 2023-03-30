@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 88762148}
   m_Layer: 3
   m_Name: SM_Floor_4x3_LOD0(Clone) (1)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -3689,7 +3689,7 @@ GameObject:
   - component: {fileID: 145053771}
   m_Layer: 3
   m_Name: SM_Floor_3x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -4069,7 +4069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ParentToClean: {fileID: 1243176181}
-  NameToSelect: Floor_trim
+  NameToSelect: Floor
   Activate: 0
 --- !u!4 &153166551
 Transform:
@@ -12529,7 +12529,7 @@ GameObject:
   - component: {fileID: 466550980}
   m_Layer: 3
   m_Name: SM_Floor_6x6_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -21896,7 +21896,7 @@ GameObject:
   - component: {fileID: 820827973}
   m_Layer: 3
   m_Name: SM_Floor_trim_door_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -23272,7 +23272,7 @@ GameObject:
   - component: {fileID: 861388561}
   m_Layer: 3
   m_Name: SM_Floor_6x3_broken_A_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -26794,7 +26794,7 @@ GameObject:
   - component: {fileID: 970287806}
   m_Layer: 3
   m_Name: SM_Floor_3x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -27251,7 +27251,7 @@ GameObject:
   - component: {fileID: 988254552}
   m_Layer: 3
   m_Name: SM_Floor_6x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -30695,7 +30695,7 @@ GameObject:
   - component: {fileID: 1100490078}
   m_Layer: 3
   m_Name: SM_Floor_trim_door_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -34472,7 +34472,7 @@ GameObject:
   - component: {fileID: 1212645159}
   m_Layer: 3
   m_Name: SM_Floor_4x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -37182,7 +37182,7 @@ GameObject:
   - component: {fileID: 1255358564}
   m_Layer: 3
   m_Name: SM_Floor_trim_door_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -38318,7 +38318,7 @@ GameObject:
   - component: {fileID: 1307613655}
   m_Layer: 3
   m_Name: SM_Floor_2x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -38582,7 +38582,7 @@ GameObject:
   - component: {fileID: 1313950711}
   m_Layer: 3
   m_Name: SM_Floor_trim_door_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -40704,7 +40704,7 @@ GameObject:
   - component: {fileID: 1395924997}
   m_Layer: 3
   m_Name: SM_Floor_4x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -46921,7 +46921,7 @@ GameObject:
   - component: {fileID: 1595189547}
   m_Layer: 3
   m_Name: SM_Floor_6x6_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -47768,7 +47768,7 @@ GameObject:
   - component: {fileID: 1625820646}
   m_Layer: 3
   m_Name: SM_Floor_3x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -48853,7 +48853,7 @@ GameObject:
   - component: {fileID: 1662825237}
   m_Layer: 3
   m_Name: SM_Floor_trim_door_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -53537,7 +53537,7 @@ GameObject:
   - component: {fileID: 1847506399}
   m_Layer: 3
   m_Name: SM_Floor_6x3_stairs_L_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -56060,7 +56060,7 @@ GameObject:
   - component: {fileID: 1927647320}
   m_Layer: 3
   m_Name: SM_Floor_6x6_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -58569,7 +58569,7 @@ GameObject:
   - component: {fileID: 2003749157}
   m_Layer: 3
   m_Name: SM_Floor_6x6_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -61653,7 +61653,7 @@ GameObject:
   - component: {fileID: 2131900810}
   m_Layer: 3
   m_Name: SM_Floor_2x3_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -61819,7 +61819,7 @@ GameObject:
   - component: {fileID: 2138165992}
   m_Layer: 3
   m_Name: SM_Floor_3x3_broken_B_LOD0(Clone)
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
@@ -11,6 +12,8 @@ public class MenuControl : MonoBehaviour
     public GameObject loadScreenPanel;
     public TextMeshProUGUI progressPercentage;
     public Slider progressBar;
+
+    public UnityEvent OnSceneLoaded;
 
     private void Awake()
     {
@@ -51,6 +54,7 @@ public class MenuControl : MonoBehaviour
             if (progressPercentage != null) { progressPercentage.text = progress + "%"; }
             yield return null;
         }
+        OnSceneLoaded.Invoke();
     }
 
     public int GetSceneCount()
