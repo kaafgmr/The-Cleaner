@@ -14,7 +14,7 @@ public class FlashLight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (PlayerInput.input.RightHand.Primarybutton.IsPressed())
         {
             if (!flashLightOn)
             {
