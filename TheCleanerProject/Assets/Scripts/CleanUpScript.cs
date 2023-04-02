@@ -9,12 +9,9 @@ using UnityEngine;
 [ExecuteAlways]
 public class CleanUpScript : MonoBehaviour
 {
-    //public GameObject parentToClean;
-    public GameObject[] objects;
-    public Material[] materials;
+    public GameObject ParentToClean;
+    public string NameToSelect;
     public bool Activate = false;
-
-    Dictionary<string, Material> materialDictionary = new Dictionary<string, Material>();
 
     private void Update()
     {
@@ -28,35 +25,49 @@ public class CleanUpScript : MonoBehaviour
     {
         if (Activate == false) return;
         Activate = false;
+        Transform[] everything = ParentToClean.GetComponentsInChildren<Transform>();
 
-        setUpDictionary();
+        List<GameObject> all = new List<GameObject>();
 
-        for (int i = 0; i < objects.Length; i++)
+        for (int i = 0; i < everything.Length; i++)
         {
-            if (!objects[i].TryGetComponent(out MeshRenderer MR)) continue;
-            
-            Material[] ObjMaterials = MR.sharedMaterials;
-
-            for (int j = 0; j < ObjMaterials.Length; j++)
+            if (everything[i].name.Contains(NameToSelect))
             {
-                if (!materialDictionary.ContainsKey(ObjMaterials[j].name)) continue;
-                ObjMaterials[j] = materialDictionary[ObjMaterials[j].name];
+                all.Add(everything[i].gameObject);   
             }
+        }
 
-            MR.sharedMaterials = ObjMaterials;
+
+        GameObject[] select = new GameObject[all.Count];
+
+        for (int i = 0; i < all.Count; i++)
+        {
+            select[i] = all[i];
+        }
+
+        Selection.objects = select;
+
+        if (select.Length == 0)
+        {
+            Selection.activeObject = gameObject;
         }
     }
 
-    void setUpDictionary()
-    {
-        for (int i = 0; i < materials.Length; i++)
-        {
-            if (!materialDictionary.ContainsKey(materials[i].name))
-            {
-                materialDictionary.Add(materials[i].name, materials[i]); 
-            }
-        }
-    }
+
+
+    //void test()
+    //{
+    //    if (everything[i].name.Contains("WallIn_A_3x_doordouble"))
+    //    {
+    //        BoxCollider bc = everything[i].AddComponent<BoxCollider>();
+    //        bc.center = new Vector3(-0.5f, 1.4f, 0);
+    //        bc.size = new Vector3(1, 2.8f, 0.3f);
+
+    //        bc = everything[i].AddComponent<BoxCollider>();
+    //        bc.center = new Vector3(-2.5f, 1.4f, 0);
+    //        bc.size = new Vector3(1, 2.8f, 0.3f);
+    //    }
+    //}
 }
 
 #endif

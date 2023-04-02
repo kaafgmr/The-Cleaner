@@ -6,7 +6,7 @@ public class PlayerInput : MonoBehaviour
 {
     public static PlayerInputActions input;
     public static PlayerInput instance;
-    private void Awake()
+    private void Start()
     {
         if (instance == null)
         {

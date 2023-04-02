@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8797337484623380276}
   - component: {fileID: 9075065166246046302}
   - component: {fileID: 3137028326194290123}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1875509668675491928}
   m_LocalRotation: {x: -0.25312078, y: 0.49262518, z: 0.6490258, w: 0.5215513}
   m_LocalPosition: {x: 2.353, y: 0.331, z: -2.638}
-  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_LocalScale: {x: 0.009011538, y: 0.009011539, z: 0.009011539}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3900794937434231759}
@@ -131,8 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders:
-  - {fileID: 3137028326194290123}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -242,7 +241,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1875509668675491928}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.6881901
   m_Height: 14.424379
@@ -257,7 +256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 741838620811440581}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +289,7 @@ GameObject:
   - component: {fileID: 3900794937434231759}
   - component: {fileID: 1453326080891916127}
   - component: {fileID: 9194728144884559391}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}

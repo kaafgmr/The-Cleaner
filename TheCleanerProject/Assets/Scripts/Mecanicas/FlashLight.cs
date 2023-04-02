@@ -8,11 +8,13 @@ public class FlashLight : MonoBehaviour
     private bool flashLightOn = false;
     void Start()
     {
-        FlashlightLight.gameObject.SetActive(true);
+        FlashlightLight.gameObject.SetActive(false);
     }
+
+    // Update is called once per frame
     void Update()
     {
-        if (PlayerInput.input.RightHand.Primarybutton.IsPressed() || PlayerInput.input.LeftHand.Primarybutton.IsPressed())
+        if (PlayerInput.input.RightHand.Primarybutton.IsPressed())
         {
             if (!flashLightOn)
             {
