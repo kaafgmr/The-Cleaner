@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 354421474176949026}
   - component: {fileID: 4984783223998132481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6160059468544529778}
   - component: {fileID: 1467976481677963397}
   - component: {fileID: 3111865993251756784}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 9185986982039267589}
   - component: {fileID: 4257738786997250183}
   - component: {fileID: 8030321757065313277}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -366,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7555448719168599817}
   - component: {fileID: 5810000237420705226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2208110911922684242}
   - component: {fileID: 1517629765576906562}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,7 +535,7 @@ GameObject:
   - component: {fileID: 5995070102688608969}
   - component: {fileID: 8754783661405912170}
   - component: {fileID: 3038246189572172985}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 5270653461221169335}
   - component: {fileID: 7570305049335304420}
   - component: {fileID: 1190086928152667863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: board_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   - component: {fileID: 4171719484677576792}
   - component: {fileID: 3468721514939622328}
   - component: {fileID: 7216863266036645027}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -891,7 +891,7 @@ GameObject:
   - component: {fileID: 4848083684495628746}
   - component: {fileID: 8689220286018812317}
   - component: {fileID: 8551726713756870133}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1025,7 +1025,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6035126928856875667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttchPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4817735456082790259}
   - component: {fileID: 4517481270261231953}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1141,7 +1141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 964144902834028703}
   - component: {fileID: 1154365283188455502}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ GameObject:
   - component: {fileID: 2475269941447523295}
   - component: {fileID: 5500538362432223123}
   - component: {fileID: 3710269517697512260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1362,7 +1362,7 @@ GameObject:
   - component: {fileID: 6557591713270307681}
   - component: {fileID: 811662190124282340}
   - component: {fileID: 8457097739778680527}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1497,7 +1497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5545213767971126443}
   - component: {fileID: 8648681106200067876}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1581,7 +1581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9092975358316878641}
   - component: {fileID: 5887866626565394349}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1668,7 +1668,7 @@ GameObject:
   - component: {fileID: 530759772800230280}
   - component: {fileID: 6731703536558044990}
   - component: {fileID: 2838958331894610312}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 3616524131059880840}
   - component: {fileID: 2423398476820507982}
   - component: {fileID: 96307276383406788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1940,7 @@ GameObject:
   - component: {fileID: 7147229828991894519}
   - component: {fileID: 4101782752516670787}
   - component: {fileID: 484844080974611652}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2076,7 +2076,7 @@ GameObject:
   - component: {fileID: 5172137087017321377}
   - component: {fileID: 5390962302723124666}
   - component: {fileID: 4416529837380340687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: page
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2158,7 +2158,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9037102555421423858}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2202,7 +2202,7 @@ GameObject:
   - component: {fileID: 283706024}
   - component: {fileID: 283706023}
   - component: {fileID: 4410447803847014935}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ClipBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2370,8 +2370,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.07238079, z: 1.2529078}
-  m_Center: {x: -0.000000011967778, y: 0.030598236, z: 0.12645325}
+  m_Size: {x: 1, y: 0.11980482, z: 1.2529078}
+  m_Center: {x: -0.000000011967778, y: 0.05431022, z: 0.12645325}
 --- !u!1 &8208641229511275312
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,7 +2382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7039388976127377782}
   - component: {fileID: 1949673991310819016}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2466,7 +2466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5249344382188119954}
   - component: {fileID: 8987434712262614131}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2550,7 +2550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788122806809941474}
   - component: {fileID: 425975627306127294}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Recuadro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2635,7 +2635,7 @@ GameObject:
   - component: {fileID: 3322214143464623620}
   - component: {fileID: 6594530494618907843}
   - component: {fileID: 5863425328886934148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Task 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
