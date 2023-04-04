@@ -98,10 +98,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000002, guid: a41d5b9a79f2e2c4da1b785999e683cb,
-    type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: c94dadd14e1223244ac72a1b5b6f0a25,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -576,11 +574,7 @@ RectTransform:
   m_Children:
   - {fileID: 197058560}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 3
-=======
   m_RootOrder: 4
->>>>>>> parent of 74e0732 (brogos done)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -930,11 +924,7 @@ PrefabInstance:
     - target: {fileID: 7490864726874353721, guid: 790106269f0a72c42800ef0918a174b0,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 8
-=======
       value: 9
->>>>>>> parent of 74e0732 (brogos done)
       objectReference: {fileID: 0}
     - target: {fileID: 7490864726874353721, guid: 790106269f0a72c42800ef0918a174b0,
         type: 3}
@@ -1310,11 +1300,7 @@ Transform:
   - {fileID: 1225380346}
   - {fileID: 373490868}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 1
-=======
   m_RootOrder: 2
->>>>>>> parent of 74e0732 (brogos done)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &559869587
 MonoBehaviour:
@@ -1561,11 +1547,7 @@ PrefabInstance:
     - target: {fileID: 1246642466145616610, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 9
-=======
       value: 10
->>>>>>> parent of 74e0732 (brogos done)
       objectReference: {fileID: 0}
     - target: {fileID: 1246642466145616610, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
@@ -1927,11 +1909,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 4
-=======
   m_RootOrder: 5
->>>>>>> parent of 74e0732 (brogos done)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1321887360
 PrefabInstance:
@@ -1944,11 +1922,7 @@ PrefabInstance:
     - target: {fileID: 532837269997306744, guid: 6b01e658ec751f940adf120ba60a69be,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 0
-=======
       value: 1
->>>>>>> parent of 74e0732 (brogos done)
       objectReference: {fileID: 0}
     - target: {fileID: 532837269997306744, guid: 6b01e658ec751f940adf120ba60a69be,
         type: 3}
@@ -2115,11 +2089,7 @@ Transform:
   - {fileID: 399069711}
   - {fileID: 104929423}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 6
-=======
   m_RootOrder: 7
->>>>>>> parent of 74e0732 (brogos done)
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849011323
 GameObject:
@@ -2187,10 +2157,6 @@ Transform:
   - {fileID: 1849011324}
   - {fileID: 1156901876}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1920231591
@@ -2308,7 +2274,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
->>>>>>> parent of 74e0732 (brogos done)
 --- !u!1 &2105480623
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,11 +2440,7 @@ PrefabInstance:
     - target: {fileID: 7368294880947500893, guid: 9ea63526b6f7b3f48ac7f2110078e979,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 7
-=======
       value: 8
->>>>>>> parent of 74e0732 (brogos done)
       objectReference: {fileID: 0}
     - target: {fileID: 7368294880947500893, guid: 9ea63526b6f7b3f48ac7f2110078e979,
         type: 3}
@@ -2615,11 +2576,7 @@ PrefabInstance:
     - target: {fileID: 6539009789785306708, guid: d6fc0793ebf62574e9868752b928b2d5,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< HEAD
-      value: 2
-=======
       value: 3
->>>>>>> parent of 74e0732 (brogos done)
       objectReference: {fileID: 0}
     - target: {fileID: 6539009789785306708, guid: d6fc0793ebf62574e9868752b928b2d5,
         type: 3}
