@@ -37,13 +37,17 @@ public class CleanUpScript : MonoBehaviour
             
             Material[] ObjMaterials = MR.sharedMaterials;
 
-            for (int j = 0; j < ObjMaterials.Length; j++)
+            if (ObjMaterials.Length > 0)
             {
-                if (!materialDictionary.ContainsKey(ObjMaterials[j].name)) continue;
-                ObjMaterials[j] = materialDictionary[ObjMaterials[j].name];
-            }
+                Debug.Log(ObjMaterials.Length);
+                for (int j = 0; j < ObjMaterials.Length; j++)
+                {
+                    if (!materialDictionary.ContainsKey(ObjMaterials[j].name)) continue;
+                    ObjMaterials[j] = materialDictionary[ObjMaterials[j].name];
+                }
 
-            MR.sharedMaterials = ObjMaterials;
+                MR.sharedMaterials = ObjMaterials;
+            }
         }
     }
 
