@@ -20,6 +20,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &-8693188676815788087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +41,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> parent of 74e0732 (brogos done)
 --- !u!114 &-8146865616810936447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +267,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &-3595543366136052243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,6 +288,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> parent of 74e0732 (brogos done)
 --- !u!114 &-3432166419956773958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,11 +362,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f0ebc320a151d3408ea1e9fce54d40e, type: 3}
   m_Name: OpenXR Package Settings
   m_EditorClassIdentifier: 
-  Keys: 0100000007000000040000000d0000000e00000019000000
+  Keys: 010000000700000004000000
   Values:
   - {fileID: 7490860471606781397}
   - {fileID: -6255125889697857809}
   - {fileID: 4834828230565890873}
+<<<<<<< HEAD
   - {fileID: 1765711414644375486}
   - {fileID: 2012764126979028304}
   - {fileID: 4631806983452598386}
@@ -384,6 +391,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> parent of 74e0732 (brogos done)
 --- !u!114 &730923814690400370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,6 +414,7 @@ MonoBehaviour:
   priority: 0
   required: 0
   ignoreValidationErrors: 0
+<<<<<<< HEAD
 --- !u!114 &862632801257495525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,6 +474,8 @@ MonoBehaviour:
   - {fileID: 408937193999409655}
   m_renderMode: 1
   m_depthSubmissionMode: 0
+=======
+>>>>>>> parent of 74e0732 (brogos done)
 --- !u!114 &3271245277459792791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,6 +496,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &3629010146692104256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +554,8 @@ MonoBehaviour:
   features: []
   m_renderMode: 1
   m_depthSubmissionMode: 0
+=======
+>>>>>>> parent of 74e0732 (brogos done)
 --- !u!114 &4834828230565890873
 MonoBehaviour:
   m_ObjectHideFlags: 0
