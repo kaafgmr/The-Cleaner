@@ -12,6 +12,7 @@ public class PlayerInput : MonoBehaviour
         {
             instance = this;
             input = new PlayerInputActions();
+            input.Enable();
         }
         else
         {

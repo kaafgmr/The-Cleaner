@@ -29,6 +29,11 @@ public class MenuControl : MonoBehaviour
         SceneManager.LoadScene(name, loadMode);
     }
 
+    public void LoadScene(string name)
+    {
+        SceneManager.LoadScene(name, LoadSceneMode.Single);
+    }
+
     public void LoadLevel(int levelNumber, LoadSceneMode loadMode = LoadSceneMode.Single)
     {
         LoadScene("Level" + levelNumber, loadMode);

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 
 public class FlashLight : MonoBehaviour
@@ -8,22 +9,21 @@ public class FlashLight : MonoBehaviour
     private bool flashLightOn = false;
     void Start()
     {
-        FlashlightLight.gameObject.SetActive(true);
+        FlashlightLight.gameObject.SetActive(false);
+        PlayerInput.input.RightHand.Primarybutton.started += PrimarybuttonDown;
+        PlayerInput.input.RightHand.Primarybutton.canceled += PrimarybuttonDown;
+        PlayerInput.input.LeftHand.Primarybutton.started += PrimarybuttonDown;
+        PlayerInput.input.LeftHand.Primarybutton.canceled += PrimarybuttonDown;
     }
-    void Update()
+
+    private void PrimarybuttonDown(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (PlayerInput.input.RightHand.Primarybutton.IsPressed() || PlayerInput.input.LeftHand.Primarybutton.IsPressed())
-        {
-            if (!flashLightOn)
-            {
-                FlashlightLight.gameObject.SetActive(true);
-                flashLightOn = true;
-            }
-            else
-            {
-                FlashlightLight.gameObject.SetActive(false);
-                flashLightOn = false;
-            }
-        }
+        UpdateFlashLight();
+    }
+
+    void UpdateFlashLight()
+    {
+        flashLightOn = !flashLightOn;
+        FlashlightLight.gameObject.SetActive(flashLightOn);
     }
 }

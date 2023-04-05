@@ -1,9 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Networking;
 
 public class FieldOfView : MonoBehaviour
 {
@@ -20,8 +18,10 @@ public class FieldOfView : MonoBehaviour
     Transform playerTransform;
     bool wandering = false;
 
+#if UNITY_EDITOR
     [Header("Debug")]
     [SerializeField]float maxDistanceView = 30;
+#endif
 
     private void Start()
     {

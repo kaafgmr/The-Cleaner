@@ -13,11 +13,11 @@ TagManager:
   - Water
   - UI
   - Triggers
-  - Player
+  - PlayerBody
   - Ghost
   - Dynamic
-  - 
-  - 
+  - Inventory
+  - PlayerHands
   - 
   - 
   - 
