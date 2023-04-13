@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8943497428649374817}
   - component: {fileID: 7775726299966081802}
   - component: {fileID: 246323757147795319}
-  m_Layer: 11
+  m_Layer: 9
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,12 +70,12 @@ GameObject:
   - component: {fileID: 7248961201090262135}
   - component: {fileID: 5996156266653547474}
   - component: {fileID: 8417886392248241944}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: lightningSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7248961201090262135
 Transform:
