@@ -98,7 +98,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000002, guid: a41d5b9a79f2e2c4da1b785999e683cb,
+  m_LightingDataAsset: {fileID: 112000002, guid: 26cdf2dbb9d5e03478534b957a341c88,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: c94dadd14e1223244ac72a1b5b6f0a25,
     type: 2}
@@ -1812,22 +1812,27 @@ PrefabInstance:
     - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.7075472
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.7075472
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.7075472
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
       propertyPath: m_Intensity
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
@@ -1907,7 +1912,7 @@ PrefabInstance:
     - target: {fileID: 9194728144884559391, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
       propertyPath: m_AdditionalLightsShadowResolutionTier
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -2550,7 +2555,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -2590,7 +2595,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
