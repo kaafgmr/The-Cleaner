@@ -11,7 +11,7 @@ public class Brogos : Ghost
     NavMeshAgent agent;
     FieldOfView FOV;
     bool MovingTowardsPlayer = false;
-    bool timeToHide;
+    public bool timeToHide;
     int recentTpnum = 0;
 
     private void Start()
@@ -22,8 +22,8 @@ public class Brogos : Ghost
 
     private void Init()
     {
-        resetRandPos();
         agent = GetComponent<NavMeshAgent>();
+        resetRandPos();
         FOV = GetComponentInChildren<FieldOfView>();
         FOV.OnViewedByMe.AddListener(StartChanneling);
         FOV.OnStartBeingViewed.AddListener(GhostCounter);
@@ -33,7 +33,6 @@ public class Brogos : Ghost
     private void Update()
     {
         if (agent != null && agent.isStopped || timeToHide) return;
-
         GhostAction();
     }
 
@@ -42,10 +41,12 @@ public class Brogos : Ghost
         if (MovingTowardsPlayer)
         {
             UpdateVision();
+            Debug.Log("estoy en el update vision");
         }
         else
         {
             StartCoroutine(Inspection());
+            Debug.Log("estoy en el start inspection");
         }
     }
 
@@ -130,14 +131,14 @@ public class Brogos : Ghost
         if (recentTpnum == num)
         {
             resetRandPos();
+            Debug.Log("estoy pillado en un bucle infinito");
         }
         else 
         {
-            //agent.isStopped = true;
-            transform.position = possibleTpPoints[num].position;
-            recentTp = transform.position;
+            agent.Warp(possibleTpPoints[num].position);
+            SetValueTimeToHide(false);
+            recentTp = possibleTpPoints[num].position;
             recentTpnum = num;
-            //agent.isStopped = false;
         }
     }
 
