@@ -11,7 +11,6 @@ public class BrogosTpPoints : MonoBehaviour
             {
                 brogos.SetValueTimeToHide(false);
                 brogos.resetRandPos();
-                //Debug.Log("Test");
             }
         }
     }
