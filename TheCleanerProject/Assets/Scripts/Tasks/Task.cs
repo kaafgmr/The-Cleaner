@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class Task 
+public abstract class Task : MonoBehaviour
 {
     public enum TaskType { waterTask, electricityTask, windTask, cleanTask }
     public float taskDuration;

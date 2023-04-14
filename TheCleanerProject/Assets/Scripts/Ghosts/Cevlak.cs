@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Cevlak : Ghost
 {
+    public GameObject[] spawnPoints;
+    
     public override void GhostAction()
     {
         throw new System.NotImplementedException();
