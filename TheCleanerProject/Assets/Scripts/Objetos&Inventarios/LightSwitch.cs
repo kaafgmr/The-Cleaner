@@ -12,7 +12,7 @@ public class LightSwitch : MonoBehaviour
     private void Start()
     {
         onRotation = transform.parent.rotation;
-        offRotation = Quaternion.Euler(-onRotation.eulerAngles.x, onRotation.eulerAngles.y, 180);
+        offRotation = Quaternion.Euler(onRotation.eulerAngles.x, onRotation.eulerAngles.y, 180);
     }
     private void OnTriggerEnter(Collider other)
     {
