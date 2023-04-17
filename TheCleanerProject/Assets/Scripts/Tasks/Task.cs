@@ -7,11 +7,12 @@ public abstract class Task : MonoBehaviour
 {
     public enum TaskType { waterTask, electricityTask, windTask, cleanTask }
     public float taskDuration;
+    public bool taskFinished;
     public UnityEvent onTaskFinished;
     public abstract void UpdateTask();
     public abstract void DoTask();
 
-    private void FinishTask()
+    public virtual void FinishTask()
     {
         onTaskFinished.Invoke();
     }

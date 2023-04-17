@@ -4,13 +4,37 @@ using UnityEngine;
 
 public class VacuumTask : Task
 {
+    public List<DustInteraction> listOfDusts;
+    int numberOfDustsVacuumed;
     public override void DoTask()
     {
         throw new System.NotImplementedException();
     }
 
+    private void Start()
+    {
+        numberOfDustsVacuumed = 0;
+    }
+
     public override void UpdateTask()
     {
-        throw new System.NotImplementedException();
+        
+        for (int i = 0; i < listOfDusts.Count; i++)
+        {
+            if (listOfDusts[i].hasBeenVacuumed == true) { numberOfDustsVacuumed++; }
+        }
+        if (numberOfDustsVacuumed == listOfDusts.Count)
+        {
+            taskFinished = true;
+        }
+    }
+    private void Update()
+    {
+        if (taskFinished) { base.FinishTask(); }
+        UpdateTask();
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            numberOfDustsVacuumed ++;
+        }
     }
 }
