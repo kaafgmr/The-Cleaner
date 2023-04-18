@@ -8,69 +8,60 @@ public class DynamicSceneLoader : MonoBehaviour
     [Header("Loading")]
     public string[] scenesToLoad;
 
-    [Header("*Optional* unload")]
-    public bool unloadForwards = false;
+    [Header("*Optional*")]
+    [Header("Unloading")]
     public string[] scenesToUnload;
 
-    bool forwards
-    {
-        get
-        {
-            Vector2 joystickRaw = PlayerInput.input.LeftHand.Joystick.ReadValue<Vector2>();
 
-            Vector3 joystickDir = new Vector3(joystickRaw.x, 0, joystickRaw.y);
-            return Vector3.Dot(transform.forward, joystickDir) > 0;
-        }
-    }
+    private Vector3 enterPos;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!forwards) return;
-        
-        LoadScenes();
-
-        if (unloadForwards)
-        {
-            UnloadScenes();
-        }
+        enterPos = other.transform.position;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (forwards) return;
-        
-        LoadScenes();
+        Vector3 exitPos = other.transform.position;
+        Vector3 playerDir = (exitPos - enterPos).normalized;
+        bool forward = Vector3.Dot(transform.forward, playerDir) > 0;
 
-        if (!unloadForwards)
+        if (forward)
         {
-            UnloadScenes();
+            LoadScenes(scenesToLoad);
+            UnloadScenes(scenesToUnload);
+        }
+        else
+        {
+            LoadScenes(scenesToUnload);
+            UnloadScenes(scenesToLoad);
         }
     }
 
-    void LoadScenes()
+    void LoadScenes(string[] scenes)
     {
-        if (scenesToLoad.Length <= 0) return;
-        for (int i = 0; i < scenesToLoad.Length; i++)
+        if (scenes.Length <= 0) return;
+        for (int i = 0; i < scenes.Length; i++)
         {
-            if (MenuControl.instance.IsAreadyLoaded(scenesToLoad[i])) return;
+            if (MenuControl.instance.IsAreadyLoaded(scenes[i])) continue;
             
-            MenuControl.instance.LoadScene(scenesToLoad[i], UnityEngine.SceneManagement.LoadSceneMode.Additive);    
+            MenuControl.instance.LoadScene(scenes[i], UnityEngine.SceneManagement.LoadSceneMode.Additive);    
         }
 
-        CalculateBounds.instance.Recalculate();
+        CalculateBounds.instance?.Recalculate();
     }
 
-    void UnloadScenes()
+    void UnloadScenes(string[] scenes)
     {
-        if (scenesToUnload.Length <= 0) return;
+        if (scenes.Length <= 0) return;
 
-        for (int i = 0; i < scenesToUnload.Length; i++)
+        for (int i = 0; i < scenes.Length; i++)
         {
-            if (!MenuControl.instance.IsAreadyLoaded(scenesToUnload[i])) return;
+            if (!MenuControl.instance.IsAreadyLoaded(scenes[i])) continue;
 
-            MenuControl.instance.UnloadSceneASYNC(scenesToUnload[i]);
+            MenuControl.instance.UnloadSceneASYNC(scenes[i]);
         }
 
-        CalculateBounds.instance.Recalculate();
+        CalculateBounds.instance?.Recalculate();
     }
 }
