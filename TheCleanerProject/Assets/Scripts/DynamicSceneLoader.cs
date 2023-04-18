@@ -8,7 +8,7 @@ public class DynamicSceneLoader : MonoBehaviour
     [Header("Loading")]
     public string[] scenesToLoad;
 
-    [Header("*Opcional* unload")]
+    [Header("*Optional* unload")]
     public bool unloadForwards = false;
     public string[] scenesToUnload;
 
@@ -49,7 +49,7 @@ public class DynamicSceneLoader : MonoBehaviour
 
     void LoadScenes()
     {
-        if (scenesToLoad.Length < 0) return;
+        if (scenesToLoad.Length <= 0) return;
         for (int i = 0; i < scenesToLoad.Length; i++)
         {
             if (MenuControl.instance.IsAreadyLoaded(scenesToLoad[i])) return;
@@ -62,7 +62,7 @@ public class DynamicSceneLoader : MonoBehaviour
 
     void UnloadScenes()
     {
-        if (scenesToUnload.Length < 0) return;
+        if (scenesToUnload.Length <= 0) return;
 
         for (int i = 0; i < scenesToUnload.Length; i++)
         {
