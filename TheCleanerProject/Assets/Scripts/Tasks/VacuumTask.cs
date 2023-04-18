@@ -28,13 +28,14 @@ public class VacuumTask : Task
             taskFinished = true;
         }
     }
+
+    public bool CheckIfItsDone()
+    {
+        return taskFinished;
+    }
     private void Update()
     {
-        if (taskFinished) { base.FinishTask(); }
-        UpdateTask();
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            numberOfDustsVacuumed ++;
-        }
+        if (CheckIfItsDone()) { base.FinishTask(); }
+        else { UpdateTask(); }        
     }
 }
