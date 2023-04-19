@@ -5,7 +5,7 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 2
+    smallestOccluder: 0.25
     smallestHole: 0.25
     backfaceThreshold: 5
   m_SceneGUID: 5b011160ba6f10f47bb8c5add0cc4445
@@ -1015,7 +1015,8 @@ MonoBehaviour:
   - MainMarkus
   - LivingRoom
   - MainCorridor
-  - MainCorridor
+  - LivingRoom2
+  - Kitchen
   - MainHallway
   InitGame:
     m_PersistentCalls:
@@ -1740,6 +1741,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Noslek
+      objectReference: {fileID: 0}
+    - target: {fileID: 877872074183875010, guid: 6b01e658ec751f940adf120ba60a69be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4043677119080524861, guid: 6b01e658ec751f940adf120ba60a69be,
         type: 3}
