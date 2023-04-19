@@ -5,6 +5,7 @@ using UnityEngine;
 public class PointManager : MonoBehaviour
 {
     public bool isInside;
+    public bool isOnFinalPoint;
     public Transform tpPoint;
     public Transform finalTpPoint;
     GameObject cevlakObject;
@@ -19,7 +20,11 @@ public class PointManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        cevlakObject.transform.position = tpPoint.position;
+        if(!isOnFinalPoint)
+        {
+            cevlakObject.transform.position = tpPoint.position;
+        }
+
         isInside = true;
         cevlakObject.GetComponent<Cevlak>().GhostAction();
     }
