@@ -5341,8 +5341,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6ea425fd40f5648b24e069ac9cdf7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objects: []
-  materials: []
+  parentToClean: {fileID: 0}
+  nameToSelect: 
   Activate: 0
 --- !u!4 &1126642305
 Transform:

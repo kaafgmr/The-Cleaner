@@ -8,9 +8,12 @@ public class DynamicSceneLoader : MonoBehaviour
     [Header("Loading")]
     public string[] scenesToLoad;
 
-    [Header("*Optional*")]
     [Header("Unloading")]
+    [Header("*Will be reloaded by going backwards*")]
     public string[] scenesToUnload;
+    [Header("*Optional*")]
+    [Header("Scenes to ensure unload")]
+    public string[] scenesToUnloadEnsured;
 
 
     private Vector3 enterPos;
@@ -30,6 +33,7 @@ public class DynamicSceneLoader : MonoBehaviour
         {
             LoadScenes(scenesToLoad);
             UnloadScenes(scenesToUnload);
+            UnloadScenes(scenesToUnloadEnsured);
         }
         else
         {

@@ -4282,7 +4282,7 @@ GameObject:
   - component: {fileID: 958277234}
   - component: {fileID: 958277237}
   - component: {fileID: 958277236}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Stairs_straight_L_railing_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

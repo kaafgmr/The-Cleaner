@@ -5,7 +5,7 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 1
+    smallestOccluder: 2
     smallestHole: 0.25
     backfaceThreshold: 5
   m_SceneGUID: 5b011160ba6f10f47bb8c5add0cc4445
@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1417833, g: 0.11500763, b: 0.042550877, a: 1}
+  m_IndirectSpecularColor: {r: 0.039341114, g: 0.028379958, b: 0.012013947, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1009,8 +1009,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScenesToLoadOnStart:
-  - Kelson
-  - Victor
+  - MainKelson
+  - MainVictor
+  - MainGalvez
+  - MainMarkus
+  - LivingRoom
+  - MainCorridor
+  - MainCorridor
+  - MainHallway
   InitGame:
     m_PersistentCalls:
       m_Calls: []
@@ -1476,8 +1482,8 @@ OcclusionArea:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225380344}
   serializedVersion: 2
-  m_Size: {x: 21.668564, y: 14.313776, z: 27.860138}
-  m_Center: {x: -0.4011805, y: 3.4965248, z: 1.637383}
+  m_Size: {x: 21.977827, y: 14.313776, z: 27.93552}
+  m_Center: {x: -0.24654937, y: 3.4965248, z: 1.5996904}
   m_IsViewVolume: 1
 --- !u!4 &1225380346
 Transform:
