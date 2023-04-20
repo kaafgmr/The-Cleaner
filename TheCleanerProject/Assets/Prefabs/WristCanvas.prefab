@@ -2856,9 +2856,12 @@ GameObject:
   - component: {fileID: 2090137544884900219}
   - component: {fileID: 2090137544884900216}
   - component: {fileID: 2090137544884900217}
-  - component: {fileID: 2090137544884900222}
+  - component: {fileID: 7419488986419389527}
   - component: {fileID: 2090137544884900223}
   - component: {fileID: 2090137544884900220}
+  - component: {fileID: 1615903851637456645}
+  - component: {fileID: 8640086614275740042}
+  - component: {fileID: 3338212115940879475}
   m_Layer: 5
   m_Name: WristCanvas
   m_TagString: Untagged
@@ -2932,7 +2935,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2090137544884900217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2950,25 +2953,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2090137544884900222
-MonoBehaviour:
+--- !u!64 &7419488986419389527
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090137544884900221}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 0
-  m_CheckFor2DOcclusion: 0
-  m_CheckFor3DOcclusion: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RaycastTriggerInteraction: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!114 &2090137544884900223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2981,8 +2979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0687ecd0251acc4cb5e3515378f751c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelOptions: {fileID: 2090137543498968657}
-  panelMain: {fileID: 2090137544419990795}
+  rayInteractor: {fileID: 0}
 --- !u!114 &2090137544884900220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2999,6 +2996,57 @@ MonoBehaviour:
   Music: {fileID: 2090137544106760060}
   SFX: {fileID: 2090137543482200327}
   FullScreenFX: {fileID: 2090137543263467931}
+--- !u!114 &1615903851637456645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090137544884900221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cf2a74d69b1c1e41916d2a7afdff5be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _facing: 0
+  _doubleSided: 0
+--- !u!114 &8640086614275740042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090137544884900221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ffe41fe81087fa41a2062cc69b99615, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _canvas: {fileID: 2090137544884900219}
+--- !u!114 &3338212115940879475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090137544884900221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb86ba9d4c5126e48bfef9b0c9550e9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 8640086614275740042}
+  _surface: {fileID: 1615903851637456645}
+  _selectSurface: {fileID: 1615903851637456645}
+  _movementProvider: {fileID: 0}
+  _tiebreakerScore: 0
 --- !u!1 &2090137544951689409
 GameObject:
   m_ObjectHideFlags: 0

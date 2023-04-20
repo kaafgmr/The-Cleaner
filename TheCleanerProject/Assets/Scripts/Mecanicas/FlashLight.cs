@@ -10,8 +10,8 @@ public class FlashLight : MonoBehaviour
     {
         flashlightLight.enabled = flashLightOn;
 
-        PlayerInput.input.RightHand.Primarybutton.started += PrimarybuttonDown;
-        PlayerInput.input.LeftHand.Primarybutton.started += PrimarybuttonDown;
+        //PlayerInput.input.RightHand.Primarybutton.started += PrimarybuttonDown;
+        //PlayerInput.input.LeftHand.Primarybutton.started += PrimarybuttonDown;
     }
 
     private void PrimarybuttonDown(UnityEngine.InputSystem.InputAction.CallbackContext obj)

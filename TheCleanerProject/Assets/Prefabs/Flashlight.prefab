@@ -37,7 +37,7 @@ Transform:
   - {fileID: 3900794937434231759}
   - {fileID: 741838620811440581}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2802133019531005255
 MeshFilter:
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6195ca2b147d6604eaba557eec6996c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FlashlightLight: {fileID: 8479537246037733363}
+  flashlightLight: {fileID: 1453326080891916127}
 --- !u!54 &8797337484623380276
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -4,11 +4,11 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject player;
     public string[] ScenesToLoadOnStart;
     public UnityEvent InitGame;
     public UnityEvent OnAllScenesLoaded;
     
-    private GameObject player;
     private Transform playerTransform;
     private float playerFOV;
     public static GameManager instance;
@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
 
-        player = FindObjectOfType<XROrigin>().gameObject;
         playerTransform = Camera.main.transform;
         playerFOV = Camera.main.fieldOfView;
 

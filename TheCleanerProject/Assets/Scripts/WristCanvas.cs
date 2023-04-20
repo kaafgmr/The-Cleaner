@@ -2,24 +2,41 @@ using UnityEngine;
 
 public class WristCanvas : MonoBehaviour
 {
-    [SerializeField] GameObject rayInteractor;
+    [SerializeField] GameObject[] rayInteractors;
     private Canvas _wristCanvas;
     private void Start()
     {
         _wristCanvas = GetComponent<Canvas>();
-        PlayerInput.input.LeftHand.Menu.performed += ToggleMenu;
-        rayInteractor.SetActive(false);
+
+        for (int i = 0; i < rayInteractors.Length; i++)
+        {
+            rayInteractors[i].SetActive(false);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (OVRInput.GetDown(OVRInput.Button.Start))
+        {
+            ToggleMenu();
+        }
     }
 
     private void OnDestroy()
     {
-        PlayerInput.input.LeftHand.Menu.performed -= ToggleMenu;
-        rayInteractor.SetActive(false);
+        for (int i = 0; i < rayInteractors.Length; i++)
+        {
+            rayInteractors[i].SetActive(false);
+        }
     }
 
-    public void ToggleMenu(UnityEngine.InputSystem.InputAction.CallbackContext context)
+    public void ToggleMenu()
     {
         _wristCanvas.enabled = !_wristCanvas.enabled;
-        rayInteractor.SetActive(_wristCanvas.enabled);
+
+        for (int i = 0; i < rayInteractors.Length; i++)
+        {
+            rayInteractors[i].SetActive(_wristCanvas.enabled);
+        }
     }
 }

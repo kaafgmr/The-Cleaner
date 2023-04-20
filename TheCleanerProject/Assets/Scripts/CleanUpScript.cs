@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[ExecuteAlways]
+[ExecuteInEditMode]
 public class CleanUpScript : MonoBehaviour
 {
     public GameObject parentToClean;

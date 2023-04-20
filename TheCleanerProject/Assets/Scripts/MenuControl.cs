@@ -47,7 +47,7 @@ public class MenuControl : MonoBehaviour
     {
         AsyncOperation loader = SceneManager.LoadSceneAsync(SceneName);
 
-        loadScreenPanel.SetActive(true);
+        loadScreenPanel?.SetActive(true);
         while(!loader.isDone)
         {
             //change the value so it goes from 0 to 1 instead of 0 to 0.9f
