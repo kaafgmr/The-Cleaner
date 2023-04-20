@@ -137,6 +137,7 @@ public class Brogos : Ghost
         {
             agent.Warp(possibleTpPoints[num].position);
             SetValueTimeToHide(false);
+            Debug.Log("EntroEnElCheckHideFalseEnElResetRandPos");
             recentTp = possibleTpPoints[num].position;
             recentTpnum = num;
         }
@@ -156,6 +157,7 @@ public class Brogos : Ghost
         MoveToRandomPoint();
         yield return new WaitForSeconds(8);
         timeToHide = true;
+        Debug.Log("EntroEnElCheckHideTrue");
         MoveToRecentTp();
     }    
 }
