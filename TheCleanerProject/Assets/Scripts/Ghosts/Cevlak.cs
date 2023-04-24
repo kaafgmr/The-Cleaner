@@ -6,27 +6,59 @@ public class Cevlak : Ghost
 {
     [SerializeField] float speed;
     
+    public GameObject playerObj;
+    public GameObject cevlakParent;
     public PointManager[] taskPoints;
-    public Transform finalPoint = null;
+    Transform finalPoint = null;
+    public bool isInside;
+    public bool speedActivator;
+    bool isCounting;
     int lastIndex;
     int actualIndex;
+
+    //Countdown
+    public float startMovingTimer;
+    float initialStartMovingTimer;
+
     Vector3 dir;
 
     private void Awake()
     {
+        cevlakParent = GameObject.Find("CevlakParent");
+        initialStartMovingTimer = startMovingTimer;
         lastIndex = taskPoints.Length+1;
         dir = new Vector3(0, 1, 0);
     }
 
     public void Update()
     {
-        if(finalPoint != null)
+        if(isInside)
         {
-            SpeedAdjustment(0.5f);
+            cevlakParent.transform.LookAt(playerObj.transform);
+            if(finalPoint != null)
+            {
+                if (!isCounting)
+                {
+                    StartCounting();
+                }
 
-            transform.position += speed * Time.deltaTime * dir;
+                if(startMovingTimer > 0)
+                {
+                    startMovingTimer -= Time.deltaTime;
+                }
+                else if (startMovingTimer <= 0)
+                {
+                    SpeedAdjustment(1);
+                    speedActivator = false;
+                    cevlakParent.transform.position += speed * Time.deltaTime * dir;
 
-            StopMovement();
+                    StopMovement();
+                }
+            }
+        }
+        else
+        {
+            startMovingTimer = initialStartMovingTimer;
         }
     }
     public override void GhostAction()
@@ -50,6 +82,8 @@ public class Cevlak : Ghost
                 lastIndex = actualIndex;
             }
         }
+
+        isCounting = false;
     }
 
     public override void GhostCounter()
@@ -64,10 +98,10 @@ public class Cevlak : Ghost
 
     public void StopMovement()
     {
-        if (transform.position.y >= finalPoint.position.y)
+        if (cevlakParent.transform.position.y >= finalPoint.position.y)
         {
             speed = 0;
-            transform.position = new Vector3(transform.position.x, finalPoint.position.y, transform.position.z);
+            cevlakParent.transform.position = new Vector3(cevlakParent.transform.position.x, finalPoint.position.y, cevlakParent.transform.position.z);
             if (!taskPoints[actualIndex].isOnFinalPoint)
             {
                 taskPoints[actualIndex].isOnFinalPoint = true;
@@ -78,17 +112,24 @@ public class Cevlak : Ghost
 
     public void SpeedAdjustment(float initialSpeed)
     {
-        if (speed == 0)
-        {
+        if(speedActivator)
+        { 
             speed = initialSpeed;
         }
-        else if (speed <= initialSpeed/5)
+
+        speed *= 0.995f;
+
+        if(speed <= 0.1f)
         {
-            speed = 0.07f;
+            speed = 0.1f;
         }
-        else if (speed >= initialSpeed / 5)
-        {
-            speed -= 0.003f;
-        }
+    }
+
+    void StartCounting()
+    {
+        startMovingTimer = initialStartMovingTimer;
+        startMovingTimer += Random.Range(0, 3);
+        Debug.Log(startMovingTimer);
+        isCounting = true;
     }
 }

@@ -9,11 +9,13 @@ public class PointManager : MonoBehaviour
     public Transform tpPoint;
     public Transform finalTpPoint;
     GameObject cevlakObject;
+    GameObject cevlakObjectParent;
 
 
     void Awake()
     {
         cevlakObject = GameObject.Find("Cevlak");
+        cevlakObjectParent = GameObject.Find("CevlakParent");
         tpPoint.gameObject.GetComponent<MeshRenderer>().enabled = false;
         finalTpPoint.gameObject.GetComponent<MeshRenderer>().enabled = false;
     }
@@ -22,10 +24,13 @@ public class PointManager : MonoBehaviour
     {
         if(!isOnFinalPoint)
         {
-            cevlakObject.transform.position = tpPoint.position;
+            cevlakObjectParent.transform.position = tpPoint.position;
         }
 
         isInside = true;
+        cevlakObject.GetComponent<Cevlak>().playerObj = other.gameObject;
+        cevlakObject.GetComponent<Cevlak>().isInside = true;
+        cevlakObject.GetComponent<Cevlak>().speedActivator = true;
         cevlakObject.GetComponent<Cevlak>().GhostAction();
     }
 
