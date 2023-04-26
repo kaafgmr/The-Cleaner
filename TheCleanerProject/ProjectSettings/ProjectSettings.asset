@@ -278,7 +278,7 @@ PlayerSettings:
   CreateWallpaper: 0
   APKExpansionFiles: 0
   keepLoadedShadersAlive: 0
-  StripUnusedMeshComponents: 1
+  StripUnusedMeshComponents: 0
   strictShaderVariantMatching: 0
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
@@ -343,7 +343,7 @@ PlayerSettings:
   clonedFromGUID: 3c72c65a16f0acb438eed22b8b16c24a
   templatePackageId: com.unity.template.urp-blank@2.0.3
   templateDefaultScene: Assets/Scenes/SampleScene.unity
-  useCustomMainManifest: 0
+  useCustomMainManifest: 1
   useCustomLauncherManifest: 0
   useCustomMainGradleTemplate: 0
   useCustomLauncherGradleManifest: 0
@@ -981,7 +981,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 1
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []

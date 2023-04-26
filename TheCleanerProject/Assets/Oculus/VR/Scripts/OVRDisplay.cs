@@ -182,6 +182,9 @@ public class OVRDisplay
 		recenterRequested = true;
 		recenterRequestedFrameCount = Time.frameCount;
 
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+		OVRMixedReality.RecenterPose();
+#endif
 	}
 
 	/// <summary>

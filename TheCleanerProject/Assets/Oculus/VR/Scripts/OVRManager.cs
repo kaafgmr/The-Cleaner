@@ -177,6 +177,10 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 	}
 
 
+    public interface EventListener
+    {
+        void OnEvent(OVRPlugin.EventDataBuffer eventData);
+    }
 
     /// <summary>
     /// Gets the singleton instance.
@@ -339,6 +343,7 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
     /// @params (UInt64 requestId, bool result)
     /// </summary>
     public static event Action<UInt64, bool> SceneCaptureComplete;
+
 
 
 
@@ -1182,10 +1187,36 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
         }
         set
         {
-            if (OVRPermissionsRequester.IsPermissionGranted(OVRPermissionsRequester.Permission.EyeTracking))
+            if (eyeTrackedFoveatedRenderingSupported)
             {
-                OVRPlugin.eyeTrackedFoveatedRenderingEnabled = value;
+                if (value)
+                {
+                    if (OVRPermissionsRequester.IsPermissionGranted(OVRPermissionsRequester.Permission.EyeTracking))
+                    {
+                        OVRPlugin.eyeTrackedFoveatedRenderingEnabled = value;
+                    }
+#if OCULUS_XR_ETFR_DELAYED_PERMISSION_REQUEST
+                    else
+                    {
+                        OVRPermissionsRequester.PermissionGranted += OnPermissionGranted;
+                        OVRPermissionsRequester.Request(new List<OVRPermissionsRequester.Permission> { OVRPermissionsRequester.Permission.EyeTracking });
+                    }
+#endif
+                }
+                else
+                {
+                    OVRPlugin.eyeTrackedFoveatedRenderingEnabled = value;
+                }
             }
+        }
+    }
+
+    private static void OnPermissionGranted(string permissionId)
+    {
+        if (permissionId == OVRPermissionsRequester.GetPermissionId(OVRPermissionsRequester.Permission.EyeTracking))
+        {
+            OVRPermissionsRequester.PermissionGranted -= OnPermissionGranted;
+            OVRPlugin.eyeTrackedFoveatedRenderingEnabled = true;
         }
     }
 
@@ -1558,6 +1589,17 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 
     private static OVRPlugin.EventDataBuffer eventDataBuffer = new OVRPlugin.EventDataBuffer();
 
+    private HashSet<EventListener> eventListeners = new HashSet<EventListener>();
+
+    public void RegisterEventListener(EventListener listener)
+    {
+        eventListeners.Add(listener);
+    }
+
+    public void DeregisterEventListener(EventListener listener)
+    {
+        eventListeners.Remove(listener);
+    }
 
     public static System.Version utilitiesVersion
     {
@@ -2010,6 +2052,9 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
         if (OVRPlugin.shouldQuit)
         {
             Debug.Log("[OVRManager] OVRPlugin.shouldQuit detected");
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN || OVR_ANDROID_MRC
+            StaticShutdownMixedRealityCapture(instance);
+#endif
 
             ShutdownInsightPassthrough();
 
@@ -2273,6 +2318,14 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
         wasPositionTracked = tracker.isPositionTracked;
 
         display.Update();
+
+#if UNITY_EDITOR
+        if (Application.isBatchMode)
+        {
+            OVRPlugin.UpdateInBatchMode();
+        }
+#endif
+
         OVRInput.Update();
 
         UpdateHMDEvents();
@@ -2382,6 +2435,10 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
                     }
                     break;
                 default:
+                    foreach (var listener in eventListeners)
+                    {
+                        listener.OnEvent(eventDataBuffer);
+                    }
                     break;
             }
         }
@@ -2611,9 +2668,57 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 			OVRPlugin.Media.Update();
 		}
 #endif
-#endif
 
+        if (configuration.enableMixedReality)
+        {
+            Camera mainCamera = FindMainCamera();
+            if (mainCamera != null)
+            {
+                if (!staticPrevEnableMixedRealityCapture)
+                {
+                    OVRPlugin.SendEvent("mixed_reality_capture", "activated");
+                    Debug.Log("MixedRealityCapture: activate");
+                    staticPrevEnableMixedRealityCapture = true;
+                }
+                OVRMixedReality.Update(gameObject, mainCamera, configuration, trackingOrigin);
+                suppressDisableMixedRealityBecauseOfNoMainCameraWarning = false;
+            }
+            else if (!suppressDisableMixedRealityBecauseOfNoMainCameraWarning)
+            {
+                Debug.LogWarning("Main Camera is not set, Mixed Reality disabled");
+                suppressDisableMixedRealityBecauseOfNoMainCameraWarning = true;
+            }
+        }
+        else if (staticPrevEnableMixedRealityCapture)
+        {
+            Debug.Log("MixedRealityCapture: deactivate");
+            staticPrevEnableMixedRealityCapture = false;
+            OVRMixedReality.Cleanup();
+        }
+
+        staticMrcSettings.ReadFrom(configuration);
     }
+
+    public static void StaticShutdownMixedRealityCapture(OVRMixedRealityCaptureConfiguration configuration)
+    {
+        if (staticMixedRealityCaptureInitialized)
+        {
+            ScriptableObject.Destroy(staticMrcSettings);
+            staticMrcSettings = null;
+
+            OVRMixedReality.Cleanup();
+
+#if OVR_ANDROID_MRC
+			if (OVRPlugin.Media.GetInitialized())
+			{
+				OVRPlugin.Media.Shutdown();
+			}
+#endif
+            staticMixedRealityCaptureInitialized = false;
+        }
+    }
+
+#endif
 
 
     enum PassthroughInitializationState
