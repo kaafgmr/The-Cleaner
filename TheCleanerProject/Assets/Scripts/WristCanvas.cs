@@ -7,6 +7,7 @@ public class WristCanvas : MonoBehaviour
     private void Start()
     {
         _wristCanvas = GetComponent<Canvas>();
+        _wristCanvas.enabled = false;
 
         for (int i = 0; i < rayInteractors.Length; i++)
         {

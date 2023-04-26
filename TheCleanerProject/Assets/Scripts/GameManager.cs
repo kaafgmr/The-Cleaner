@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
 
         playerTransform = Camera.main.transform;
         playerFOV = Camera.main.fieldOfView;
-
     }
 
 
@@ -38,8 +37,13 @@ public class GameManager : MonoBehaviour
         }
         
         InitGame.Invoke();
+        InitOculusSettings();
     }
 
+    void InitOculusSettings()
+    {
+        OVRManager.foveatedRenderingLevel = OVRManager.FoveatedRenderingLevel.High;
+    }
 
     public GameObject GetPlayer()
     {
