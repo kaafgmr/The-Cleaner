@@ -13,6 +13,7 @@ public class Cevlak : Ghost
     public bool isInside;
     public bool speedActivator;
     bool isCounting;
+    bool isStoped;
     int lastIndex;
     int actualIndex;
 
@@ -21,9 +22,11 @@ public class Cevlak : Ghost
     float initialStartMovingTimer;
 
     Vector3 dir;
+    Vector3 initialUp;
 
     private void Awake()
     {
+        initialUp = cevlakParent.transform.up;
         cevlakParent = GameObject.Find("CevlakParent");
         initialStartMovingTimer = startMovingTimer;
         lastIndex = taskPoints.Length+1;
@@ -34,8 +37,7 @@ public class Cevlak : Ghost
     {
         if(isInside)
         {
-            cevlakParent.transform.LookAt(playerObj.transform);
-            if(finalPoint != null)
+            if (finalPoint != null)
             {
                 if (!isCounting)
                 {
@@ -48,17 +50,23 @@ public class Cevlak : Ghost
                 }
                 else if (startMovingTimer <= 0)
                 {
+                    isStoped = false;
                     SpeedAdjustment(1);
                     speedActivator = false;
                     cevlakParent.transform.position += speed * Time.deltaTime * dir;
 
                     StopMovement();
                 }
-            }
+            } 
         }
         else
         {
             startMovingTimer = initialStartMovingTimer;
+        }
+
+        if (isStoped)
+        {
+            cevlakParent.transform.LookAt(playerObj.transform, initialUp);
         }
     }
     public override void GhostAction()
@@ -107,6 +115,7 @@ public class Cevlak : Ghost
                 taskPoints[actualIndex].isOnFinalPoint = true;
             }
             finalPoint = null;
+            isStoped = true;
         }
     }
 
