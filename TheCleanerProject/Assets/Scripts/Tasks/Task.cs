@@ -10,7 +10,7 @@ public abstract class Task : MonoBehaviour
     public bool taskFinished;
     public UnityEvent onTaskFinished;
     public abstract void UpdateTask();
-    public abstract void DoTask();
+    public virtual void DoTask() { }
 
     public virtual void FinishTask()
     {

@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class TidyUpRoomTask : Task
 {
-    public override void DoTask()
-    {
-        throw new System.NotImplementedException();
-    }
-
+    public ObjectsTidiedUpController _objectsController;
     public override void UpdateTask()
     {
-        throw new System.NotImplementedException();
+        if (_objectsController.CheckObjectsRealPosition()) {
+            taskFinished = true;
+        }
+    }
+    public bool CheckIfItsDone()
+    {
+        return taskFinished;
     }
 }

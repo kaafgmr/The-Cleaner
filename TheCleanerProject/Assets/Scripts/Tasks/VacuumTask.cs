@@ -6,11 +6,6 @@ public class VacuumTask : Task
 {
     public List<DustInteraction> listOfDusts;
     int numberOfDustsVacuumed;
-    public override void DoTask()
-    {
-        throw new System.NotImplementedException();
-    }
-
     private void Start()
     {
         numberOfDustsVacuumed = 0;
