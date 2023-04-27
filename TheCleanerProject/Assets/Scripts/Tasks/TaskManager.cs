@@ -5,14 +5,13 @@ using UnityEngine;
 public class TaskManager : MonoBehaviour
 {
     public List<Task> tasksList;
-    void Start()
+    public static TaskManager _instance;
+    void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+        else { Destroy(this); }
     }
 }

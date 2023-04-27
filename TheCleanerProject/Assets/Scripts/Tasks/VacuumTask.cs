@@ -6,9 +6,11 @@ public class VacuumTask : Task
 {
     public List<DustInteraction> listOfDusts;
     int numberOfDustsVacuumed;
-    private void Start()
+
+    public override void internalStart()
     {
-        numberOfDustsVacuumed = 0;
+        base.internalStart();
+        numberOfDustsVacuumed = 0; 
     }
 
     public override void UpdateTask()

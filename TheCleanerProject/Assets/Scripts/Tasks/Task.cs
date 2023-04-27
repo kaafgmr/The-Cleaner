@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public abstract class Task : MonoBehaviour
 {
     public enum TaskType { waterTask, electricityTask, windTask, cleanTask }
-    public float taskDuration;
+    float taskDuration;
     public bool taskFinished;
     public UnityEvent onTaskFinished;
     public abstract void UpdateTask();
@@ -15,5 +15,14 @@ public abstract class Task : MonoBehaviour
     public virtual void FinishTask()
     {
         onTaskFinished.Invoke();
+    }
+    private void Start()
+    {
+        internalStart();
+    }
+
+    public virtual void internalStart()
+    {
+        TaskManager._instance.tasksList.Add(this);
     }
 }
