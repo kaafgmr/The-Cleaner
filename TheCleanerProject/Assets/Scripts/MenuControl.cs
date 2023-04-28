@@ -9,6 +9,7 @@ public class MenuControl : MonoBehaviour
 {
     public static MenuControl instance;
     public GameObject loadScreenPanel;
+    public GameObject mainMenuPanel;
     public TextMeshProUGUI progressPercentage;
     public Slider progressBar;
 
@@ -47,8 +48,9 @@ public class MenuControl : MonoBehaviour
     {
         AsyncOperation loader = SceneManager.LoadSceneAsync(SceneName);
 
-        if (loadScreenPanel != null)
+        if (loadScreenPanel != null && mainMenuPanel != null)
         {
+            mainMenuPanel.SetActive(false);
             loadScreenPanel.SetActive(true);
         }
         
