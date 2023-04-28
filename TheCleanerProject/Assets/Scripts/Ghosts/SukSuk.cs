@@ -7,11 +7,15 @@ public class SukSuk : Ghost
 {
     [SerializeField] float distanceToUpdate = 0.5f;
     NavMeshAgent agent;
+
     [SerializeField] private float slowSpeed; //      2
     [SerializeField] private float defaultSpeed; //   3.5
     [SerializeField] private float fastSpeed; //      5
+
     FieldOfView FOV;
     [SerializeField] private Light flashLight;
+    [SerializeField] LayerMask collisionLayer;
+    bool flashlightPointingToMe = false;
     [SerializeField] private Transform restingPos;
 
     bool SeeingPlayer = false;
@@ -29,50 +33,38 @@ public class SukSuk : Ghost
         GoBackToRestingPosition();
         FOV = GetComponentInChildren<FieldOfView>();
         FOV.OnViewedByMe.AddListener(ChasePlayer);
-        FOV.OnStartBeingViewed.AddListener(Accelarete);
         FOV.OnStopBeingViewed.AddListener(StopWatchingPlayer);
     }
 
     private void Update()
     {
-        if (agent != null) return;
+        if (agent != null && agent.isStopped) return;
         GhostAction();
     }
 
-    public override void GhostAction()
+    public override void GhostAction() //chasear si lo ves pero ir lento aunque te mire, correr si lleva linterna puesta, correr bastante si te apunta con la linterna. si le dejas de ver y no lleva linterna dejar de chasear.
     {
-        //chasear si lo ves pero ir lento aunque te mire, correr si lleva linterna puesta, correr bastante si te apunta con la linterna. si le dejas de ver y no lleva linterna dejar de chasear.
         if (ChasingPlayer)
         {
-             if (!flashLight.isActiveAndEnabled)
-            { //comprobar forwward linterna
+            if (!flashLight.isActiveAndEnabled)
+            { 
                 if (!SeeingPlayer && !flashLight.isActiveAndEnabled) GoBackToRestingPosition();
                 else GhostCounter();
+            }
+            else
+            {
+                CheckFlashLightHit();
+                if (flashlightPointingToMe) Accelarete();
             }            
         }        
         else GoBackToRestingPosition();
     }
 
-    public void StopMovement()
-    {
-        if (!agent.isStopped)
-        {
-            agent.isStopped = true;
-        }
-    }
+    public void StopMovement() { if (!agent.isStopped) agent.isStopped = true; }
 
-    void ResumeMovement()
-    {
-        if (agent.isStopped)
-        {
-            agent.isStopped = false;
-        }
-    }
+    void ResumeMovement() { if (agent.isStopped) agent.isStopped = false; }
 
-    public override void GhostCounter() //se triggerea si apaga la linterna
-    {
-        agent.speed = slowSpeed; //reducir mucho velocidad
-    }
+    public override void GhostCounter() { agent.speed = slowSpeed; }
 
     public override void Scream() { throw new System.NotImplementedException(); }
 
@@ -92,5 +84,6 @@ public class SukSuk : Ghost
         agent.destination = restingPos.position;
     }
 
+    private void CheckFlashLightHit() { flashlightPointingToMe = Physics.Raycast(flashLight.transform.position, flashLight.transform.forward, out RaycastHit hit, 1000, collisionLayer); }
     private void StopWatchingPlayer() { SeeingPlayer = false; }
 }
