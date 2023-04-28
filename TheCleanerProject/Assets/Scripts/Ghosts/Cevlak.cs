@@ -88,6 +88,7 @@ public class Cevlak : Ghost
             {
                 taskPoints[lastIndex].isOnFinalPoint = false;
                 lastIndex = actualIndex;
+                isStoped = false;
             }
         }
 

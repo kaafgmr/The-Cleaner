@@ -37,6 +37,7 @@ public class PointManager : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         isInside = false;
+        cevlakObject.GetComponent<Cevlak>().isInside = false;
     }
 
     private void OnDrawGizmos()
