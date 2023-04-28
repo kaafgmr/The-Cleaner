@@ -1923,6 +1923,7 @@ public class OVRManager : MonoBehaviour, OVRMixedRealityCaptureConfiguration
 
     private void Awake()
     {
+        Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
 #if !USING_XR_SDK
 		//For legacy, we should initialize OVRManager in all cases.
 		//For now, in XR SDK, only initialize if OVRPlugin is initialized.

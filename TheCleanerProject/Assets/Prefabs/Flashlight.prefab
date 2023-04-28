@@ -18,8 +18,8 @@ GameObject:
   - component: {fileID: 3510479688450678990}
   - component: {fileID: 18940387938894298}
   - component: {fileID: 6157076038990655009}
-  - component: {fileID: 5675059694128980163}
   - component: {fileID: 8997971243129471505}
+  - component: {fileID: 184582306}
   m_Layer: 9
   m_Name: Flashlight
   m_TagString: Untagged
@@ -42,7 +42,7 @@ Transform:
   - {fileID: 3900794937434231759}
   - {fileID: 741838620811440581}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2802133019531005255
 MeshFilter:
@@ -202,29 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5675059694128980163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875509668675491928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 3510479688450678990}
-  _rigidbody: {fileID: 8797337484623380276}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 0
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
-  _physicsGrabbable: {fileID: 18940387938894298}
 --- !u!65 &8997971243129471505
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -238,6 +215,46 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 14, z: 3}
   m_Center: {x: 0.015468061, y: 7.224309, z: 0}
+--- !u!114 &184582306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875509668675491928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 3510479688450678990}
+  _rigidbody: {fileID: 8797337484623380276}
+  _physicsGrabbable: {fileID: 18940387938894298}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _supportedGrabTypes: 2
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []
 --- !u!1 &3452831921088272459
 GameObject:
   m_ObjectHideFlags: 0

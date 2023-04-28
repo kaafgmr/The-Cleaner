@@ -15,13 +15,14 @@ public class WristCanvas : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (OVRInput.GetDown(OVRInput.Button.Start))
-        {
-            ToggleMenu();
-        }
-    }
+    //private void FixedUpdate()
+    //{
+    //    if (OVRInput.GetDown(OVRInput.Button.Start))
+    //    {
+    //        ToggleMenu();
+    //        ToggleInteractors();
+    //    }
+    //}
 
     private void OnDestroy()
     {
@@ -34,7 +35,10 @@ public class WristCanvas : MonoBehaviour
     public void ToggleMenu()
     {
         _wristCanvas.enabled = !_wristCanvas.enabled;
+    }
 
+    public void ToggleInteractors()
+    {
         for (int i = 0; i < rayInteractors.Length; i++)
         {
             rayInteractors[i].SetActive(_wristCanvas.enabled);
