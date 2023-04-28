@@ -1043,6 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadScreenPanel: {fileID: 0}
+  mainMenuPanel: {fileID: 0}
   progressPercentage: {fileID: 0}
   progressBar: {fileID: 0}
   OnSceneLoaded:
@@ -1297,6 +1298,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453326080891916127, guid: 41b3654d10f106a4a966c0d472fb734f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1875509668675491928, guid: 41b3654d10f106a4a966c0d472fb734f,
         type: 3}
