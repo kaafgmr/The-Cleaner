@@ -4,13 +4,34 @@ using UnityEngine;
 
 public class CollectPlushiesTask : Task
 {
-    public override void DoTask()
+    public List<Plushy> listOfPlushies;
+    int numberOfPlushiesCollected;
+
+    public override void internalStart()
     {
-        throw new System.NotImplementedException();
+        base.internalStart();
+        numberOfPlushiesCollected = 0;
     }
 
     public override void UpdateTask()
     {
-        throw new System.NotImplementedException();
+        for (int i = 0; i < listOfPlushies.Count; i++)
+        {
+            if (listOfPlushies[i].hasBeenCollected == true) { numberOfPlushiesCollected++; }
+        }
+        if (numberOfPlushiesCollected == listOfPlushies.Count)
+        {
+            taskFinished = true;
+        }
+    }
+
+    public bool CheckIfItsDone()
+    {
+        return taskFinished;
+    }
+    private void Update()
+    {
+        if (CheckIfItsDone()) { base.FinishTask(); }
+        else { UpdateTask(); }
     }
 }
