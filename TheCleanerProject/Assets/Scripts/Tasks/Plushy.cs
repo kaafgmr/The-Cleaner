@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Plushy : MonoBehaviour
 {
-    public bool hasBeenCollected;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool isInRightPlace;
+    void Start() { isInRightPlace = false; }
+    private void OnTriggerEnter(Collider obj) { if (obj.TryGetComponent(out CollectPlushiesTask plushiesTask)) if (!plushiesTask.CheckIfItsDone()) isInRightPlace = true; }
+    private void OnTriggerExit(Collider obj) { if (obj.TryGetComponent(out CollectPlushiesTask plushiesTask)) if (!plushiesTask.CheckIfItsDone()) isInRightPlace = false; }
 }
