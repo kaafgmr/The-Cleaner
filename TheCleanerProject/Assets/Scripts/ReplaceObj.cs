@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ReplaceObj : MonoBehaviour
 {
-    public void Replace(GameObject newObj) 
-    {//codigo en el hijo de la bombilla (el que tiene el modelo)
-        GameObject newObject = Instantiate(newObj, transform.position, transform.rotation);
-        newObject.transform.SetParent(transform.parent);
+    public void Replace(GameObject newObj) //codigo en la bombilla que hay que reparar
+    {
+        newObj.transform.position = transform.position;
         Destroy(gameObject);
     }
 }

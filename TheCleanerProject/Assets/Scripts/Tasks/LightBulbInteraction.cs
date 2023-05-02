@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightBulbInteraction : MonoBehaviour
+public class LightBulbInteraction : MonoBehaviour //script para la bombilla que hay que coger y llevar a donde la bombilla rota
 {
     public bool hasBeenChanged;
-    [SerializeField] private GameObject fixedLightBulb;
     private GameObject lightBulbToFix;
     void Start() { hasBeenChanged = false; }
     private void OnTriggerEnter(Collider obj) 
@@ -21,9 +20,10 @@ public class LightBulbInteraction : MonoBehaviour
     }
     private void Update() { if (hasBeenChanged) ReplaceObj(); }
     private void ReplaceObj() 
-    {//objeto padre bombilla con la task y un hijo con el modelo 3d de la bombila y el script de ReplaceObj, finalizamos la tarea del padre y instanciamos nueva bombilla y destruimos la anterior
+    {//objeto padre bombilla con la task y un hijo con el modelo 3d de la bombila y el script de ReplaceObj, finalizamos la tarea del padre y movemos la lampara de la mano a donde estaba la rota y destruimos la anterior
         lightBulbToFix.GetComponent<ChangeLightBulbTask>().taskFinished = true;
-        lightBulbToFix.transform.GetChild(0).GetComponent<ReplaceObj>().Replace(fixedLightBulb);
-        Destroy(gameObject);
+        lightBulbToFix.transform.GetChild(0).GetComponent<ReplaceObj>().Replace(gameObject);
+        gameObject.GetComponent<GrabObject>().enabled = false;
+        this.enabled = false;
     }
 }
