@@ -27,13 +27,11 @@ public class ArmSwingMovementSystem : MonoBehaviour
         float leftHandMovedDist = Vector3.Distance(LeftHandPrevPos, leftHand.transform.position);
         float rightHandMovedDist = Vector3.Distance(rightHandPrevPos, rightHand.transform.position);
 
+        handSpeed = 0;
+
         if (leftHandMovedDist > 0.2f || rightHandMovedDist > 0.2f)
         {
             handSpeed = (leftHandMovedDist - playerMovedDist) + (rightHandMovedDist - playerMovedDist);
-        }
-        else
-        {
-            handSpeed = 0;
         }
 
         PlayerPrevPos = Vector3.up * transform.position.y;
