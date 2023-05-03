@@ -8,7 +8,7 @@ public class ObjectsToOrder : MonoBehaviour
     public bool isOnRealPosition;
     void Start()
     {
-        
+        isOnRealPosition = false;
     }
 
     // Update is called once per frame
