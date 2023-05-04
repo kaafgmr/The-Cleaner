@@ -1,13 +1,10 @@
 #if UNITY_EDITOR
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 [ExecuteInEditMode]
 public class CleanUpScript : MonoBehaviour
 {
     public GameObject parentToClean;
-    public string nameToSelect;
     public bool Activate = false;
 
     private void Update()
@@ -23,30 +20,10 @@ public class CleanUpScript : MonoBehaviour
         if (Activate == false) return;
         Activate = false;
 
-        Transform[] objects = parentToClean.GetComponentsInChildren<Transform>(true);
-        List<GameObject> all = new List<GameObject>();
+        BoxCollider[] objects = parentToClean.GetComponentsInChildren<BoxCollider>(true);
+        CapsuleCollider[] objects2 = parentToClean.GetComponentsInChildren<CapsuleCollider>(true);
 
-        for (int i = 0; i < objects.Length; i++)
-        {
-            if (objects[i].name.Contains(nameToSelect))
-            {
-                all.Add(objects[i].gameObject);
-            }
-        }
-
-        GameObject[] select = all.ToArray();
-
-        Selection.activeGameObject = gameObject;
-
-        if (select.Length > 0)
-        {
-            Selection.objects = select;
-        }
-        else
-        {
-            Debug.Log(select.Length + " objects selected");
-        }
+        Debug.Log(objects.Length + objects2.Length);
     }
 }
-
 #endif

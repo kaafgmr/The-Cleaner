@@ -385,7 +385,6 @@ GameObject:
   - component: {fileID: 16237805}
   - component: {fileID: 16237807}
   - component: {fileID: 16237806}
-  - component: {fileID: 16237808}
   m_Layer: 3
   m_Name: SM_WallIn_A_3x_bent_A_LOD0(Clone)
   m_TagString: Untagged
@@ -459,19 +458,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &16237808
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16237804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0000005, y: 2.8, z: 0.13832068}
-  m_Center: {x: -1.5000002, y: 1.4, z: 0.15400131}
 --- !u!1 &36514157
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +469,6 @@ GameObject:
   - component: {fileID: 36514158}
   - component: {fileID: 36514160}
   - component: {fileID: 36514159}
-  - component: {fileID: 36514161}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -556,19 +541,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &36514161
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36514157}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.2942999}
 --- !u!1 &40359091
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +718,6 @@ GameObject:
   - component: {fileID: 78460787}
   - component: {fileID: 78460789}
   - component: {fileID: 78460788}
-  - component: {fileID: 78460790}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -819,19 +790,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &78460790
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78460786}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430038}
 --- !u!1 &91628850
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +801,6 @@ GameObject:
   - component: {fileID: 91628851}
   - component: {fileID: 91628853}
   - component: {fileID: 91628852}
-  - component: {fileID: 91628854}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -916,19 +873,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &91628854
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 91628850}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430038}
 --- !u!1 &94155624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,7 +1051,6 @@ GameObject:
   - component: {fileID: 133975152}
   - component: {fileID: 133975154}
   - component: {fileID: 133975153}
-  - component: {fileID: 133975155}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_L_LOD0(Clone)
   m_TagString: Untagged
@@ -1180,19 +1123,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &133975155
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133975151}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.45257777, y: 0.5622316, z: 0.05128625}
-  m_Center: {x: -0.22220969, y: 0, z: 0.02210432}
 --- !u!1 &140079180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,8 +1134,6 @@ GameObject:
   - component: {fileID: 140079181}
   - component: {fileID: 140079183}
   - component: {fileID: 140079182}
-  - component: {fileID: 140079184}
-  - component: {fileID: 140079185}
   m_Layer: 3
   m_Name: SM_Chair_barstool_LOD0(Clone)
   m_TagString: Untagged
@@ -1278,32 +1206,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &140079184
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140079180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.39576864, y: 0.70652044, z: 0.47865915}
-  m_Center: {x: -1.9844457e-15, y: 0.35392243, z: 0.0000005662441}
---- !u!65 &140079185
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140079180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.39576864, y: 0.4462154, z: 0.06652961}
-  m_Center: {x: 0.0000015335763, y: 0.9194418, z: -0.20606108}
 --- !u!1 &156262413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,7 +1217,6 @@ GameObject:
   - component: {fileID: 156262414}
   - component: {fileID: 156262416}
   - component: {fileID: 156262415}
-  - component: {fileID: 156262417}
   m_Layer: 3
   m_Name: SM_Fridge_Body_LOD0(Clone)
   m_TagString: Untagged
@@ -1389,19 +1290,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &156262417
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156262413}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.94318426, y: 1.7999052, z: 0.60996604}
-  m_Center: {x: -0.00000002980233, y: 0.90004736, z: 0.42699876}
 --- !u!1 &184207250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1384,6 @@ GameObject:
   - component: {fileID: 196336494}
   - component: {fileID: 196336496}
   - component: {fileID: 196336495}
-  - component: {fileID: 196336497}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_LOD0(Clone)
   m_TagString: Untagged
@@ -1570,19 +1457,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &196336497
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196336493}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.9999998, y: 2.8, z: 0.099328265}
-  m_Center: {x: -1.5000001, y: 1.4, z: 0.14965945}
 --- !u!1 &202363620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,7 +1634,6 @@ GameObject:
   - component: {fileID: 256094559}
   - component: {fileID: 256094561}
   - component: {fileID: 256094560}
-  - component: {fileID: 256094562}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_LOD0(Clone)
   m_TagString: Untagged
@@ -1834,19 +1707,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &256094562
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256094558}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.9999998, y: 2.8, z: 0.099328265}
-  m_Center: {x: -1.5000001, y: 1.4, z: 0.14965934}
 --- !u!1 &274264631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1718,6 @@ GameObject:
   - component: {fileID: 274264632}
   - component: {fileID: 274264634}
   - component: {fileID: 274264633}
-  - component: {fileID: 274264635}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -1931,19 +1790,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &274264635
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274264631}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.2942999}
 --- !u!1 &292551802
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,8 +2216,6 @@ GameObject:
   - component: {fileID: 357599269}
   - component: {fileID: 357599271}
   - component: {fileID: 357599270}
-  - component: {fileID: 357599272}
-  - component: {fileID: 357599273}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_corner_LOD0(Clone)
   m_TagString: Untagged
@@ -2445,32 +2289,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &357599272
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357599268}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9000002, y: 0.9500001, z: 0.6437005}
-  m_Center: {x: 0.5499999, y: 0.47499993, z: 0.42185003}
---- !u!65 &357599273
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 357599268}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6421138, y: 0.9500001, z: 0.25465107}
-  m_Center: {x: 0.4210567, y: 0.47499993, z: 0.8726747}
 --- !u!1 &363833874
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,7 +3048,6 @@ GameObject:
   - component: {fileID: 447652242}
   - component: {fileID: 447652244}
   - component: {fileID: 447652243}
-  - component: {fileID: 447652245}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -3303,19 +3120,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &447652245
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 447652241}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430038}
 --- !u!1 &447861747
 GameObject:
   m_ObjectHideFlags: 0
@@ -3908,7 +3712,6 @@ GameObject:
   - component: {fileID: 553650213}
   - component: {fileID: 553650215}
   - component: {fileID: 553650214}
-  - component: {fileID: 553650216}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -3981,19 +3784,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &553650216
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553650212}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.2942999}
 --- !u!1 &563997602
 GameObject:
   m_ObjectHideFlags: 0
@@ -4089,7 +3879,6 @@ GameObject:
   - component: {fileID: 564337253}
   - component: {fileID: 564337255}
   - component: {fileID: 564337254}
-  - component: {fileID: 564337256}
   m_Layer: 3
   m_Name: SM_Trashcan_large_LOD0(Clone)
   m_TagString: Untagged
@@ -4162,19 +3951,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &564337256
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564337252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.43094632, y: 0.5619588, z: 0.59369993}
-  m_Center: {x: -0.00000005215408, y: 0.28089923, z: 0.00000007450582}
 --- !u!1 &567180153
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,7 +4211,6 @@ GameObject:
   - component: {fileID: 586142280}
   - component: {fileID: 586142282}
   - component: {fileID: 586142281}
-  - component: {fileID: 586142283}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -4508,19 +4283,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &586142283
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 586142279}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430038}
 --- !u!1 &598146865
 GameObject:
   m_ObjectHideFlags: 0
@@ -4698,7 +4460,6 @@ GameObject:
   - component: {fileID: 637592798}
   - component: {fileID: 637592800}
   - component: {fileID: 637592799}
-  - component: {fileID: 637592801}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -4771,19 +4532,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &637592801
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637592797}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430038}
 --- !u!1 &642825856
 GameObject:
   m_ObjectHideFlags: 0
@@ -4795,7 +4543,6 @@ GameObject:
   - component: {fileID: 642825857}
   - component: {fileID: 642825859}
   - component: {fileID: 642825858}
-  - component: {fileID: 642825860}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -4868,19 +4615,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &642825860
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642825856}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4525778, y: 0.5622316, z: 0.051286243}
-  m_Center: {x: 0.22224893, y: 0, z: 0.022104755}
 --- !u!1 &643299885
 GameObject:
   m_ObjectHideFlags: 0
@@ -5307,7 +5041,6 @@ GameObject:
   - component: {fileID: 691690617}
   - component: {fileID: 691690619}
   - component: {fileID: 691690618}
-  - component: {fileID: 691690620}
   m_Layer: 3
   m_Name: SM_WallIn_A_3x_doordouble_LOD0(Clone)
   m_TagString: Untagged
@@ -5381,19 +5114,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &691690620
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691690616}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 2.8, z: 0.09932417}
-  m_Center: {x: -1.5, y: 1.4, z: 0.14966138}
 --- !u!1 &696012089
 GameObject:
   m_ObjectHideFlags: 0
@@ -5405,7 +5125,6 @@ GameObject:
   - component: {fileID: 696012090}
   - component: {fileID: 696012092}
   - component: {fileID: 696012091}
-  - component: {fileID: 696012093}
   m_Layer: 3
   m_Name: SM_Door_mesh_sliding_LOD0(Clone)
   m_TagString: Untagged
@@ -5478,19 +5197,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &696012093
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696012089}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0324241, y: 2.158968, z: 0.03912042}
-  m_Center: {x: -0.51626486, y: 1.0870912, z: 0.021264438}
 --- !u!1 &696381499
 GameObject:
   m_ObjectHideFlags: 0
@@ -5502,7 +5208,6 @@ GameObject:
   - component: {fileID: 696381500}
   - component: {fileID: 696381502}
   - component: {fileID: 696381501}
-  - component: {fileID: 696381503}
   m_Layer: 3
   m_Name: SM_Door_mesh_C_L_LOD0(Clone)
   m_TagString: Untagged
@@ -5575,19 +5280,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &696381503
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696381499}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0208327, y: 2.148, z: 0.19988146}
-  m_Center: {x: 0.48329735, y: 1.077614, z: -0.0026051737}
 --- !u!1 &700827789
 GameObject:
   m_ObjectHideFlags: 0
@@ -5599,7 +5291,6 @@ GameObject:
   - component: {fileID: 700827790}
   - component: {fileID: 700827792}
   - component: {fileID: 700827791}
-  - component: {fileID: 700827793}
   m_Layer: 3
   m_Name: SM_Side_table_C_LOD0(Clone)
   m_TagString: Untagged
@@ -5672,19 +5363,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &700827793
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700827789}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.86718404, y: 0.69187844, z: 0.47481495}
-  m_Center: {x: 0.00000002980233, y: 0.34477687, z: 0.00000006705524}
 --- !u!1 &709365728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5696,8 +5374,6 @@ GameObject:
   - component: {fileID: 709365729}
   - component: {fileID: 709365731}
   - component: {fileID: 709365730}
-  - component: {fileID: 709365732}
-  - component: {fileID: 709365733}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_door_bent_A_LOD0(Clone)
   m_TagString: Untagged
@@ -5771,32 +5447,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &709365732
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709365728}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.021095, y: 2.8, z: 0.3479157}
-  m_Center: {x: -0.51054823, y: 1.4000005, z: 0.04253748}
---- !u!65 &709365733
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 709365728}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.021095, y: 2.8, z: 0.3479157}
-  m_Center: {x: -2.48, y: 1.4000005, z: 0.04253748}
 --- !u!1 &713503736
 GameObject:
   m_ObjectHideFlags: 0
@@ -5891,7 +5541,6 @@ GameObject:
   - component: {fileID: 722568248}
   - component: {fileID: 722568250}
   - component: {fileID: 722568249}
-  - component: {fileID: 722568251}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -5964,19 +5613,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &722568251
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722568247}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4525778, y: 0.5622316, z: 0.051286243}
-  m_Center: {x: 0.22224893, y: 0, z: 0.022104278}
 --- !u!1 &740943059
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,7 +5707,6 @@ GameObject:
   - component: {fileID: 749536471}
   - component: {fileID: 749536473}
   - component: {fileID: 749536472}
-  - component: {fileID: 749536474}
   m_Layer: 3
   m_Name: SM_WallIn_A_columnhalf_large_LOD0(Clone)
   m_TagString: Untagged
@@ -6145,19 +5780,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &749536474
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749536470}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.2438874, y: 2.7999997, z: 0.4019398}
-  m_Center: {x: 0.00000014901158, y: 1.4000001, z: 0.296131}
 --- !u!1 &778527782
 GameObject:
   m_ObjectHideFlags: 0
@@ -6169,7 +5791,6 @@ GameObject:
   - component: {fileID: 778527783}
   - component: {fileID: 778527785}
   - component: {fileID: 778527784}
-  - component: {fileID: 778527786}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -6242,19 +5863,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &778527786
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 778527782}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.45257768, y: 0.5622316, z: 0.05128623}
-  m_Center: {x: 0.22224887, y: 0, z: 0.02210475}
 --- !u!1 &787299166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6349,7 +5957,6 @@ GameObject:
   - component: {fileID: 789281459}
   - component: {fileID: 789281461}
   - component: {fileID: 789281460}
-  - component: {fileID: 789281462}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -6422,19 +6029,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &789281462
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789281458}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4525778, y: 0.5622316, z: 0.051286243}
-  m_Center: {x: 0.22224893, y: 0, z: 0.022105232}
 --- !u!1 &803954295
 GameObject:
   m_ObjectHideFlags: 0
@@ -6446,7 +6040,6 @@ GameObject:
   - component: {fileID: 803954296}
   - component: {fileID: 803954298}
   - component: {fileID: 803954297}
-  - component: {fileID: 803954299}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_L_LOD0(Clone)
   m_TagString: Untagged
@@ -6519,19 +6112,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &803954299
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803954295}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.45257777, y: 0.5622316, z: 0.05128625}
-  m_Center: {x: -0.22220969, y: 0, z: 0.022105273}
 --- !u!1 &818767943
 GameObject:
   m_ObjectHideFlags: 0
@@ -6626,7 +6206,6 @@ GameObject:
   - component: {fileID: 820837838}
   - component: {fileID: 820837841}
   - component: {fileID: 820837840}
-  - component: {fileID: 820837839}
   m_Layer: 3
   m_Name: SM_WallIn_A_2x_bent_A_LOD0(Clone) (1)
   m_TagString: Untagged
@@ -6649,19 +6228,6 @@ Transform:
   m_Father: {fileID: 1243176182}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &820837839
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 820837837}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9999999, y: 2.8, z: 0.11599374}
-  m_Center: {x: -1.0000001, y: 1.4, z: 0.15018454}
 --- !u!33 &820837840
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -6807,7 +6373,6 @@ GameObject:
   - component: {fileID: 846008851}
   - component: {fileID: 846008853}
   - component: {fileID: 846008852}
-  - component: {fileID: 846008854}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_sink_LOD0(Clone)
   m_TagString: Untagged
@@ -6882,19 +6447,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &846008854
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846008850}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 1.353324, z: 0.6500003}
-  m_Center: {x: -0.5000001, y: 0.6766619, z: 0.42500004}
 --- !u!1 &846315252
 GameObject:
   m_ObjectHideFlags: 0
@@ -6906,8 +6458,6 @@ GameObject:
   - component: {fileID: 846315253}
   - component: {fileID: 846315255}
   - component: {fileID: 846315254}
-  - component: {fileID: 846315256}
-  - component: {fileID: 846315257}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_door_LOD0(Clone)
   m_TagString: Untagged
@@ -6981,32 +6531,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &846315256
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846315252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0045726, y: 2.8, z: 0.37167495}
-  m_Center: {x: -0.5022863, y: 1.4, z: 0.013485372}
---- !u!65 &846315257
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846315252}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0045726, y: 2.8, z: 0.37167495}
-  m_Center: {x: -2.49, y: 1.4, z: 0.013485372}
 --- !u!1 &850192675
 GameObject:
   m_ObjectHideFlags: 0
@@ -7101,7 +6625,6 @@ GameObject:
   - component: {fileID: 862352933}
   - component: {fileID: 862352935}
   - component: {fileID: 862352934}
-  - component: {fileID: 862352936}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -7174,19 +6697,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &862352936
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 862352932}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430014}
 --- !u!1 &865592723
 GameObject:
   m_ObjectHideFlags: 0
@@ -7281,7 +6791,6 @@ GameObject:
   - component: {fileID: 881942042}
   - component: {fileID: 881942044}
   - component: {fileID: 881942043}
-  - component: {fileID: 881942045}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -7354,19 +6863,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &881942045
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881942041}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430014}
 --- !u!1 &955351053
 GameObject:
   m_ObjectHideFlags: 0
@@ -7461,7 +6957,6 @@ GameObject:
   - component: {fileID: 971474229}
   - component: {fileID: 971474231}
   - component: {fileID: 971474230}
-  - component: {fileID: 971474232}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_A_LOD0(Clone)
   m_TagString: Untagged
@@ -7535,19 +7030,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &971474232
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 971474228}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 0.95000005, z: 0.6500003}
-  m_Center: {x: -0.50000006, y: 0.47499996, z: 0.42500052}
 --- !u!1 &973607767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7974,8 +7456,6 @@ GameObject:
   - component: {fileID: 1087178833}
   - component: {fileID: 1087178835}
   - component: {fileID: 1087178834}
-  - component: {fileID: 1087178836}
-  - component: {fileID: 1087178837}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_doordouble_LOD0(Clone)
   m_TagString: Untagged
@@ -8049,32 +7529,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1087178836
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087178832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.50012493, y: 2.8, z: 0.3449368}
-  m_Center: {x: -0.25006247, y: 1.4, z: 0.026854962}
---- !u!65 &1087178837
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087178832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5217191, y: 2.8, z: 0.31269014}
-  m_Center: {x: -2.75, y: 1.4, z: 0.042978093}
 --- !u!1 &1087793756
 GameObject:
   m_ObjectHideFlags: 0
@@ -8086,7 +7540,6 @@ GameObject:
   - component: {fileID: 1087793757}
   - component: {fileID: 1087793759}
   - component: {fileID: 1087793758}
-  - component: {fileID: 1087793760}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -8159,19 +7612,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1087793760
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1087793756}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430085}
 --- !u!1 &1091432103
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,7 +8543,6 @@ GameObject:
   - component: {fileID: 1193893945}
   - component: {fileID: 1193893947}
   - component: {fileID: 1193893946}
-  - component: {fileID: 1193893948}
   m_Layer: 3
   m_Name: SM_WallIn_A_1x_LOD0(Clone)
   m_TagString: Untagged
@@ -9177,19 +8616,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1193893948
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1193893944}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000001, y: 2.8, z: 0.099324144}
-  m_Center: {x: -0.5, y: 1.4, z: 0.14966112}
 --- !u!1 &1194223568
 GameObject:
   m_ObjectHideFlags: 0
@@ -9284,7 +8710,6 @@ GameObject:
   - component: {fileID: 1238076866}
   - component: {fileID: 1238076868}
   - component: {fileID: 1238076867}
-  - component: {fileID: 1238076869}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_A_LOD0(Clone)
   m_TagString: Untagged
@@ -9358,19 +8783,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1238076869
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1238076865}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 0.95000005, z: 0.6500003}
-  m_Center: {x: -0.50000006, y: 0.47499996, z: 0.42500028}
 --- !u!1 &1243176181
 GameObject:
   m_ObjectHideFlags: 0
@@ -10104,7 +9516,6 @@ GameObject:
   - component: {fileID: 1353593605}
   - component: {fileID: 1353593607}
   - component: {fileID: 1353593606}
-  - component: {fileID: 1353593608}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_doordouble_LOD0(Clone)
   m_TagString: Untagged
@@ -10178,19 +9589,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1353593608
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353593604}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3, y: 2.8, z: 0.09936297}
-  m_Center: {x: -1.5, y: 1.4, z: 0.14964186}
 --- !u!1 &1371930414
 GameObject:
   m_ObjectHideFlags: 0
@@ -10202,7 +9600,6 @@ GameObject:
   - component: {fileID: 1371930415}
   - component: {fileID: 1371930417}
   - component: {fileID: 1371930416}
-  - component: {fileID: 1371930418}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_dishwasher_LOD0(Clone)
   m_TagString: Untagged
@@ -10277,19 +9674,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1371930418
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371930414}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 0.95017296, z: 0.6500001}
-  m_Center: {x: -0.49999997, y: 0.4749135, z: 0.42499995}
 --- !u!1 &1375581558
 GameObject:
   m_ObjectHideFlags: 0
@@ -10301,7 +9685,6 @@ GameObject:
   - component: {fileID: 1375581559}
   - component: {fileID: 1375581561}
   - component: {fileID: 1375581560}
-  - component: {fileID: 1375581562}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_windowsmall_LOD0(Clone)
   m_TagString: Untagged
@@ -10375,19 +9758,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1375581562
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375581558}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0000005, y: 2.8, z: 0.09932829}
-  m_Center: {x: -1.5000005, y: 1.4, z: 0.14965925}
 --- !u!1 &1386899939
 GameObject:
   m_ObjectHideFlags: 0
@@ -10482,7 +9852,6 @@ GameObject:
   - component: {fileID: 1396281540}
   - component: {fileID: 1396281542}
   - component: {fileID: 1396281541}
-  - component: {fileID: 1396281543}
   m_Layer: 3
   m_Name: SM_Door_mesh_sliding_LOD0(Clone)
   m_TagString: Untagged
@@ -10555,19 +9924,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1396281543
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396281539}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0324241, y: 2.158968, z: 0.03912042}
-  m_Center: {x: -0.51626486, y: 1.0870912, z: 0.02126444}
 --- !u!1 &1415417566
 GameObject:
   m_ObjectHideFlags: 0
@@ -10834,7 +10190,6 @@ GameObject:
   - component: {fileID: 1434176308}
   - component: {fileID: 1434176310}
   - component: {fileID: 1434176309}
-  - component: {fileID: 1434176311}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_B_LOD0(Clone)
   m_TagString: Untagged
@@ -10908,19 +10263,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1434176311
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434176307}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 0.95000005, z: 0.6500003}
-  m_Center: {x: -0.50000006, y: 0.47499996, z: 0.42500004}
 --- !u!1 &1440112598
 GameObject:
   m_ObjectHideFlags: 0
@@ -10932,7 +10274,6 @@ GameObject:
   - component: {fileID: 1440112599}
   - component: {fileID: 1440112601}
   - component: {fileID: 1440112600}
-  - component: {fileID: 1440112602}
   m_Layer: 3
   m_Name: SM_WallIn_A_3x_doordouble_LOD0(Clone)
   m_TagString: Untagged
@@ -11006,19 +10347,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1440112602
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1440112598}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0000007, y: 2.8, z: 0.09932419}
-  m_Center: {x: -1.5000004, y: 1.4, z: 0.14966135}
 --- !u!1 &1448785126
 GameObject:
   m_ObjectHideFlags: 0
@@ -11030,7 +10358,6 @@ GameObject:
   - component: {fileID: 1448785127}
   - component: {fileID: 1448785129}
   - component: {fileID: 1448785128}
-  - component: {fileID: 1448785130}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_separate_LOD0(Clone)
   m_TagString: Untagged
@@ -11104,19 +10431,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1448785130
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1448785126}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.5717055, y: 0.95105714, z: 0.89999926}
-  m_Center: {x: 0.00000002980233, y: 0.47447142, z: -0.00000043213367}
 --- !u!1 &1460077834
 GameObject:
   m_ObjectHideFlags: 0
@@ -11377,7 +10691,6 @@ GameObject:
   - component: {fileID: 1477047356}
   - component: {fileID: 1477047358}
   - component: {fileID: 1477047357}
-  - component: {fileID: 1477047359}
   m_Layer: 3
   m_Name: SM_WallIn_A_columnhalf_small_LOD0(Clone)
   m_TagString: Untagged
@@ -11451,19 +10764,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1477047359
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477047355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.55388725, y: 2.7999997, z: 0.22782186}
-  m_Center: {x: -0.00000010430816, y: 1.4000001, z: 0.20883158}
 --- !u!1 &1486167269
 GameObject:
   m_ObjectHideFlags: 0
@@ -11475,7 +10775,6 @@ GameObject:
   - component: {fileID: 1486167270}
   - component: {fileID: 1486167272}
   - component: {fileID: 1486167271}
-  - component: {fileID: 1486167273}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -11548,19 +10847,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1486167273
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486167269}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.2942999}
 --- !u!1 &1517533435
 GameObject:
   m_ObjectHideFlags: 0
@@ -11572,7 +10858,6 @@ GameObject:
   - component: {fileID: 1517533436}
   - component: {fileID: 1517533438}
   - component: {fileID: 1517533437}
-  - component: {fileID: 1517533439}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -11645,19 +10930,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1517533439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517533435}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430085}
 --- !u!1 &1525158138
 GameObject:
   m_ObjectHideFlags: 0
@@ -11669,7 +10941,6 @@ GameObject:
   - component: {fileID: 1525158139}
   - component: {fileID: 1525158141}
   - component: {fileID: 1525158140}
-  - component: {fileID: 1525158142}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_B_LOD0(Clone)
   m_TagString: Untagged
@@ -11743,19 +11014,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1525158142
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525158138}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000002, y: 0.95000005, z: 0.6500003}
-  m_Center: {x: -0.50000006, y: 0.47499996, z: 0.42500028}
 --- !u!1 &1540981779
 GameObject:
   m_ObjectHideFlags: 0
@@ -11850,7 +11108,6 @@ GameObject:
   - component: {fileID: 1546828707}
   - component: {fileID: 1546828709}
   - component: {fileID: 1546828708}
-  - component: {fileID: 1546828710}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -11923,19 +11180,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1546828710
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546828706}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4525778, y: 0.5622316, z: 0.051286243}
-  m_Center: {x: 0.22224893, y: 0, z: 0.022104755}
 --- !u!1 &1550031760
 GameObject:
   m_ObjectHideFlags: 0
@@ -12030,7 +11274,6 @@ GameObject:
   - component: {fileID: 1560219679}
   - component: {fileID: 1560219681}
   - component: {fileID: 1560219680}
-  - component: {fileID: 1560219682}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -12103,19 +11346,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1560219682
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1560219678}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4525778, y: 0.5622316, z: 0.051286243}
-  m_Center: {x: 0.22224893, y: 0, z: 0.022104993}
 --- !u!1 &1560721745
 GameObject:
   m_ObjectHideFlags: 0
@@ -12210,7 +11440,6 @@ GameObject:
   - component: {fileID: 1576067667}
   - component: {fileID: 1576067669}
   - component: {fileID: 1576067668}
-  - component: {fileID: 1576067670}
   m_Layer: 3
   m_Name: SM_WallIn_A_columnhalf_medium_LOD0(Clone)
   m_TagString: Untagged
@@ -12284,19 +11513,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1576067670
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576067666}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.90388715, y: 2.8, z: 0.3019397}
-  m_Center: {x: -0.00000011920929, y: 1.4, z: 0.24613096}
 --- !u!1 &1576522727
 GameObject:
   m_ObjectHideFlags: 0
@@ -12557,7 +11773,6 @@ GameObject:
   - component: {fileID: 1618050649}
   - component: {fileID: 1618050651}
   - component: {fileID: 1618050650}
-  - component: {fileID: 1618050652}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -12630,19 +11845,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1618050652
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618050648}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.29430085}
 --- !u!1 &1644517005
 GameObject:
   m_ObjectHideFlags: 0
@@ -13152,7 +12354,6 @@ GameObject:
   - component: {fileID: 1746268145}
   - component: {fileID: 1746268147}
   - component: {fileID: 1746268146}
-  - component: {fileID: 1746268148}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -13225,19 +12426,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1746268148
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746268144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.2942999}
 --- !u!1 &1762225324
 GameObject:
   m_ObjectHideFlags: 0
@@ -13249,7 +12437,6 @@ GameObject:
   - component: {fileID: 1762225325}
   - component: {fileID: 1762225327}
   - component: {fileID: 1762225326}
-  - component: {fileID: 1762225328}
   m_Layer: 3
   m_Name: SM_WallIn_A_2x_bent_A_LOD0(Clone)
   m_TagString: Untagged
@@ -13323,19 +12510,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1762225328
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762225324}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9999999, y: 2.8, z: 0.11599374}
-  m_Center: {x: -1.0000001, y: 1.4, z: 0.15018454}
 --- !u!1 &1765389346
 GameObject:
   m_ObjectHideFlags: 0
@@ -13436,7 +12610,6 @@ GameObject:
   - component: {fileID: 1774438993}
   - component: {fileID: 1774438995}
   - component: {fileID: 1774438994}
-  - component: {fileID: 1774438996}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_windowsmall_LOD0(Clone)
   m_TagString: Untagged
@@ -13510,19 +12683,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1774438996
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774438992}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0000005, y: 2.8, z: 0.09932829}
-  m_Center: {x: -1.5000005, y: 1.4, z: 0.14965925}
 --- !u!1 &1774452817
 GameObject:
   m_ObjectHideFlags: 0
@@ -13617,7 +12777,6 @@ GameObject:
   - component: {fileID: 1783103258}
   - component: {fileID: 1783103260}
   - component: {fileID: 1783103259}
-  - component: {fileID: 1783103261}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -13690,19 +12849,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1783103261
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1783103257}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.2942999}
 --- !u!1 &1784445785
 GameObject:
   m_ObjectHideFlags: 0
@@ -13797,7 +12943,6 @@ GameObject:
   - component: {fileID: 1792794995}
   - component: {fileID: 1792794997}
   - component: {fileID: 1792794996}
-  - component: {fileID: 1792794998}
   m_Layer: 3
   m_Name: SM_Stove_LOD0(Clone)
   m_TagString: Untagged
@@ -13870,19 +13015,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1792794998
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1792794994}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.93790954, y: 1.1181959, z: 0.6513521}
-  m_Center: {x: -0.000000059604645, y: 0.55839473, z: 0.42567602}
 --- !u!1 &1799712518
 GameObject:
   m_ObjectHideFlags: 0
@@ -14394,7 +13526,6 @@ GameObject:
   - component: {fileID: 1826381409}
   - component: {fileID: 1826381411}
   - component: {fileID: 1826381410}
-  - component: {fileID: 1826381412}
   m_Layer: 3
   m_Name: SM_Side_table_G_LOD0(Clone)
   m_TagString: Untagged
@@ -14467,19 +13598,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1826381412
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826381408}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.28261617, y: 0.60831374, z: 0.36740476}
-  m_Center: {x: -0.00000005960466, y: 0.30413285, z: 0.00000055134296}
 --- !u!1 &1830934321
 GameObject:
   m_ObjectHideFlags: 0
@@ -14740,7 +13858,6 @@ GameObject:
   - component: {fileID: 1834207067}
   - component: {fileID: 1834207069}
   - component: {fileID: 1834207068}
-  - component: {fileID: 1834207070}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -14813,19 +13930,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1834207070
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834207066}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44480008, y: 0.15585321, z: 0.59787357}
-  m_Center: {x: -0.0000001713634, y: 0.000000044703484, z: -0.2942999}
 --- !u!1 &1840313979
 GameObject:
   m_ObjectHideFlags: 0
@@ -14926,7 +14030,6 @@ GameObject:
   - component: {fileID: 1840409249}
   - component: {fileID: 1840409251}
   - component: {fileID: 1840409250}
-  - component: {fileID: 1840409252}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_L_LOD0(Clone)
   m_TagString: Untagged
@@ -14999,19 +14102,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1840409252
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1840409248}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.45257777, y: 0.5622316, z: 0.05128625}
-  m_Center: {x: -0.22220969, y: 0, z: 0.022105034}
 --- !u!1 &1840910552
 GameObject:
   m_ObjectHideFlags: 0
@@ -15106,8 +14196,6 @@ GameObject:
   - component: {fileID: 1853229978}
   - component: {fileID: 1853229980}
   - component: {fileID: 1853229979}
-  - component: {fileID: 1853229981}
-  - component: {fileID: 1853229982}
   m_Layer: 3
   m_Name: SM_Chair_barstool_LOD0(Clone)
   m_TagString: Untagged
@@ -15180,32 +14268,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1853229981
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853229977}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3957688, y: 0.6959764, z: 0.47865933}
-  m_Center: {x: -1.270551e-21, y: 0.34865314, z: 0.0000005662441}
---- !u!65 &1853229982
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1853229977}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3957688, y: 0.45010263, z: 0.06866585}
-  m_Center: {x: -6.395412e-16, y: 0.9175012, z: -0.20499623}
 --- !u!1 &1854125305
 GameObject:
   m_ObjectHideFlags: 0
@@ -15383,7 +14445,6 @@ GameObject:
   - component: {fileID: 1866074178}
   - component: {fileID: 1866074180}
   - component: {fileID: 1866074179}
-  - component: {fileID: 1866074181}
   m_Layer: 3
   m_Name: SM_Doorframe_out_single_windows_LOD0(Clone)
   m_TagString: Untagged
@@ -15457,19 +14518,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1866074181
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1866074177}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.2884648, y: 2.2818682, z: 0.2653728}
-  m_Center: {x: -0.000041007996, y: 1.1397568, z: -0.010664009}
 --- !u!1 &1869927688
 GameObject:
   m_ObjectHideFlags: 0
@@ -15564,7 +14612,6 @@ GameObject:
   - component: {fileID: 1915557613}
   - component: {fileID: 1915557615}
   - component: {fileID: 1915557614}
-  - component: {fileID: 1915557616}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_L_LOD0(Clone)
   m_TagString: Untagged
@@ -15637,19 +14684,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1915557616
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915557612}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.45257777, y: 0.5622316, z: 0.05128625}
-  m_Center: {x: -0.22220945, y: 0, z: 0.022105273}
 --- !u!1 &1917292280
 GameObject:
   m_ObjectHideFlags: 0
@@ -15993,7 +15027,6 @@ GameObject:
   - component: {fileID: 1967184740}
   - component: {fileID: 1967184742}
   - component: {fileID: 1967184741}
-  - component: {fileID: 1967184743}
   m_Layer: 3
   m_Name: SM_WallIn_B_1x_LOD0(Clone)
   m_TagString: Untagged
@@ -16067,19 +15100,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1967184743
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967184739}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 2.8, z: 0.099328}
-  m_Center: {x: -0.5000001, y: 1.4, z: 0.14965934}
 --- !u!1 &1973797713
 GameObject:
   m_ObjectHideFlags: 0
@@ -16091,7 +15111,6 @@ GameObject:
   - component: {fileID: 1973797714}
   - component: {fileID: 1973797716}
   - component: {fileID: 1973797715}
-  - component: {fileID: 1973797717}
   m_Layer: 3
   m_Name: SM_WallIn_B_1x_LOD0(Clone)
   m_TagString: Untagged
@@ -16165,19 +15184,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1973797717
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1973797713}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 2.8, z: 0.099328}
-  m_Center: {x: -0.5000001, y: 1.4, z: 0.14965934}
 --- !u!1 &1976836694
 GameObject:
   m_ObjectHideFlags: 0
@@ -16189,7 +15195,6 @@ GameObject:
   - component: {fileID: 1976836695}
   - component: {fileID: 1976836697}
   - component: {fileID: 1976836696}
-  - component: {fileID: 1976836698}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -16262,19 +15267,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1976836698
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976836694}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4525778, y: 0.5622316, z: 0.051286243}
-  m_Center: {x: 0.22224893, y: 0, z: 0.022105232}
 --- !u!1 &1986150985
 GameObject:
   m_ObjectHideFlags: 0
@@ -16286,7 +15278,6 @@ GameObject:
   - component: {fileID: 1986150986}
   - component: {fileID: 1986150988}
   - component: {fileID: 1986150987}
-  - component: {fileID: 1986150989}
   m_Layer: 3
   m_Name: SM_WallIn_B_3x_LOD0(Clone)
   m_TagString: Untagged
@@ -16360,19 +15351,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &1986150989
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1986150985}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.9999998, y: 2.8, z: 0.099328265}
-  m_Center: {x: -1.5000001, y: 1.4, z: 0.14965922}
 --- !u!1 &2004356310
 GameObject:
   m_ObjectHideFlags: 0
@@ -16384,7 +15362,6 @@ GameObject:
   - component: {fileID: 2004356311}
   - component: {fileID: 2004356313}
   - component: {fileID: 2004356312}
-  - component: {fileID: 2004356314}
   m_Layer: 3
   m_Name: SM_WallIn_A_columnhalf_medium_LOD0(Clone)
   m_TagString: Untagged
@@ -16458,19 +15435,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2004356314
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004356310}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9038874, y: 2.8, z: 0.30193976}
-  m_Center: {x: -0.00000011920932, y: 1.4, z: 0.24613114}
 --- !u!1 &2008780095
 GameObject:
   m_ObjectHideFlags: 0
@@ -16732,7 +15696,6 @@ GameObject:
   - component: {fileID: 2047957219}
   - component: {fileID: 2047957221}
   - component: {fileID: 2047957220}
-  - component: {fileID: 2047957222}
   m_Layer: 3
   m_Name: SM_WallIn_A_corner_outPatch_LOD0(Clone)
   m_TagString: Untagged
@@ -16806,19 +15769,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2047957222
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047957218}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.1993236, y: 2.8, z: 0.19932355}
-  m_Center: {x: 0.09966111, y: 1.4, z: 0.099661805}
 --- !u!1 &2052928263
 GameObject:
   m_ObjectHideFlags: 0
@@ -17163,7 +16113,6 @@ GameObject:
   - component: {fileID: 2098170201}
   - component: {fileID: 2098170203}
   - component: {fileID: 2098170202}
-  - component: {fileID: 2098170204}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_drawer_LOD0(Clone)
   m_TagString: Untagged
@@ -17236,19 +16185,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2098170204
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098170200}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.44479996, y: 0.15585321, z: 0.59787345}
-  m_Center: {x: -0.00000017136335, y: 0.000000044703484, z: -0.29430032}
 --- !u!1 &2119605957
 GameObject:
   m_ObjectHideFlags: 0
@@ -17343,7 +16279,6 @@ GameObject:
   - component: {fileID: 2132794714}
   - component: {fileID: 2132794716}
   - component: {fileID: 2132794715}
-  - component: {fileID: 2132794717}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_door_R_LOD0(Clone)
   m_TagString: Untagged
@@ -17416,16 +16351,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2132794717
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2132794713}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4525778, y: 0.5622316, z: 0.051286243}
-  m_Center: {x: 0.22224893, y: 0, z: 0.022104278}
