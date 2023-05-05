@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -76,6 +74,20 @@ public class FieldOfView : MonoBehaviour
     bool ImInsideItsFOV(Vector3 dir, Vector3 itsForward, float itsFOV)
     {
         return (Vector3.Angle(dir, itsForward) < (itsFOV * 0.5f));
+    }
+
+    /// <summary>
+    /// Calculates if "to" is inside the FOV of "from"
+    /// </summary>
+    /// <param name="from"> The object that has the FOV that "to" could be inside of</param>
+    /// <param name="fromFOV"> The FOV it self that "from" have</param>
+    /// <param name="to"> The objects that could me inside "from"s FOV</param>
+    /// <returns>True if "to" is inside "from"s FOV</returns>
+    public bool isInsideTheFOVOf(Transform from, float fromFOV, Transform to)
+    {
+        Vector3 dir = (to.position - from.position).normalized;
+
+        return (Vector3.Angle(dir, from.forward) < (fromFOV * 0.5f));
     }
 
     Vector3 debugRay = Vector3.zero;
