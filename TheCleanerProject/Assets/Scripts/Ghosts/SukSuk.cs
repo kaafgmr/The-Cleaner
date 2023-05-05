@@ -14,7 +14,7 @@ public class SukSuk : Ghost
 
     FieldOfView FOV;
     [SerializeField] private Light flashLight;
-    [SerializeField] LayerMask collisionLayer;
+    [SerializeField] LayerMask collisionLayer; //comprobar la collisionlayer
     bool flashlightPointingToMe = false;
     [SerializeField] private Transform restingPos;
 
