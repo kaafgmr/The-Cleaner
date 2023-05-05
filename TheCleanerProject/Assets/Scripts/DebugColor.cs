@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DebugColor : MonoBehaviour
@@ -13,7 +11,7 @@ public class DebugColor : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        material.color = Color.red;
+        material.color = Color.green;
     }
 
     private void OnTriggerExit(Collider other)
