@@ -12,7 +12,7 @@ public class Plushy : MonoBehaviour
             {
                 isInRightPlace = true;
                 plushiesTask.UpdateTask();
-                gameObject.GetComponent<GrabObject>().enabled = false;
+                gameObject.GetComponent<OVRGrabbable>().enabled = false;
             }
     }
 }
