@@ -38,11 +38,13 @@ public class PointManager : MonoBehaviour
     {
         isInside = false;
         cevlakObject.GetComponent<Cevlak>().isInside = false;
+        cevlakObject.GetComponent<Cevlak>().isStoped = false;
+        cevlakObjectParent.transform.position = tpPoint.position;
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = new Color(1, 0, 0, 0.5f);
-        Gizmos.DrawCube(transform.position, new Vector3(1,0.3095628f, 1));
+        Gizmos.DrawCube(transform.position, new Vector3(transform.localScale.x, transform.localScale.y*0.3095628f, transform.localScale.z));
     }
 }

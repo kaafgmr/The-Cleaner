@@ -13,7 +13,7 @@ public class Cevlak : Ghost
     public bool isInside;
     public bool speedActivator;
     bool isCounting;
-    bool isStoped;
+    public bool isStoped;
     int lastIndex;
     int actualIndex;
 
@@ -62,6 +62,7 @@ public class Cevlak : Ghost
         else
         {
             startMovingTimer = initialStartMovingTimer;
+
         }
 
         if (isStoped)
@@ -138,8 +139,7 @@ public class Cevlak : Ghost
     void StartCounting()
     {
         startMovingTimer = initialStartMovingTimer;
-        startMovingTimer += Random.Range(0, 3);
-        Debug.Log(startMovingTimer);
+        startMovingTimer += Random.Range(3, 5);
         isCounting = true;
     }
 }
