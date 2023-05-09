@@ -27,14 +27,12 @@ Shader "TheCleaner/WindowUnlit"
             {
                 float4 position : POSITION;
                 float2 uv     : TEXCOORD0;
-                float3 normal : NORMAL;
             };
 
             struct VSOutput
             {
                 float4 position      : SV_POSITION;
                 float2 uv          : TEXCOORD0;
-                float3 normal      : NORMAL;
             };
 
             sampler2D _CleanTexture;

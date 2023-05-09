@@ -1,11 +1,9 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class WindowInteraction : MonoBehaviour
 {
-    public TextMeshProUGUI debugtext;
 
     public bool finishedCleaning;
     public float progress;
@@ -49,11 +47,8 @@ public class WindowInteraction : MonoBehaviour
             
         float movement = Vector3.Distance(clothPrevPos, clothCurrPos);
 
-        debugtext.text = "";
-
         if (movement > 0.005f)
         {
-            debugtext.text = "" + movement;
             progress = timeCleaning / timeToClean;
             material.SetFloat("_Progress", progress);
             timeCleaning += Time.fixedDeltaTime;

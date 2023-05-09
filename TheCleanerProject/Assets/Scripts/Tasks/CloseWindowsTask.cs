@@ -4,13 +4,39 @@ using UnityEngine;
 
 public class CloseWindowsTask : Task
 {
-    public override void DoTask()
+    public static CloseWindowsTask instance;
+    public List<CloseWindowInteraction> windowsToClose;
+    int closedWindows;
+
+    public override void InternalAwake()
     {
-        throw new System.NotImplementedException();
+        base.InternalAwake();
+
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
+    public override void internalStart()
+    {
+        base.internalStart();
+
+        closedWindows = 0;
     }
 
     public override void UpdateTask()
     {
-        throw new System.NotImplementedException();
+        closedWindows++;
+
+        if (closedWindows >= windowsToClose.Count)
+        {
+            base.FinishTask();
+            taskFinished = true;
+        }
     }
 }
