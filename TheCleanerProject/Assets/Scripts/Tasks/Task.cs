@@ -16,9 +16,20 @@ public abstract class Task : MonoBehaviour
     {
         onTaskFinished.Invoke();
     }
+
+    private void Awake()
+    {
+        InternalAwake();
+    }
+
     private void Start()
     {
         internalStart();
+    }
+
+    public virtual void InternalAwake()
+    {
+
     }
 
     public virtual void internalStart()

@@ -1,16 +1,44 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class CleanWindowsTask : Task
 {
-    public override void DoTask()
+    public static CleanWindowsTask instance;
+
+    public List<WindowInteraction> windowsToClean;
+    int windowsCleaned;
+
+    public override void InternalAwake()
     {
-        throw new System.NotImplementedException();
+        base.InternalAwake();
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
+    public override void internalStart()
+    {
+        base.internalStart();
     }
 
     public override void UpdateTask()
     {
-        throw new System.NotImplementedException();
+        windowsCleaned = 0;
+        for (int i = 0; i < windowsToClean.Count; i++)
+        {
+            if (!windowsToClean[i].finishedCleaning) return;
+            
+            windowsCleaned++;
+        }
+
+        if (windowsCleaned == windowsToClean.Count)
+        {
+            base.FinishTask();
+            taskFinished = true;
+        }
     }
 }

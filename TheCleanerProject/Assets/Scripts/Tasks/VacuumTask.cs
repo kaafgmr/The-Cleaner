@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class VacuumTask : Task
 {
@@ -15,7 +13,7 @@ public class VacuumTask : Task
 
     public override void UpdateTask()
     {
-        
+        numberOfDustsVacuumed = 0;
         for (int i = 0; i < listOfDusts.Count; i++)
         {
             if (listOfDusts[i].hasBeenVacuumed == true) { numberOfDustsVacuumed++; }
