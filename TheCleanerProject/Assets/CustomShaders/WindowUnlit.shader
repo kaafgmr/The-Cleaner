@@ -4,7 +4,7 @@ Shader "TheCleaner/WindowUnlit"
     {
        [NoScaleOffset] _CleanTexture("Clean Texture", 2D) = "white" {}
        [NoScaleOffset] _DirtyTexture("Dirty Texture", 2D) = "black" {}
-        _Progress("Progress", Range(0,1)) = 0
+        _Progress("_Progress", Range(0,1)) = 0
     }
     SubShader
     {

@@ -1,9 +1,12 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class WindowInteraction : MonoBehaviour
 {
+    public TextMeshProUGUI debugtext;
+
     public bool finishedCleaning;
     public float progress;
     public float timeToClean = 5;
@@ -18,14 +21,15 @@ public class WindowInteraction : MonoBehaviour
     {
         CleanWindowsTask.instance.windowsToClean.Add(this);
         material = GetComponent<MeshRenderer>().material;
-        progress = 0;
-        timeCleaning = 0;
+        finishedCleaning = false;
+        timeCleaning = 0f;
+        progress = 0f;
         material.SetFloat("_Progress", progress);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (finishedCleaning && !other.TryGetComponent(out SpongeBehaviour SB)) return;
+        if (finishedCleaning || !other.TryGetComponent(out SpongeBehaviour SB)) return;
 
         clothPrevPos = other.transform.position;
         StartCoroutine(UpdateProgress(other.transform));
@@ -41,31 +45,33 @@ public class WindowInteraction : MonoBehaviour
 
     IEnumerator UpdateProgress(Transform cloth)
     {
-        while (timeCleaning < timeToClean)
+        clothCurrPos = cloth.position;
+            
+        float movement = Vector3.Distance(clothPrevPos, clothCurrPos);
+
+        debugtext.text = "";
+
+        if (movement > 0.005f)
         {
-            clothCurrPos = cloth.position;
-
-            if (Vector3.Distance(clothPrevPos, clothCurrPos) > 0.2f)
-            {
-                if (timeCleaning == 0)
-                {
-                    progress = 0;
-                }
-                else
-                {
-                    progress = timeToClean / timeCleaning;
-                }
-
-                material.SetFloat("_Progress", progress);
-                timeCleaning += Time.fixedDeltaTime;
-            }
-
-            clothPrevPos = cloth.position;
-            yield return new WaitForSeconds(Time.fixedDeltaTime);
+            debugtext.text = "" + movement;
+            progress = timeCleaning / timeToClean;
+            material.SetFloat("_Progress", progress);
+            timeCleaning += Time.fixedDeltaTime;
         }
 
-        timeCleaning = timeToClean;
-        finishedCleaning = true;
-        OnFinishedCleaning.Invoke();
+        clothPrevPos = cloth.position;
+        yield return new WaitForSeconds(Time.fixedDeltaTime);
+
+        if (progress < 1f)
+        {
+            StartCoroutine(UpdateProgress(cloth));
+        }
+        else
+        {
+            timeCleaning = timeToClean;
+            progress = 1f;
+            finishedCleaning = true;
+            OnFinishedCleaning.Invoke();
+        }
     }
 }
