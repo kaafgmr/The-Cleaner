@@ -139,7 +139,7 @@ public class Cevlak : Ghost
     void StartCounting()
     {
         startMovingTimer = initialStartMovingTimer;
-        startMovingTimer += Random.Range(3, 5);
+        startMovingTimer += Random.Range(5, 5);
         isCounting = true;
     }
 }

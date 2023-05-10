@@ -1,53 +1,52 @@
+using UnityEngine.UI;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+
 
 public class WashTheDishesTask : Task
 {
-    public float percentageOfTask;
+    public static WashTheDishesTask _instance;
+    public List<PlateInteraction> plates;
     public Slider percentageBar;
+    public float progressOfTask;
+    int washedPlates;
 
-    private void Awake()
+
+    public override void InternalAwake()
     {
-        percentageOfTask = 0f;
+        base.InternalAwake();
+
+        if(_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+    public override void internalStart()
+    {
+        base.internalStart();
+        washedPlates = 0;
     }
 
     public override void UpdateTask()
     {
-        if (percentageOfTask >= 100f)
+        washedPlates++;
+        UpdateProgress();
+        if (washedPlates == plates.Count)
         {
-            taskFinished = true;
-            percentageBar.value = percentageOfTask * 0.01f;
+            base.FinishTask();
         }
     }
 
-    public bool CheckIfItsDone()
+    public void UpdateProgress()
     {
-        return taskFinished;
+        progressOfTask = washedPlates / plates.Count;
+
+        percentageBar.value = progressOfTask;
     }
 
-    private void Update()
-    {
-        if (CheckIfItsDone()) { base.FinishTask(); }
-        else { UpdateTask(); }
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if(percentageOfTask < 100f)
-        { 
-            percentageOfTask += 10 * Time.deltaTime;
-        }
-        else
-        {
-            percentageOfTask = 100f;
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = new Color(0, 0, 1, 0.5f);
-        Gizmos.DrawCube(transform.position, transform.localScale);       
-    }
 }
