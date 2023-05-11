@@ -1,20 +1,33 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class CollectPlushiesTask : Task
 {
+    public static CollectPlushiesTask instance;
+
     public List<Plushy> listOfPlushies;
-    public override void internalStart() { base.internalStart(); }
+
+    int plushiesInRightPlace;
+
+    public override void InternalAwake()
+    {
+        base.InternalAwake();
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
+
     public override void UpdateTask()
     {
-        for (int i = 0; i < listOfPlushies.Count; i++) if (!listOfPlushies[i].isInRightPlace)
-            {
-                taskFinished = false;
-                return;
-            }
-        taskFinished = true;
-        base.FinishTask();
+        plushiesInRightPlace++;
+
+        if (plushiesInRightPlace >= listOfPlushies.Count)
+        {
+            base.FinishTask();
+        }
     }
-    public bool CheckIfItsDone() { return taskFinished; }
 }

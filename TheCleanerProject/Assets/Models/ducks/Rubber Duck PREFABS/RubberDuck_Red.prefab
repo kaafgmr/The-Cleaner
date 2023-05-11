@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3349590}
   - component: {fileID: 2342242}
   - component: {fileID: 1543747947}
-  - component: {fileID: 1543747946}
   - component: {fileID: 1543747945}
   - component: {fileID: 1543747948}
-  - component: {fileID: 1543747949}
   - component: {fileID: 1543747950}
   - component: {fileID: 1543747951}
-  m_Layer: 0
+  - component: {fileID: 1543747944}
+  - component: {fileID: 2571033295107587907}
+  m_Layer: 9
   m_Name: RubberDuck_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,20 +107,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1543747946
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144290}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: e9b20f339e41d42409993f01aec5ac61, type: 3}
 --- !u!114 &1543747945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,50 +135,10 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1543747951}
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
---- !u!114 &1543747949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 144290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c6cba82e9f3c84f80041e0d2741ef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _travellingData:
-    _travelSpeed: 1
-    _useFixedTravelTime: 0
-    _travelCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  _pointableElement: {fileID: 0}
 --- !u!114 &1543747950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +157,7 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 1543747948}
   _rigidbody: {fileID: 1543747947}
-  _physicsGrabbable: {fileID: 0}
+  _physicsGrabbable: {fileID: 2571033295107587907}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -245,6 +191,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1543747944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144290}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.825446, y: 1.7659374, z: 1.3345867}
+  m_Center: {x: 0.00000006402985, y: -0.14509302, z: 0.6803955}
+--- !u!114 &2571033295107587907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbable: {fileID: 1543747948}
+  _rigidbody: {fileID: 1543747947}
+  _scaleMassWithSize: 1
 --- !u!1 &1783362296
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783362297}
   - component: {fileID: 1783362298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

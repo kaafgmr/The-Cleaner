@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Plushy : MonoBehaviour
 {
-    public bool isInRightPlace;
-    void Start() { isInRightPlace = false; }
-    private void OnTriggerEnter(Collider obj) 
+    void Start()
     {
-        if (obj.TryGetComponent(out CollectPlushiesTask plushiesTask)) if (!plushiesTask.CheckIfItsDone())
-            {
-                isInRightPlace = true;
-                plushiesTask.UpdateTask();
-                gameObject.GetComponent<OVRGrabbable>().enabled = false;
-            }
+        CollectPlushiesTask.instance.listOfPlushies.Add(this);
+    }
+    
+    public void CompleteTask()
+    {
+        CollectPlushiesTask.instance.UpdateTask();
     }
 }

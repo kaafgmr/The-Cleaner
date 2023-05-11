@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3384934}
   - component: {fileID: 2315060}
   - component: {fileID: 1236166132}
-  - component: {fileID: 1236166131}
   - component: {fileID: 1236166130}
   - component: {fileID: 1236166133}
-  - component: {fileID: 1236166134}
   - component: {fileID: 1236166135}
   - component: {fileID: 1236166136}
-  m_Layer: 0
+  - component: {fileID: 138806422}
+  - component: {fileID: 3957303092756225504}
+  m_Layer: 9
   m_Name: RubberDuck_Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,20 +107,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1236166131
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176708}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: bba15a401835a274586eb834aaa72480, type: 3}
 --- !u!114 &1236166130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,50 +135,10 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1236166136}
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
---- !u!114 &1236166134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 176708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c6cba82e9f3c84f80041e0d2741ef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _travellingData:
-    _travelSpeed: 1
-    _useFixedTravelTime: 0
-    _travelCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  _pointableElement: {fileID: 0}
 --- !u!114 &1236166135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +157,7 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 1236166133}
   _rigidbody: {fileID: 1236166132}
-  _physicsGrabbable: {fileID: 0}
+  _physicsGrabbable: {fileID: 3957303092756225504}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -245,6 +191,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &138806422
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.82544565, y: 1.7659372, z: 1.334586}
+  m_Center: {x: -0.0000000043241055, y: -0.14509292, z: 0.6803953}
+--- !u!114 &3957303092756225504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbable: {fileID: 1236166133}
+  _rigidbody: {fileID: 1236166132}
+  _scaleMassWithSize: 1
 --- !u!1 &1577770299
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1577770300}
   - component: {fileID: 1577770301}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

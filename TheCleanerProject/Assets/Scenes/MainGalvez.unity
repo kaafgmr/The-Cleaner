@@ -312,7 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9468ed089d4419e46be4fe9e59fdd915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubeMaterial: {fileID: 2100000, guid: 35dbf4926aad22a4fafd87575186e928, type: 2}
+  material: {fileID: 2100000, guid: 35dbf4926aad22a4fafd87575186e928, type: 2}
   fadeSpeed: 1
 --- !u!65 &1427153235
 BoxCollider:

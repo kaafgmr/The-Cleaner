@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3380300}
   - component: {fileID: 2372762}
   - component: {fileID: 1361036890}
-  - component: {fileID: 1361036889}
   - component: {fileID: 1361036888}
   - component: {fileID: 1361036891}
-  - component: {fileID: 1361036892}
   - component: {fileID: 1361036893}
   - component: {fileID: 1361036894}
-  m_Layer: 0
+  - component: {fileID: 1170508617}
+  - component: {fileID: 1170508620}
+  m_Layer: 9
   m_Name: RubberDuck_LightPurple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,20 +107,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &1361036889
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159862}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: d3a659c406a6b6c4dbe49af16b0e412a, type: 3}
 --- !u!114 &1361036888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,50 +135,10 @@ MonoBehaviour:
   _transferOnSecondSelection: 0
   _addNewPointsToFront: 0
   _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
+  _oneGrabTransformer: {fileID: 1361036894}
   _twoGrabTransformer: {fileID: 0}
   _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
---- !u!114 &1361036892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159862}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4c6cba82e9f3c84f80041e0d2741ef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _travellingData:
-    _travelSpeed: 1
-    _useFixedTravelTime: 0
-    _travelCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  _pointableElement: {fileID: 0}
 --- !u!114 &1361036893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +157,7 @@ MonoBehaviour:
   _data: {fileID: 0}
   _pointableElement: {fileID: 1361036891}
   _rigidbody: {fileID: 1361036890}
-  _physicsGrabbable: {fileID: 0}
+  _physicsGrabbable: {fileID: 1170508620}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -245,6 +191,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3236b8f205019504589358e7e0412a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1170508617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.82544595, y: 1.7659373, z: 1.3345866}
+  m_Center: {x: 0.00000001682337, y: -0.14509301, z: 0.6803955}
+--- !u!114 &1170508620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _grabbable: {fileID: 1361036891}
+  _rigidbody: {fileID: 1361036890}
+  _scaleMassWithSize: 1
 --- !u!1 &2054981911
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2054981912}
   - component: {fileID: 2054981913}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
