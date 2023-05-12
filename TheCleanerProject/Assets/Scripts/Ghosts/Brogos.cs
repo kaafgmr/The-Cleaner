@@ -26,8 +26,8 @@ public class Brogos : Ghost
         resetRandPos();
         FOV = GetComponentInChildren<FieldOfView>();
         FOV.OnViewedByMe.AddListener(StartChanneling);
-        FOV.OnStartBeingViewed.AddListener(GhostCounter);
-        FOV.OnStopBeingViewed.AddListener(StartInspection);
+        FOV.ImBeingViewed.AddListener(GhostCounter);
+        FOV.OnNothingHappening.AddListener(StartInspection);
     }
 
     private void Update()
@@ -36,7 +36,7 @@ public class Brogos : Ghost
         GhostAction();
     }
 
-    public override void GhostAction()
+    public override void GhostAction(Transform other = null)
     {
         if (MovingTowardsPlayer)
         {

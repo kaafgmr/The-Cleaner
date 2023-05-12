@@ -1,10 +1,10 @@
-using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    public FlashlightBehaviour flashlight;
     public string[] ScenesToLoadOnStart;
     public UnityEvent InitGame;
     public UnityEvent OnAllScenesLoaded;

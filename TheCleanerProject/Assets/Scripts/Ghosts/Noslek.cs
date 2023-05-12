@@ -23,8 +23,8 @@ public class Noslek : Ghost
         StopMovement();
         FOV = GetComponentInChildren<FieldOfView>();
         FOV.OnViewedByMe.AddListener(MoveToPlayer);
-        FOV.OnStartBeingViewed.AddListener(GhostCounter);
-        FOV.OnStopBeingViewed.AddListener(MoveToRandomPoint);
+        FOV.ImBeingViewed.AddListener(GhostCounter);
+        FOV.OnNothingHappening.AddListener(MoveToRandomPoint);
     }
 
     private void Update()
@@ -34,7 +34,7 @@ public class Noslek : Ghost
         GhostAction();
     }
 
-    public override void GhostAction()
+    public override void GhostAction(Transform other = null)
     {
         if (MovingTowardsPlayer)
         {

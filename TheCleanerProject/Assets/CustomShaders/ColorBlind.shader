@@ -1,8 +1,11 @@
-Shader "TheCleaner/Base HLSL Shader"
+Shader "TheCleaner/ColorBlind"
 {
     Properties
     {
-       _MainTex("Texture", 2D) = "white" {}
+        _MainTex("Texture", 2D) = "white" {}
+        _R ("_R", Color) = (1, 0, 0, 1)
+        _G ("_G", Color) = (0, 1, 0, 1)
+        _B ("_B", Color) = (0, 0, 1, 1)
     }
     SubShader
     {
@@ -35,6 +38,9 @@ Shader "TheCleaner/Base HLSL Shader"
             };
 
             sampler2D _MainTex;
+            float4 _R;
+            float4 _G;
+            float4 _B;
 
             VSOutput VShader(VSInput i)
             {
@@ -53,10 +59,14 @@ Shader "TheCleaner/Base HLSL Shader"
 
             float4 FShader(VSOutput i) : SV_Target
             {
-               float4 texColor = tex2D(_MainTex, i.uv);
+                float4 screenColor = tex2D(_MainTex, i.uv);
 
-
-                return texColor;
+                return float4(
+                    screenColor.r * _R.r + screenColor.g * _R.g + screenColor.b * _R.b,
+                    screenColor.r * _G.r + screenColor.g * _G.g + screenColor.b * _G.b,
+                    screenColor.r * _B.r + screenColor.g * _B.g + screenColor.b * _B.b,
+                    1
+                );
             }
 
             ENDHLSL

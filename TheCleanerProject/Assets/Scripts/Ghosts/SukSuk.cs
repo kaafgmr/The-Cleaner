@@ -1,79 +1,92 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class SukSuk : Ghost
 {
-    NavMeshAgent agent;
-
-    [SerializeField] private float defaultSpeed; //   3.5
-    [SerializeField] private float fastSpeed; //      5
-
-    FieldOfView FOV;
-    private GameObject flashLight;
+    [SerializeField] private float speed = 3.5f;
     [SerializeField] private Transform restingPos;
 
-    bool SeeingPlayer = false;
-    bool ChasingPlayer = false;
+    FlashlightBehaviour flashLight;
+    NavMeshAgent agent;
+    FieldOfView FOV;
+    float flashlightFOVAngle;
 
-    float FLRange;
+
+
+    public TextMeshProUGUI debugText;
+
+
 
     private void Start()
     {
+
+        debugText = GameObject.Find("DebugText").GetComponent<TextMeshProUGUI>();
+        debugText.text = "";
+
+
+
         Init();
+
         CalculateBounds.instance.OnInit.AddListener(ResumeMovement);
     }
 
     private void Init()
     {
         agent = GetComponent<NavMeshAgent>();
-        GoBackToRestingPosition();
+        agent.speed = speed;
+        StopMovement();
         FOV = GetComponentInChildren<FieldOfView>();
-        FOV.OnViewedByMe.AddListener(ChasePlayer);
-        FOV.OnStopBeingViewed.AddListener(StopWatchingPlayer);
-        flashLight = GameObject.Find("Flashlight");
-        FLRange = flashLight.GetComponentInChildren<Light>().range;
+        FOV.OnNothingHappening.AddListener(ReturnToSpawn);
+        FOV.OnViewedByMe.AddListener(GhostAction);
+        flashLight = GameManager.instance.flashlight;
+        flashlightFOVAngle = flashLight.GetFOV();
     }
 
-    private void Update()
+    public override void GhostAction(Transform other = null)
     {
-        if (agent != null && agent.isStopped) return;
-        GhostAction();
-    }
-
-    public override void GhostAction() //chasear si lo ves pero ir lento aunque te mire, correr si lleva linterna puesta, correr bastante si te apunta con la linterna. si le dejas de ver y no lleva linterna dejar de chasear.
-    {
-        if (ChasingPlayer)
+        debugText.text ="inside: " + FOV.isInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform).ToString();
+        if (flashLight.isBeingHeld && FOV.isInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform))
         {
-            if (!FOV.isInsideTheFOVOf(flashLight.transform, FLRange, gameObject.transform)) if (!SeeingPlayer) GhostCounter();
-            else  Accelarete();  
-        }        
-        else GhostCounter();
+            ResumeMovement();
+            agent.destination = other.position;
+        }
     }
 
-    public void StopMovement() { if (!agent.isStopped) agent.isStopped = true; }
-
-    void ResumeMovement() { if (agent.isStopped) agent.isStopped = false; }
-
-    public override void GhostCounter() { GoBackToRestingPosition(); }
-
-    public override void Scream() { throw new System.NotImplementedException(); }
-
-    public void ChasePlayer(Transform PlayerTransform)
+    public override void GhostCounter()
     {
-        agent.destination = PlayerTransform.position;
-        SeeingPlayer = true;
-        ChasingPlayer = true;
-        agent.speed = defaultSpeed;
+
     }
 
-    private void Accelarete() { agent.speed = fastSpeed; } //acelerar el chase; aumentarle el speed al agent del navmesh y quitarselo al resetear el fantasma;
+    public override void Scream()
+    {
+        throw new System.NotImplementedException();
+    }
     
-    public void GoBackToRestingPosition()
+    void ReturnToSpawn()
     {
-        ChasingPlayer = false;
+        if (agent.isStopped)
+        {
+            ResumeMovement();
+        }
         agent.destination = restingPos.position;
     }
-     private void StopWatchingPlayer() { SeeingPlayer = false; }
+
+    void ResumeMovement()
+    {
+        if (agent.isStopped)
+        {
+            agent.isStopped = false;
+        }
+    }
+
+    public void StopMovement()
+    {
+        if (!agent.isStopped)
+        {
+            agent.isStopped = true;
+        } 
+    }
 }

@@ -8,13 +8,14 @@ public class FieldOfView : MonoBehaviour
     [SerializeField] LayerMask collisionLayer;
 
     public UnityEvent<Transform> OnViewedByMe;
-    public UnityEvent OnStartBeingViewed;
-    public UnityEvent OnStopBeingViewed;
+    public UnityEvent ImBeingViewed;
+    public UnityEvent OnNothingHappening;
 
     GameObject player;
     float playerFOV;
     Transform playerTransform;
-    bool wandering = false;
+
+    bool wanderingOnce = false;
 
 #if UNITY_EDITOR
     [Header("Debug")]
@@ -34,35 +35,25 @@ public class FieldOfView : MonoBehaviour
 
         if (ICouldBeSeenBy(player, myDir))
         {
+            if (IsInsideMyFOV(myDir))
+            {
+                OnViewedByMe.Invoke(playerTransform);
+                wanderingOnce = false;
+            }
+
             Vector3 itsDir = -myDir;
             if (ImInsideItsFOV(itsDir, playerTransform.forward, playerFOV))
             {
-                OnStartBeingViewed.Invoke();
-                wandering = false;
-            }
-            else
-            {
-                if (IsInsideMyFOV(myDir))
-                {
-                    OnViewedByMe.Invoke(playerTransform);
-                    wandering = false;
-                }
-                else
-                {
-                    if (wandering) return;
-                    
-                    OnStopBeingViewed.Invoke();
-                    wandering = true;
-                }
+                ImBeingViewed.Invoke();
+                wanderingOnce = false;
             }
         }
         else
         {
-            if (!wandering)
-            {
-                OnStopBeingViewed.Invoke();
-                wandering = true;
-            }
+            if (wanderingOnce) return;
+
+            OnNothingHappening.Invoke();
+            wanderingOnce = true;
         }
     }
 
@@ -80,20 +71,19 @@ public class FieldOfView : MonoBehaviour
     /// Calculates if "to" is inside the FOV of "from"
     /// </summary>
     /// <param name="from"> The object that has the FOV that "to" could be inside of</param>
-    /// <param name="fromFOV"> The FOV it self that "from" have</param>
+    /// <param name="fromFOVAngle"> The FOV it self that "from" have</param>
     /// <param name="to"> The objects that could me inside "from"s FOV</param>
     /// <returns>True if "to" is inside "from"s FOV</returns>
-    public bool isInsideTheFOVOf(Transform from, float fromFOV, Transform to)
+    public bool isInsideTheFOVOf(Transform from, float fromFOVAngle, Transform to)
     {
         Vector3 dir = (to.position - from.position).normalized;
 
-        return (Vector3.Angle(dir, from.forward) < (fromFOV * 0.5f));
+        return (Vector3.Angle(dir, from.forward) < (fromFOVAngle * 0.5f));
     }
 
     Vector3 debugRay = Vector3.zero;
     bool ICouldBeSeenBy(GameObject obj, Vector3 dir)
     {
-        
         if(Physics.Raycast(transform.position, dir, out RaycastHit hit, 1000, collisionLayer))
         {
             debugRay = hit.point;
@@ -113,8 +103,6 @@ public class FieldOfView : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawRay(transform.position, debugRay);
     }
-
-
 
     void DrawFOV()
     {

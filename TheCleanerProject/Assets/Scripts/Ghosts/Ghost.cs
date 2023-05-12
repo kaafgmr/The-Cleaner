@@ -10,5 +10,5 @@ public abstract class Ghost : MonoBehaviour
 
     }
     public abstract void GhostCounter();
-    public abstract void GhostAction();
+    public abstract void GhostAction(Transform other = null);
 }
