@@ -61,6 +61,7 @@ public class Noslek : Ghost
     public override void Scream()
     {
         base.Scream();
+        agent.enabled = false;
         gac.PlayAnimation(screamerAnimName);
     }
 
