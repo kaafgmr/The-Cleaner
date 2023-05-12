@@ -45,7 +45,7 @@ public class FieldOfView : MonoBehaviour
 
             if (IsInsideMyFOV(myDir))
             {
-                OnViewedByMe.Invoke(player.transform.position);
+                OnViewedByMe.Invoke(GameManager.instance.playerPos);
                 wanderingOnce = false;
                 Debug.Log("I see him");
                 return;
