@@ -1097,7 +1097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4171719484677576792
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1113,10 +1113,10 @@ RectTransform:
   m_Father: {fileID: 4497911948388693983}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 71.8}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 738.6667, y: -192.9}
+  m_SizeDelta: {x: 1477.3334, y: 71.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3468721514939622328
 CanvasRenderer:
@@ -2313,7 +2313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7147229828991894519
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2322,17 +2322,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6309614945553400354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4497911948388693983}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 738.6667, y: -428.1667}
-  m_SizeDelta: {x: 1477.3334, y: 71.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 71.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4101782752516670787
 CanvasRenderer:
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect the plushies from the child's room
+  m_text: Collect the plushies from the girl's room
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de7728d9d2f1ab944ad6a7b9d1c99479, type: 2}
   m_sharedMaterial: {fileID: 7187872869066788802, guid: de7728d9d2f1ab944ad6a7b9d1c99479,
