@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3623182912159645582}
   - component: {fileID: 2635417331300382967}
   - component: {fileID: 3946046337798450268}
+  - component: {fileID: 7758986370389104169}
   m_Layer: 8
   m_Name: Noslek
   m_TagString: Untagged
@@ -51,6 +52,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distanceToUpdate: 0.5
+  walkAnimName: NoslekWalk
+  idleAnimName: NoslekIdle
+  screamerAnimName: Screamer
 --- !u!54 &4043677119080524861
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -91,7 +95,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.3
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -123,6 +127,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7758986370389104169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877872074183875010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f31225ddad4234db80ddb143a89bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &980444103367843293
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,10 +771,10 @@ MonoBehaviour:
   OnViewedByMe:
     m_PersistentCalls:
       m_Calls: []
-  OnStartBeingViewed:
+  ImBeingViewed:
     m_PersistentCalls:
       m_Calls: []
-  OnStopBeingViewed:
+  OnNothingHappening:
     m_PersistentCalls:
       m_Calls: []
   maxDistanceView: 30

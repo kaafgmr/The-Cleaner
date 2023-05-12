@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject player;
     public FlashlightBehaviour flashlight;
+    public Transform ScreamerPoint;
     public string[] ScenesToLoadOnStart;
     public UnityEvent InitGame;
     public UnityEvent OnAllScenesLoaded;

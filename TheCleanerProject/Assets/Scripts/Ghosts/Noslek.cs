@@ -1,13 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Noslek : Ghost
 {
     [SerializeField] float distanceToUpdate = 0.5f;
+    [SerializeField] private string walkAnimName;
+    [SerializeField] private string idleAnimName;
+    [SerializeField] private string screamerAnimName;
+
+
     NavMeshAgent agent;
     FieldOfView FOV;
+    GhostAnimController gac;
 
     bool MovingTowardsPlayer = false;
 
@@ -19,6 +23,7 @@ public class Noslek : Ghost
 
     private void Init()
     {
+        gac = GetComponent<GhostAnimController>();
         agent = GetComponent<NavMeshAgent>();
         StopMovement();
         FOV = GetComponentInChildren<FieldOfView>();
@@ -53,7 +58,8 @@ public class Noslek : Ghost
 
     public override void Scream()
     {
-        throw new System.NotImplementedException();
+        base.Scream();
+        gac.PlayAnimation(screamerAnimName);
     }
 
     public void StopMovement()
@@ -61,6 +67,7 @@ public class Noslek : Ghost
         if (!agent.isStopped)
         {
             agent.isStopped = true;
+            gac.PlayAnimation(idleAnimName);
         }
     }
 
@@ -69,6 +76,7 @@ public class Noslek : Ghost
         if (agent.isStopped)
         {
             agent.isStopped = false;
+            gac.PlayAnimation(walkAnimName);
         }
     }
 
