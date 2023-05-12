@@ -13,6 +13,7 @@ public class Brogos : Ghost
     bool MovingTowardsPlayer = false;
     public bool timeToHide;
     int recentTpnum = 0;
+    Coroutine _coroutine=null;
 
     private void Start()
     {
@@ -32,7 +33,7 @@ public class Brogos : Ghost
 
     private void Update()
     {
-        if (agent != null && agent.isStopped || timeToHide) return;
+        if (agent != null && agent.isStopped) return;
         GhostAction();
     }
 
@@ -41,18 +42,20 @@ public class Brogos : Ghost
         if (MovingTowardsPlayer)
         {
             UpdateVision();
-            //Debug.Log("estoy en el update vision");
         }
         else
         {
-            StartCoroutine(Inspection());
-            //Debug.Log("estoy en el start inspection");
+            if (_coroutine == null)
+            {
+                _coroutine = StartCoroutine(Inspection());
+            }
         }
     }
 
     public void StartInspection()
     {
-        StartCoroutine(Inspection());
+        if (_coroutine == null)
+            _coroutine = StartCoroutine(Inspection());
     }
 
     public override void GhostCounter()
@@ -131,13 +134,11 @@ public class Brogos : Ghost
         if (recentTpnum == num)
         {
             resetRandPos();
-            //Debug.Log("estoy pillado en un bucle infinito");
         }
         else 
         {
             agent.Warp(possibleTpPoints[num].position);
             SetValueTimeToHide(false);
-            //Debug.Log("EntroEnElCheckHideFalseEnElResetRandPos");
             recentTp = possibleTpPoints[num].position;
             recentTpnum = num;
         }
@@ -147,17 +148,19 @@ public class Brogos : Ghost
     {
         if (timeToHide) { StopCoroutine(Stalk(PlayerPos)); }
         StopMovement();
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         ResumeMovement();
         MoveToPlayer(PlayerPos);
     }
     
     IEnumerator Inspection()
     {
+        Debug.Log("entro");
         MoveToRandomPoint();
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(4);
+        Debug.Log("entro despues de los 4");
         timeToHide = true;
-        //Debug.Log("EntroEnElCheckHideTrue");
         MoveToRecentTp();
+        _coroutine = null;
     }    
 }
