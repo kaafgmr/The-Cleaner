@@ -9,6 +9,7 @@ public class TidyUpRoomTask : Task
     {
         if (_objectsController.CheckObjectsRealPosition()) {
             taskFinished = true;
+            base.FinishTask();
         }
     }
     public bool CheckIfItsDone()

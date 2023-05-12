@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.039341114, g: 0.028379958, b: 0.012013947, a: 1}
+  m_IndirectSpecularColor: {r: 0.1417833, g: 0.11500763, b: 0.042550877, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4547,6 +4547,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: Put the ducks on top of child's 2 bed
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038246189572172985, guid: 790106269f0a72c42800ef0918a174b0,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038246189572172985, guid: 790106269f0a72c42800ef0918a174b0,
+        type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038246189572172985, guid: 790106269f0a72c42800ef0918a174b0,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 3038246189572172985, guid: 790106269f0a72c42800ef0918a174b0,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3322214143464623620, guid: 790106269f0a72c42800ef0918a174b0,
         type: 3}
@@ -11337,6 +11357,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.9999998, y: 2.8, z: 0.099328265}
   m_Center: {x: -1.5000001, y: 1.4, z: 0.14965922}
+--- !u!114 &719363844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3038246189572172985, guid: 790106269f0a72c42800ef0918a174b0,
+    type: 3}
+  m_PrefabInstance: {fileID: 283706021}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &720265437
 GameObject:
   m_ObjectHideFlags: 0
@@ -19040,6 +19072,79 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.44479996, y: 0.15585321, z: 0.59787345}
   m_Center: {x: -0.00000017136335, y: 0.000000044703484, z: -0.29430032}
+--- !u!1 &1312814880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1312814882}
+  - component: {fileID: 1312814881}
+  - component: {fileID: 1312814883}
+  m_Layer: 6
+  m_Name: ExitCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &1312814881
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312814880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.3130302}
+  m_Center: {x: 0, y: 0, z: -0.17335969}
+--- !u!4 &1312814882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312814880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.907, y: 0.2694435, z: -1.9443787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1408359921}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1312814883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312814880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f75f4d2b33b1e4da3258a73df27bb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onGameFinished:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1910118101}
+        m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: GameFinished
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1313350902
 GameObject:
   m_ObjectHideFlags: 0
@@ -19556,6 +19661,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tasksList: []
+  allTasksDone: 0
+  OnAllTasksCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 719363844}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_alpha
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 255
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1312814880}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!4 &1343475492
 Transform:
   m_ObjectHideFlags: 0
@@ -20350,6 +20483,7 @@ Transform:
   - {fileID: 1481635994}
   - {fileID: 1302105050}
   - {fileID: 638259057}
+  - {fileID: 1312814882}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26164,6 +26298,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.066516876, y: 2.8000023, z: 3.9000087}
   m_Center: {x: -0.5626522, y: 1.4000009, z: -2.0499995}
+--- !u!114 &1910118101 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7592214283489067054, guid: e07f14b54c7e3ec46961e0461509ab49,
+    type: 3}
+  m_PrefabInstance: {fileID: 672243306}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 801ece1f74504654085042904df09623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1911679299
 GameObject:
   m_ObjectHideFlags: 0
