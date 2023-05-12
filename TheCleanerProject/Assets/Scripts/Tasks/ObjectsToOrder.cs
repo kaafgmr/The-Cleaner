@@ -11,17 +11,13 @@ public class ObjectsToOrder : MonoBehaviour
     void Start()
     {
         isOnRealPosition = false;
+        TidyUpRoomTask.instance.objesctsList.Add(this);
     }
 
-    private void Update()
-    {
-        if (isOnRealPosition)
-        {
-            _handGrabInteractable.enabled = false;
-        }
-    }
     public void SetIsOnRealPosition(bool value)
     {
         isOnRealPosition = true;
+        _handGrabInteractable.enabled = false;
+        TidyUpRoomTask.instance.UpdateTask();
     }
 }

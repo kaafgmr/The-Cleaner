@@ -36,6 +36,7 @@ public class Noslek : Ghost
 
     private void Update()
     {
+        if (screaming) return;
         if (agent != null && agent.isStopped) return;
 
         GhostAction(Vector3.zero);
@@ -55,6 +56,7 @@ public class Noslek : Ghost
 
     public override void GhostCounter()
     {
+        if (!screaming)
         StopMovement();
     }
 
@@ -82,7 +84,7 @@ public class Noslek : Ghost
 
     void ResumeMovement()
     {
-        if (agent.isStopped)
+        if (agent.isStopped && !screaming)
         {
             agent.isStopped = false;
             
@@ -97,6 +99,7 @@ public class Noslek : Ghost
 
     public void MoveToPlayer(Vector3 playerPos)
     {
+        if (screaming) return;
         ResumeMovement();
         agent.destination = playerPos;
         MovingTowardsPlayer = true;
@@ -104,6 +107,7 @@ public class Noslek : Ghost
     }
     public void MoveToRandomPoint()
     {
+        if (screaming) return;
         ResumeMovement();
         if (agent.remainingDistance > distanceToUpdate) return;
 

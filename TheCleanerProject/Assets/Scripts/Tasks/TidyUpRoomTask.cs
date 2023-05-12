@@ -5,10 +5,30 @@ using UnityEngine;
 public class TidyUpRoomTask : Task
 {
     public ObjectsTidiedUpController _objectsController;
+
+    public List<ObjectsToOrder> objesctsList;
+
+    public static TidyUpRoomTask instance;
+
+    int objectsInPlace = 0;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
     public override void UpdateTask()
     {
-        if (_objectsController.CheckObjectsRealPosition()) {
-            taskFinished = true;
+        objectsInPlace++;
+
+        if(objectsInPlace >= objesctsList.Count)
+        {
             base.FinishTask();
         }
     }

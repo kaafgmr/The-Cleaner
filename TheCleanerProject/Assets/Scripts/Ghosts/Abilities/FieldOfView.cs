@@ -39,7 +39,6 @@ public class FieldOfView : MonoBehaviour
             {
                 ImBeingViewed.Invoke();
                 wanderingOnce = false;
-                Debug.Log("he sees me");
                 return;
             }
 
@@ -47,24 +46,18 @@ public class FieldOfView : MonoBehaviour
             {
                 OnViewedByMe.Invoke(GameManager.instance.playerPos);
                 wanderingOnce = false;
-                Debug.Log("I see him");
                 return;
             }
 
             if (wanderingOnce) return;
 
-            Debug.Log("nothing");
             OnNothingHappening.Invoke();
             wanderingOnce = true;
-
-            Debug.Log("void");
-
         }
         else
         {
             if (wanderingOnce) return;
 
-            Debug.Log("nothing");
             OnNothingHappening.Invoke();
             wanderingOnce = true;
         }
