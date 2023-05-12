@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,13 +8,12 @@ public class FieldOfView : MonoBehaviour
     [SerializeField] float fovAngle;
     [SerializeField] LayerMask collisionLayer;
 
-    public UnityEvent<Transform> OnViewedByMe;
+    public UnityEvent<Vector3> OnViewedByMe;
     public UnityEvent ImBeingViewed;
     public UnityEvent OnNothingHappening;
 
     GameObject player;
     float playerFOV;
-    Transform playerTransform;
 
     bool wanderingOnce = false;
 
@@ -26,32 +26,45 @@ public class FieldOfView : MonoBehaviour
     {
         player = GameManager.instance.GetPlayer();
         playerFOV = GameManager.instance.GetPlayerFOV();
-        playerTransform = GameManager.instance.GetPlayerTransform();
     }
 
     private void FixedUpdate()
     {
-        Vector3 myDir = (playerTransform.position - transform.position).normalized;
+        Vector3 myDir = (player.transform.position - transform.position).normalized;
 
         if (ICouldBeSeenBy(player, myDir))
         {
-            if (IsInsideMyFOV(myDir))
-            {
-                OnViewedByMe.Invoke(playerTransform);
-                wanderingOnce = false;
-            }
-
             Vector3 itsDir = -myDir;
-            if (ImInsideItsFOV(itsDir, playerTransform.forward, playerFOV))
+            if (ImInsideItsFOV(itsDir, player.transform.forward, playerFOV))
             {
                 ImBeingViewed.Invoke();
                 wanderingOnce = false;
+                Debug.Log("he sees me");
+                return;
             }
+
+            if (IsInsideMyFOV(myDir))
+            {
+                OnViewedByMe.Invoke(GameManager.instance.playerPos);
+                wanderingOnce = false;
+                Debug.Log("I see him");
+                return;
+            }
+
+            if (wanderingOnce) return;
+
+            Debug.Log("nothing");
+            OnNothingHappening.Invoke();
+            wanderingOnce = true;
+
+            Debug.Log("void");
+
         }
         else
         {
             if (wanderingOnce) return;
 
+            Debug.Log("nothing");
             OnNothingHappening.Invoke();
             wanderingOnce = true;
         }
@@ -74,19 +87,22 @@ public class FieldOfView : MonoBehaviour
     /// <param name="fromFOVAngle"> The FOV it self that "from" have</param>
     /// <param name="to"> The objects that could me inside "from"s FOV</param>
     /// <returns>True if "to" is inside "from"s FOV</returns>
-    public bool isInsideTheFOVOf(Transform from, float fromFOVAngle, Transform to)
+    public bool IsInsideTheFOVOf(Transform from, float fromFOVAngle, Transform to)
     {
         Vector3 dir = (to.position - from.position).normalized;
 
         return (Vector3.Angle(dir, from.forward) < (fromFOVAngle * 0.5f));
     }
 
-    Vector3 debugRay = Vector3.zero;
+
     bool ICouldBeSeenBy(GameObject obj, Vector3 dir)
     {
-        if(Physics.Raycast(transform.position, dir, out RaycastHit hit, 1000, collisionLayer))
+        if(Physics.Raycast(transform.position, dir, out RaycastHit hit, 1000f, collisionLayer))
         {
+#if UNITY_EDITOR
             debugRay = hit.point;
+            debugDir = dir;
+#endif
             if (hit.collider.gameObject == obj)
             {
                 return true;
@@ -95,20 +111,27 @@ public class FieldOfView : MonoBehaviour
         return false;
     }
 
+
+
 #if UNITY_EDITOR
-    private void OnDrawGizmosSelected()
+    Vector3 debugDir = Vector3.zero;
+    Vector3 debugRay = Vector3.zero;
+    private void OnDrawGizmos()
     {
         DrawFOV();
 
         Gizmos.color = Color.blue;
         Gizmos.DrawRay(transform.position, debugRay);
+
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawRay(transform.position, debugDir * 100);
     }
 
     void DrawFOV()
     {
         float catetoOpuesto = maxDistanceView * Mathf.Tan(fovAngle * 0.5f * Mathf.Deg2Rad);
         Vector3 viewingPosR = transform.right * catetoOpuesto + transform.forward * maxDistanceView;
-        Vector3 viewingPosL = (transform.right * catetoOpuesto * -1) + transform.forward * maxDistanceView;
+        Vector3 viewingPosL = transform.right * -catetoOpuesto + transform.forward * maxDistanceView;
 
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + viewingPosR.normalized * maxDistanceView);

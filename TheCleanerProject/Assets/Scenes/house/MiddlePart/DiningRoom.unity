@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 11634934}
   - component: {fileID: 11634936}
   - component: {fileID: 11634935}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Beer_bottle_open_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 12443189}
   - component: {fileID: 12443191}
   - component: {fileID: 12443190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 14059217}
   - component: {fileID: 14059219}
   - component: {fileID: 14059218}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallIn_A_3x_doordouble_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 14533991}
   - component: {fileID: 14533993}
   - component: {fileID: 14533992}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_long_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 25474440}
   - component: {fileID: 25474442}
   - component: {fileID: 25474441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cutlery_knife_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 54014554}
   - component: {fileID: 54014556}
   - component: {fileID: 54014555}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Light_switch_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 79671945}
   - component: {fileID: 79671947}
   - component: {fileID: 79671946}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_R_windowglass_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 109018223}
   - component: {fileID: 109018225}
   - component: {fileID: 109018224}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bowl_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 112184422}
   - component: {fileID: 112184424}
   - component: {fileID: 112184423}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Doorframe_in_double_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,7 +1052,7 @@ GameObject:
   - component: {fileID: 159236012}
   - component: {fileID: 159236014}
   - component: {fileID: 159236013}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_rod_singlewindow_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1303,7 @@ GameObject:
   - component: {fileID: 234873800}
   - component: {fileID: 234873802}
   - component: {fileID: 234873801}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Frying_pan_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ GameObject:
   - component: {fileID: 244141550}
   - component: {fileID: 244141552}
   - component: {fileID: 244141551}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Beer_bottle_open_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1552,7 +1552,7 @@ GameObject:
   - component: {fileID: 311953081}
   - component: {fileID: 311953083}
   - component: {fileID: 311953082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Doorframe_in_double_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1635,7 +1635,7 @@ GameObject:
   - component: {fileID: 312857177}
   - component: {fileID: 312857179}
   - component: {fileID: 312857178}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1885,7 +1885,7 @@ GameObject:
   - component: {fileID: 365292022}
   - component: {fileID: 365292024}
   - component: {fileID: 365292023}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Side_table_B_drawer_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1968,7 +1968,7 @@ GameObject:
   - component: {fileID: 425107098}
   - component: {fileID: 425107100}
   - component: {fileID: 425107099}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_J_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2134,7 +2134,7 @@ GameObject:
   - component: {fileID: 437786014}
   - component: {fileID: 437786016}
   - component: {fileID: 437786015}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Side_table_B_drawer_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2217,7 +2217,7 @@ GameObject:
   - component: {fileID: 445572899}
   - component: {fileID: 445572901}
   - component: {fileID: 445572900}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cutlery_knife_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2300,7 +2300,7 @@ GameObject:
   - component: {fileID: 446794655}
   - component: {fileID: 446794657}
   - component: {fileID: 446794656}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_door_A_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2383,7 +2383,7 @@ GameObject:
   - component: {fileID: 451970493}
   - component: {fileID: 451970495}
   - component: {fileID: 451970494}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_door_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2549,7 +2549,7 @@ GameObject:
   - component: {fileID: 536576037}
   - component: {fileID: 536576039}
   - component: {fileID: 536576038}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_rod_singlewindow_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2632,7 +2632,7 @@ GameObject:
   - component: {fileID: 550249759}
   - component: {fileID: 550249761}
   - component: {fileID: 550249760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_table_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2715,7 +2715,7 @@ GameObject:
   - component: {fileID: 558251223}
   - component: {fileID: 558251225}
   - component: {fileID: 558251224}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_6x6_broken_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3051,7 +3051,7 @@ GameObject:
   - component: {fileID: 663265621}
   - component: {fileID: 663265623}
   - component: {fileID: 663265622}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cutlery_fork_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3134,7 +3134,7 @@ GameObject:
   - component: {fileID: 706952671}
   - component: {fileID: 706952673}
   - component: {fileID: 706952672}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Side_table_B_drawer_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3301,7 +3301,7 @@ GameObject:
   - component: {fileID: 712535112}
   - component: {fileID: 712535114}
   - component: {fileID: 712535113}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallIn_A_3x_doordouble_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3385,7 +3385,7 @@ GameObject:
   - component: {fileID: 736977288}
   - component: {fileID: 736977290}
   - component: {fileID: 736977289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_long_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3468,7 +3468,7 @@ GameObject:
   - component: {fileID: 794452747}
   - component: {fileID: 794452749}
   - component: {fileID: 794452748}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Food_box_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3551,7 +3551,7 @@ GameObject:
   - component: {fileID: 796185427}
   - component: {fileID: 796185429}
   - component: {fileID: 796185428}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Jar_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3634,7 +3634,7 @@ GameObject:
   - component: {fileID: 796657049}
   - component: {fileID: 796657051}
   - component: {fileID: 796657050}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3717,7 +3717,7 @@ GameObject:
   - component: {fileID: 812290086}
   - component: {fileID: 812290088}
   - component: {fileID: 812290087}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Jar_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3800,7 +3800,7 @@ GameObject:
   - component: {fileID: 819371830}
   - component: {fileID: 819371832}
   - component: {fileID: 819371831}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_CeilingFan_Blades_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4051,7 +4051,7 @@ GameObject:
   - component: {fileID: 907046045}
   - component: {fileID: 907046047}
   - component: {fileID: 907046046}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_door_A_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4467,7 +4467,7 @@ GameObject:
   - component: {fileID: 1022736817}
   - component: {fileID: 1022736819}
   - component: {fileID: 1022736818}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_windowglass_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4550,7 +4550,7 @@ GameObject:
   - component: {fileID: 1042003539}
   - component: {fileID: 1042003541}
   - component: {fileID: 1042003540}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Plate_spaghetti_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4634,7 +4634,7 @@ GameObject:
   - component: {fileID: 1078025166}
   - component: {fileID: 1078025168}
   - component: {fileID: 1078025167}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_CeilingFan_Lamps_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4885,7 +4885,7 @@ GameObject:
   - component: {fileID: 1087635471}
   - component: {fileID: 1087635473}
   - component: {fileID: 1087635472}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_door_A_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4968,7 +4968,7 @@ GameObject:
   - component: {fileID: 1099488269}
   - component: {fileID: 1099488271}
   - component: {fileID: 1099488270}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5051,7 +5051,7 @@ GameObject:
   - component: {fileID: 1107837994}
   - component: {fileID: 1107837996}
   - component: {fileID: 1107837995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5609,7 +5609,7 @@ GameObject:
   - component: {fileID: 1281950301}
   - component: {fileID: 1281950303}
   - component: {fileID: 1281950302}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_table_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5692,7 +5692,7 @@ GameObject:
   - component: {fileID: 1336945593}
   - component: {fileID: 1336945595}
   - component: {fileID: 1336945594}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_China_set_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5942,7 +5942,7 @@ GameObject:
   - component: {fileID: 1353052210}
   - component: {fileID: 1353052212}
   - component: {fileID: 1353052211}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_6x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6025,7 +6025,7 @@ GameObject:
   - component: {fileID: 1381004144}
   - component: {fileID: 1381004146}
   - component: {fileID: 1381004145}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_corner_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6192,7 +6192,7 @@ GameObject:
   - component: {fileID: 1486130048}
   - component: {fileID: 1486130050}
   - component: {fileID: 1486130049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_door_A_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6359,7 +6359,7 @@ GameObject:
   - component: {fileID: 1510249493}
   - component: {fileID: 1510249495}
   - component: {fileID: 1510249494}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Plate_spaghetti_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6443,7 +6443,7 @@ GameObject:
   - component: {fileID: 1513061238}
   - component: {fileID: 1513061240}
   - component: {fileID: 1513061239}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_L_windowglass_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6609,7 +6609,7 @@ GameObject:
   - component: {fileID: 1518775594}
   - component: {fileID: 1518775596}
   - component: {fileID: 1518775595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Side_table_B_drawer_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6692,7 +6692,7 @@ GameObject:
   - component: {fileID: 1523535066}
   - component: {fileID: 1523535068}
   - component: {fileID: 1523535067}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_door_A_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6775,7 +6775,7 @@ GameObject:
   - component: {fileID: 1539519324}
   - component: {fileID: 1539519326}
   - component: {fileID: 1539519325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Jar_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6858,7 +6858,7 @@ GameObject:
   - component: {fileID: 1540981780}
   - component: {fileID: 1540981782}
   - component: {fileID: 1540981781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_window_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7108,7 +7108,7 @@ GameObject:
   - component: {fileID: 1563535281}
   - component: {fileID: 1563535283}
   - component: {fileID: 1563535282}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7192,7 +7192,7 @@ GameObject:
   - component: {fileID: 1566258537}
   - component: {fileID: 1566258539}
   - component: {fileID: 1566258538}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_shelf_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7275,7 +7275,7 @@ GameObject:
   - component: {fileID: 1569110706}
   - component: {fileID: 1569110708}
   - component: {fileID: 1569110707}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_corner_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7358,7 +7358,7 @@ GameObject:
   - component: {fileID: 1587048902}
   - component: {fileID: 1587048904}
   - component: {fileID: 1587048903}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cutlery_holder_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7441,7 +7441,7 @@ GameObject:
   - component: {fileID: 1593558170}
   - component: {fileID: 1593558172}
   - component: {fileID: 1593558171}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_H_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7524,7 +7524,7 @@ GameObject:
   - component: {fileID: 1637953909}
   - component: {fileID: 1637953911}
   - component: {fileID: 1637953910}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Jar_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7607,7 +7607,7 @@ GameObject:
   - component: {fileID: 1647063093}
   - component: {fileID: 1647063095}
   - component: {fileID: 1647063094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_CeilingFan_Base_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7773,7 +7773,7 @@ GameObject:
   - component: {fileID: 1660399510}
   - component: {fileID: 1660399512}
   - component: {fileID: 1660399511}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7856,7 +7856,7 @@ GameObject:
   - component: {fileID: 1682483630}
   - component: {fileID: 1682483632}
   - component: {fileID: 1682483631}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Jar_F_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7939,7 +7939,7 @@ GameObject:
   - component: {fileID: 1684236485}
   - component: {fileID: 1684236487}
   - component: {fileID: 1684236486}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_China_set_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8022,7 +8022,7 @@ GameObject:
   - component: {fileID: 1708006811}
   - component: {fileID: 1708006813}
   - component: {fileID: 1708006812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_long_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8105,7 +8105,7 @@ GameObject:
   - component: {fileID: 1721632548}
   - component: {fileID: 1721632550}
   - component: {fileID: 1721632549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_window_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8188,7 +8188,7 @@ GameObject:
   - component: {fileID: 1730895836}
   - component: {fileID: 1730895838}
   - component: {fileID: 1730895837}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Carpet_persian_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8354,7 +8354,7 @@ GameObject:
   - component: {fileID: 1799712519}
   - component: {fileID: 1799712521}
   - component: {fileID: 1799712520}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Light_switch_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8437,7 +8437,7 @@ GameObject:
   - component: {fileID: 1851788251}
   - component: {fileID: 1851788253}
   - component: {fileID: 1851788252}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Shelf_standing_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8520,7 +8520,7 @@ GameObject:
   - component: {fileID: 1852020026}
   - component: {fileID: 1852020028}
   - component: {fileID: 1852020027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_end_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8769,7 +8769,7 @@ GameObject:
   - component: {fileID: 1867634677}
   - component: {fileID: 1867634679}
   - component: {fileID: 1867634678}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cutlery_fork_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8852,7 +8852,7 @@ GameObject:
   - component: {fileID: 1879203819}
   - component: {fileID: 1879203821}
   - component: {fileID: 1879203820}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_door_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9018,7 +9018,7 @@ GameObject:
   - component: {fileID: 1925307077}
   - component: {fileID: 1925307079}
   - component: {fileID: 1925307078}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Pot_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9184,7 +9184,7 @@ GameObject:
   - component: {fileID: 2030755440}
   - component: {fileID: 2030755442}
   - component: {fileID: 2030755441}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_F_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9267,7 +9267,7 @@ GameObject:
   - component: {fileID: 2036116597}
   - component: {fileID: 2036116599}
   - component: {fileID: 2036116598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Light_switch_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9350,7 +9350,7 @@ GameObject:
   - component: {fileID: 2116038620}
   - component: {fileID: 2116038622}
   - component: {fileID: 2116038621}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Kitchen_cabinet_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9433,7 +9433,7 @@ GameObject:
   - component: {fileID: 2120607094}
   - component: {fileID: 2120607096}
   - component: {fileID: 2120607095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_long_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -31,7 +31,7 @@ public class PointManager : MonoBehaviour
         cevlakObject.GetComponent<Cevlak>().playerObj = other.gameObject;
         cevlakObject.GetComponent<Cevlak>().isInside = true;
         cevlakObject.GetComponent<Cevlak>().speedActivator = true;
-        cevlakObject.GetComponent<Cevlak>().GhostAction();
+        cevlakObject.GetComponent<Cevlak>().GhostAction(Vector3.zero);
     }
 
     private void OnTriggerExit(Collider other)

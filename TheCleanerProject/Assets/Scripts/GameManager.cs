@@ -4,6 +4,8 @@ using UnityEngine.Events;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    public GameObject playerFoot;
+    public Vector3 playerPos { get => playerFoot.transform.position; }
     public FlashlightBehaviour flashlight;
     public Transform ScreamerPoint;
     public string[] ScenesToLoadOnStart;
@@ -36,7 +38,8 @@ public class GameManager : MonoBehaviour
         {
             MenuControl.instance.LoadScene(ScenesToLoadOnStart[i], UnityEngine.SceneManagement.LoadSceneMode.Additive);
         }
-        
+        playerFoot = GameObject.Find("OVRCameraRig");
+
         InitGame.Invoke();
         InitOculusSettings();
     }

@@ -13,7 +13,7 @@ public abstract class Ghost : MonoBehaviour
 
     }
     public abstract void GhostCounter();
-    public abstract void GhostAction(Transform other = null);
+    public abstract void GhostAction(Vector3 otherPos);
 
     private void OnCollisionEnter(Collision collision)
     {

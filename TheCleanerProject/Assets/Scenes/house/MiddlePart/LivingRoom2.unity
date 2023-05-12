@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 13941871}
   - component: {fileID: 13941873}
   - component: {fileID: 13941872}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_chandelier_shade_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   - component: {fileID: 21320126}
   - component: {fileID: 21320128}
   - component: {fileID: 21320127}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_windowglass_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -400,7 +400,7 @@ GameObject:
   - component: {fileID: 27296867}
   - component: {fileID: 27296869}
   - component: {fileID: 27296868}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 37213603}
   - component: {fileID: 37213605}
   - component: {fileID: 37213604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 56573761}
   - component: {fileID: 56573763}
   - component: {fileID: 56573762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_2x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +650,7 @@ GameObject:
   - component: {fileID: 68257337}
   - component: {fileID: 68257339}
   - component: {fileID: 68257338}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_corner_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 87742289}
   - component: {fileID: 87742291}
   - component: {fileID: 87742290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_door_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -817,7 +817,7 @@ GameObject:
   - component: {fileID: 104478672}
   - component: {fileID: 104478674}
   - component: {fileID: 104478673}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_F_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -900,7 +900,7 @@ GameObject:
   - component: {fileID: 105434650}
   - component: {fileID: 105434652}
   - component: {fileID: 105434651}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ GameObject:
   - component: {fileID: 185791767}
   - component: {fileID: 185791769}
   - component: {fileID: 185791768}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_F_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   - component: {fileID: 197231519}
   - component: {fileID: 197231521}
   - component: {fileID: 197231520}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Carpet_persian_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   - component: {fileID: 208101090}
   - component: {fileID: 208101092}
   - component: {fileID: 208101091}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_chandelier_shade_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1315,7 +1315,7 @@ GameObject:
   - component: {fileID: 241471578}
   - component: {fileID: 241471581}
   - component: {fileID: 241471580}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_D_LOD0(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   - component: {fileID: 288787843}
   - component: {fileID: 288787845}
   - component: {fileID: 288787844}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_I_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1481,7 +1481,7 @@ GameObject:
   - component: {fileID: 290228233}
   - component: {fileID: 290228235}
   - component: {fileID: 290228234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1565,7 +1565,7 @@ GameObject:
   - component: {fileID: 319111320}
   - component: {fileID: 319111322}
   - component: {fileID: 319111321}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1648,7 +1648,7 @@ GameObject:
   - component: {fileID: 326748024}
   - component: {fileID: 326748026}
   - component: {fileID: 326748025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_TV_on_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1732,7 +1732,7 @@ GameObject:
   - component: {fileID: 328635305}
   - component: {fileID: 328635307}
   - component: {fileID: 328635306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1815,7 +1815,7 @@ GameObject:
   - component: {fileID: 330377594}
   - component: {fileID: 330377596}
   - component: {fileID: 330377595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Doorframe_in_double_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1898,7 +1898,7 @@ GameObject:
   - component: {fileID: 351321122}
   - component: {fileID: 351321124}
   - component: {fileID: 351321123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2176,7 +2176,7 @@ GameObject:
   - component: {fileID: 397990791}
   - component: {fileID: 397990793}
   - component: {fileID: 397990792}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_door_B_LOD0(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2259,7 +2259,7 @@ GameObject:
   - component: {fileID: 417164220}
   - component: {fileID: 417164222}
   - component: {fileID: 417164221}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_6x_windowtriple_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2342,7 +2342,7 @@ GameObject:
   - component: {fileID: 427033750}
   - component: {fileID: 427033752}
   - component: {fileID: 427033751}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_rod_triplewindow_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2425,7 +2425,7 @@ GameObject:
   - component: {fileID: 437878259}
   - component: {fileID: 437878261}
   - component: {fileID: 437878260}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_double_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2509,7 +2509,7 @@ GameObject:
   - component: {fileID: 475964626}
   - component: {fileID: 475964628}
   - component: {fileID: 475964627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_chandelier_shade_E_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2884,7 +2884,7 @@ GameObject:
   - component: {fileID: 497235406}
   - component: {fileID: 497235408}
   - component: {fileID: 497235407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_China_set_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3162,7 +3162,7 @@ GameObject:
   - component: {fileID: 531546616}
   - component: {fileID: 531546618}
   - component: {fileID: 531546617}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3536,7 +3536,7 @@ GameObject:
   - component: {fileID: 565417748}
   - component: {fileID: 565417750}
   - component: {fileID: 565417749}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallIn_A_3x_door_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3620,7 +3620,7 @@ GameObject:
   - component: {fileID: 565935255}
   - component: {fileID: 565935257}
   - component: {fileID: 565935256}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3703,7 +3703,7 @@ GameObject:
   - component: {fileID: 597700635}
   - component: {fileID: 597700637}
   - component: {fileID: 597700636}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_chandelier_body_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3884,7 +3884,7 @@ GameObject:
   - component: {fileID: 620751184}
   - component: {fileID: 620751186}
   - component: {fileID: 620751185}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Tv_remote_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4065,7 +4065,7 @@ GameObject:
   - component: {fileID: 665919461}
   - component: {fileID: 665919463}
   - component: {fileID: 665919462}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_China_set_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4246,7 +4246,7 @@ GameObject:
   - component: {fileID: 761336330}
   - component: {fileID: 761336332}
   - component: {fileID: 761336331}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4329,7 +4329,7 @@ GameObject:
   - component: {fileID: 826430977}
   - component: {fileID: 826430979}
   - component: {fileID: 826430978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_E_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4510,7 +4510,7 @@ GameObject:
   - component: {fileID: 854924560}
   - component: {fileID: 854924562}
   - component: {fileID: 854924561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_3x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4593,7 +4593,7 @@ GameObject:
   - component: {fileID: 864913153}
   - component: {fileID: 864913155}
   - component: {fileID: 864913154}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowblinds_open_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4676,7 +4676,7 @@ GameObject:
   - component: {fileID: 878336603}
   - component: {fileID: 878336605}
   - component: {fileID: 878336604}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_6x6_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4759,7 +4759,7 @@ GameObject:
   - component: {fileID: 892159385}
   - component: {fileID: 892159387}
   - component: {fileID: 892159386}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4940,7 +4940,7 @@ GameObject:
   - component: {fileID: 906951938}
   - component: {fileID: 906951940}
   - component: {fileID: 906951939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_1x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5023,7 +5023,7 @@ GameObject:
   - component: {fileID: 910321903}
   - component: {fileID: 910321905}
   - component: {fileID: 910321904}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_2x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5106,7 +5106,7 @@ GameObject:
   - component: {fileID: 915701825}
   - component: {fileID: 915701827}
   - component: {fileID: 915701826}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_L_windowglass_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5496,7 +5496,7 @@ GameObject:
   - component: {fileID: 1035217184}
   - component: {fileID: 1035217186}
   - component: {fileID: 1035217185}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_R_windowglass_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5579,7 +5579,7 @@ GameObject:
   - component: {fileID: 1048400312}
   - component: {fileID: 1048400314}
   - component: {fileID: 1048400313}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5745,7 +5745,7 @@ GameObject:
   - component: {fileID: 1059449081}
   - component: {fileID: 1059449083}
   - component: {fileID: 1059449082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5828,7 +5828,7 @@ GameObject:
   - component: {fileID: 1074391194}
   - component: {fileID: 1074391196}
   - component: {fileID: 1074391195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowblinds_open_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5911,7 +5911,7 @@ GameObject:
   - component: {fileID: 1116864067}
   - component: {fileID: 1116864069}
   - component: {fileID: 1116864068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6092,7 +6092,7 @@ GameObject:
   - component: {fileID: 1155896575}
   - component: {fileID: 1155896577}
   - component: {fileID: 1155896576}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6175,7 +6175,7 @@ GameObject:
   - component: {fileID: 1156052229}
   - component: {fileID: 1156052231}
   - component: {fileID: 1156052230}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6258,7 +6258,7 @@ GameObject:
   - component: {fileID: 1159383215}
   - component: {fileID: 1159383217}
   - component: {fileID: 1159383216}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6341,7 +6341,7 @@ GameObject:
   - component: {fileID: 1220692949}
   - component: {fileID: 1220692951}
   - component: {fileID: 1220692950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6521,7 +6521,7 @@ GameObject:
   - component: {fileID: 1229810572}
   - component: {fileID: 1229810574}
   - component: {fileID: 1229810573}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6741,7 +6741,7 @@ GameObject:
   - component: {fileID: 1248363601}
   - component: {fileID: 1248363603}
   - component: {fileID: 1248363602}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6922,7 +6922,7 @@ GameObject:
   - component: {fileID: 1286857288}
   - component: {fileID: 1286857290}
   - component: {fileID: 1286857289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7102,7 +7102,7 @@ GameObject:
   - component: {fileID: 1315905157}
   - component: {fileID: 1315905159}
   - component: {fileID: 1315905158}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowblinds_open_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7185,7 +7185,7 @@ GameObject:
   - component: {fileID: 1338290260}
   - component: {fileID: 1338290263}
   - component: {fileID: 1338290262}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_D_LOD0(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7268,7 +7268,7 @@ GameObject:
   - component: {fileID: 1356785705}
   - component: {fileID: 1356785707}
   - component: {fileID: 1356785706}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7351,7 +7351,7 @@ GameObject:
   - component: {fileID: 1403834410}
   - component: {fileID: 1403834412}
   - component: {fileID: 1403834411}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7434,7 +7434,7 @@ GameObject:
   - component: {fileID: 1562666624}
   - component: {fileID: 1562666626}
   - component: {fileID: 1562666625}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Doorframe_in_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7629,7 +7629,7 @@ GameObject:
   - component: {fileID: 1653827960}
   - component: {fileID: 1653827962}
   - component: {fileID: 1653827961}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_chandelier_shade_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7712,7 +7712,7 @@ GameObject:
   - component: {fileID: 1674466397}
   - component: {fileID: 1674466399}
   - component: {fileID: 1674466398}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_chandelier_shade_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7795,7 +7795,7 @@ GameObject:
   - component: {fileID: 1675559541}
   - component: {fileID: 1675559543}
   - component: {fileID: 1675559542}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7878,7 +7878,7 @@ GameObject:
   - component: {fileID: 1700074261}
   - component: {fileID: 1700074263}
   - component: {fileID: 1700074262}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Book_set_G_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7961,7 +7961,7 @@ GameObject:
   - component: {fileID: 1755111278}
   - component: {fileID: 1755111280}
   - component: {fileID: 1755111279}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowblinds_open_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8044,7 +8044,7 @@ GameObject:
   - component: {fileID: 1789010374}
   - component: {fileID: 1789010376}
   - component: {fileID: 1789010375}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8127,7 +8127,7 @@ GameObject:
   - component: {fileID: 1792910395}
   - component: {fileID: 1792910397}
   - component: {fileID: 1792910396}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8308,7 +8308,7 @@ GameObject:
   - component: {fileID: 1841100129}
   - component: {fileID: 1841100131}
   - component: {fileID: 1841100130}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8391,7 +8391,7 @@ GameObject:
   - component: {fileID: 1852633641}
   - component: {fileID: 1852633643}
   - component: {fileID: 1852633642}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8474,7 +8474,7 @@ GameObject:
   - component: {fileID: 1894705321}
   - component: {fileID: 1894705323}
   - component: {fileID: 1894705322}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8557,7 +8557,7 @@ GameObject:
   - component: {fileID: 1895692842}
   - component: {fileID: 1895692844}
   - component: {fileID: 1895692843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_6x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8640,7 +8640,7 @@ GameObject:
   - component: {fileID: 1901563235}
   - component: {fileID: 1901563237}
   - component: {fileID: 1901563236}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Carpet_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8723,7 +8723,7 @@ GameObject:
   - component: {fileID: 1914566094}
   - component: {fileID: 1914566096}
   - component: {fileID: 1914566095}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_China_set_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8806,7 +8806,7 @@ GameObject:
   - component: {fileID: 1933953776}
   - component: {fileID: 1933953778}
   - component: {fileID: 1933953777}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_D_door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8972,7 +8972,7 @@ GameObject:
   - component: {fileID: 1977441022}
   - component: {fileID: 1977441024}
   - component: {fileID: 1977441023}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9152,7 +9152,7 @@ GameObject:
   - component: {fileID: 2043664407}
   - component: {fileID: 2043664409}
   - component: {fileID: 2043664408}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9235,7 +9235,7 @@ GameObject:
   - component: {fileID: 2087182929}
   - component: {fileID: 2087182931}
   - component: {fileID: 2087182930}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bookshelf_Door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9429,7 +9429,7 @@ GameObject:
   - component: {fileID: 2130312751}
   - component: {fileID: 2130312753}
   - component: {fileID: 2130312752}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 56573761}
   - component: {fileID: 56573763}
   - component: {fileID: 56573762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_2x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 119834050}
   - component: {fileID: 119834052}
   - component: {fileID: 119834051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_B_door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 145608341}
   - component: {fileID: 145608343}
   - component: {fileID: 145608342}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -802,7 +802,7 @@ GameObject:
   - component: {fileID: 156822994}
   - component: {fileID: 156822996}
   - component: {fileID: 156822995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bathroom_sink_door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 226668335}
   - component: {fileID: 226668337}
   - component: {fileID: 226668336}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ GameObject:
   - component: {fileID: 241921110}
   - component: {fileID: 241921112}
   - component: {fileID: 241921111}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_I_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 317321962}
   - component: {fileID: 317321964}
   - component: {fileID: 317321963}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1300,7 +1300,7 @@ GameObject:
   - component: {fileID: 383545826}
   - component: {fileID: 383545828}
   - component: {fileID: 383545827}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Power_socket_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1383,7 +1383,7 @@ GameObject:
   - component: {fileID: 393438386}
   - component: {fileID: 393438388}
   - component: {fileID: 393438387}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_singlesmall_vinyl_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1550,7 +1550,7 @@ GameObject:
   - component: {fileID: 451575880}
   - component: {fileID: 451575882}
   - component: {fileID: 451575881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1633,7 +1633,7 @@ GameObject:
   - component: {fileID: 524312629}
   - component: {fileID: 524312631}
   - component: {fileID: 524312630}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_window_openable_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1716,7 +1716,7 @@ GameObject:
   - component: {fileID: 527453816}
   - component: {fileID: 527453818}
   - component: {fileID: 527453817}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bathroom_sink_door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1799,7 +1799,7 @@ GameObject:
   - component: {fileID: 544610812}
   - component: {fileID: 544610814}
   - component: {fileID: 544610813}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_corner_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1883,7 +1883,7 @@ GameObject:
   - component: {fileID: 565417748}
   - component: {fileID: 565417750}
   - component: {fileID: 565417749}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallIn_A_3x_door_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2050,7 +2050,7 @@ GameObject:
   - component: {fileID: 649726977}
   - component: {fileID: 649726979}
   - component: {fileID: 649726978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Carpet_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2385,7 +2385,7 @@ GameObject:
   - component: {fileID: 723509854}
   - component: {fileID: 723509856}
   - component: {fileID: 723509855}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Toilet_lid_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2468,7 +2468,7 @@ GameObject:
   - component: {fileID: 740377725}
   - component: {fileID: 740377727}
   - component: {fileID: 740377726}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Carpet_E_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2718,7 +2718,7 @@ GameObject:
   - component: {fileID: 811167496}
   - component: {fileID: 811167498}
   - component: {fileID: 811167497}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Jar_ceramic_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2801,7 +2801,7 @@ GameObject:
   - component: {fileID: 838620761}
   - component: {fileID: 838620763}
   - component: {fileID: 838620762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Toiletpaper_holder_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2884,7 +2884,7 @@ GameObject:
   - component: {fileID: 891990983}
   - component: {fileID: 891990985}
   - component: {fileID: 891990984}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Towel_holder_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2967,7 +2967,7 @@ GameObject:
   - component: {fileID: 906951938}
   - component: {fileID: 906951940}
   - component: {fileID: 906951939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_1x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3050,7 +3050,7 @@ GameObject:
   - component: {fileID: 953018048}
   - component: {fileID: 953018050}
   - component: {fileID: 953018049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_J_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3133,7 +3133,7 @@ GameObject:
   - component: {fileID: 977632250}
   - component: {fileID: 977632252}
   - component: {fileID: 977632251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bathroom_sink_door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3299,7 +3299,7 @@ GameObject:
   - component: {fileID: 1013758291}
   - component: {fileID: 1013758293}
   - component: {fileID: 1013758292}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Windowglass_single_vinyl_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3466,7 +3466,7 @@ GameObject:
   - component: {fileID: 1125148542}
   - component: {fileID: 1125148544}
   - component: {fileID: 1125148543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_6x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3895,7 +3895,7 @@ GameObject:
   - component: {fileID: 1286857288}
   - component: {fileID: 1286857290}
   - component: {fileID: 1286857289}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4145,7 +4145,7 @@ GameObject:
   - component: {fileID: 1373723721}
   - component: {fileID: 1373723723}
   - component: {fileID: 1373723722}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Towel_folded_B_pile_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4228,7 +4228,7 @@ GameObject:
   - component: {fileID: 1406745949}
   - component: {fileID: 1406745951}
   - component: {fileID: 1406745950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Shower_curtain_rail_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4311,7 +4311,7 @@ GameObject:
   - component: {fileID: 1423714105}
   - component: {fileID: 1423714107}
   - component: {fileID: 1423714106}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Hand_towel_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4645,7 +4645,7 @@ GameObject:
   - component: {fileID: 1512092306}
   - component: {fileID: 1512092308}
   - component: {fileID: 1512092307}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_windowsmall_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4728,7 +4728,7 @@ GameObject:
   - component: {fileID: 1545521606}
   - component: {fileID: 1545521608}
   - component: {fileID: 1545521607}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Bathroom_sink_door_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4811,7 +4811,7 @@ GameObject:
   - component: {fileID: 1689735347}
   - component: {fileID: 1689735349}
   - component: {fileID: 1689735348}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_L_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4894,7 +4894,7 @@ GameObject:
   - component: {fileID: 1743693629}
   - component: {fileID: 1743693631}
   - component: {fileID: 1743693630}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_bathroom_wall_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4977,7 +4977,7 @@ GameObject:
   - component: {fileID: 1762862668}
   - component: {fileID: 1762862670}
   - component: {fileID: 1762862669}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_corner_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5061,7 +5061,7 @@ GameObject:
   - component: {fileID: 1770571518}
   - component: {fileID: 1770571520}
   - component: {fileID: 1770571519}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Light_switch_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5144,7 +5144,7 @@ GameObject:
   - component: {fileID: 1864791068}
   - component: {fileID: 1864791070}
   - component: {fileID: 1864791069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Carpet_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5227,7 +5227,7 @@ GameObject:
   - component: {fileID: 1876895463}
   - component: {fileID: 1876895465}
   - component: {fileID: 1876895464}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_singlesmall_vinyl_openable_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5310,7 +5310,7 @@ GameObject:
   - component: {fileID: 1945941444}
   - component: {fileID: 1945941446}
   - component: {fileID: 1945941445}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cabinet_B_door_R_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5393,7 +5393,7 @@ GameObject:
   - component: {fileID: 1981340459}
   - component: {fileID: 1981340461}
   - component: {fileID: 1981340460}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Toiletpaper_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5476,7 +5476,7 @@ GameObject:
   - component: {fileID: 2063737364}
   - component: {fileID: 2063737366}
   - component: {fileID: 2063737365}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Towel_folded_A_pile_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

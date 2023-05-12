@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 67567913}
   - component: {fileID: 67567915}
   - component: {fileID: 67567914}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Porch_A_3x_noColumn_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 99105728}
   - component: {fileID: 99105730}
   - component: {fileID: 99105729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_rod_singlewindow_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,31 +389,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1243176182}
     m_Modifications:
-    - target: {fileID: -3918083910692475491, guid: d599f3c1a44138042be0d14c406e92bb,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3918083910692475491, guid: d599f3c1a44138042be0d14c406e92bb,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -3918083910692475491, guid: d599f3c1a44138042be0d14c406e92bb,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3918083910692475491, guid: d599f3c1a44138042be0d14c406e92bb,
-        type: 3}
-      propertyPath: m_AutoConfigureConnectedAnchor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1058376755077823905, guid: d599f3c1a44138042be0d14c406e92bb,
-        type: 3}
-      propertyPath: m_TrackRotation
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1145751282120160164, guid: d599f3c1a44138042be0d14c406e92bb,
         type: 3}
       propertyPath: m_RootOrder
@@ -474,15 +449,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door3
       objectReference: {fileID: 0}
-    - target: {fileID: 1145751282120160165, guid: d599f3c1a44138042be0d14c406e92bb,
+    - target: {fileID: 3927840172667987519, guid: d599f3c1a44138042be0d14c406e92bb,
         type: 3}
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1145751282120160169, guid: d599f3c1a44138042be0d14c406e92bb, type: 3}
-    - {fileID: 5234256065531548829, guid: d599f3c1a44138042be0d14c406e92bb, type: 3}
-    - {fileID: 7841778767960788653, guid: d599f3c1a44138042be0d14c406e92bb, type: 3}
+    - target: {fileID: 8698878504546636561, guid: d599f3c1a44138042be0d14c406e92bb,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d599f3c1a44138042be0d14c406e92bb, type: 3}
 --- !u!4 &102805579 stripped
@@ -502,7 +479,7 @@ GameObject:
   - component: {fileID: 186181500}
   - component: {fileID: 186181502}
   - component: {fileID: 186181501}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_table_G_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -668,7 +645,7 @@ GameObject:
   - component: {fileID: 332457430}
   - component: {fileID: 332457433}
   - component: {fileID: 332457432}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_3x3_LOD0(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -751,7 +728,7 @@ GameObject:
   - component: {fileID: 436012002}
   - component: {fileID: 436012004}
   - component: {fileID: 436012003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Doorframe_in_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -918,7 +895,7 @@ GameObject:
   - component: {fileID: 548566296}
   - component: {fileID: 548566298}
   - component: {fileID: 548566297}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_window_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +978,7 @@ GameObject:
   - component: {fileID: 555237714}
   - component: {fileID: 555237716}
   - component: {fileID: 555237715}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallIn_A_3x_doordouble_bent_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1504,7 +1481,7 @@ GameObject:
   - component: {fileID: 840286907}
   - component: {fileID: 840286909}
   - component: {fileID: 840286908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_2x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1921,7 +1898,7 @@ GameObject:
   - component: {fileID: 972763529}
   - component: {fileID: 972763531}
   - component: {fileID: 972763530}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Window_single_static_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2005,7 +1982,7 @@ GameObject:
   - component: {fileID: 994535922}
   - component: {fileID: 994535924}
   - component: {fileID: 994535923}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2088,7 +2065,7 @@ GameObject:
   - component: {fileID: 1050298042}
   - component: {fileID: 1050298044}
   - component: {fileID: 1050298043}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Porch_A_3x_corner_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2596,7 +2573,7 @@ GameObject:
   - component: {fileID: 1212724794}
   - component: {fileID: 1212724796}
   - component: {fileID: 1212724795}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_ceiling_ball_base_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2679,7 +2656,7 @@ GameObject:
   - component: {fileID: 1233429617}
   - component: {fileID: 1233429619}
   - component: {fileID: 1233429618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Curtain_short_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3012,7 +2989,7 @@ GameObject:
   - component: {fileID: 1313900447}
   - component: {fileID: 1313900449}
   - component: {fileID: 1313900448}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallOut_3x_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3461,7 +3438,7 @@ GameObject:
   - component: {fileID: 1544761717}
   - component: {fileID: 1544761719}
   - component: {fileID: 1544761718}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_WallIn_C_stairs_basement_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3544,7 +3521,7 @@ GameObject:
   - component: {fileID: 1573546658}
   - component: {fileID: 1573546660}
   - component: {fileID: 1573546659}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_3x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3627,7 +3604,7 @@ GameObject:
   - component: {fileID: 1608176869}
   - component: {fileID: 1608176871}
   - component: {fileID: 1608176870}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painkillers_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3710,7 +3687,7 @@ GameObject:
   - component: {fileID: 1678524482}
   - component: {fileID: 1678524484}
   - component: {fileID: 1678524483}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_ceiling_ball_ball_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3793,7 +3770,7 @@ GameObject:
   - component: {fileID: 1744748947}
   - component: {fileID: 1744748950}
   - component: {fileID: 1744748949}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_3x3_LOD0(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3876,7 +3853,7 @@ GameObject:
   - component: {fileID: 1746543726}
   - component: {fileID: 1746543728}
   - component: {fileID: 1746543727}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_stairs_basement_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4126,7 +4103,7 @@ GameObject:
   - component: {fileID: 1831995863}
   - component: {fileID: 1831995865}
   - component: {fileID: 1831995864}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_ceiling_ball_ball_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4292,7 +4269,7 @@ GameObject:
   - component: {fileID: 1902346301}
   - component: {fileID: 1902346303}
   - component: {fileID: 1902346302}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Painting_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4407,7 +4384,7 @@ GameObject:
   - component: {fileID: 2049827344}
   - component: {fileID: 2049827346}
   - component: {fileID: 2049827345}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_3x3_broken_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4492,7 +4469,7 @@ GameObject:
   - component: {fileID: 2067377055}
   - component: {fileID: 2067377057}
   - component: {fileID: 2067377056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Lamp_ceiling_ball_base_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4575,7 +4552,7 @@ GameObject:
   - component: {fileID: 2117935933}
   - component: {fileID: 2117935935}
   - component: {fileID: 2117935934}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Pencil_post_it_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

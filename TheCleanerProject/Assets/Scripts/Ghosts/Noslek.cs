@@ -14,6 +14,8 @@ public class Noslek : Ghost
     GhostAnimController gac;
 
     bool MovingTowardsPlayer = false;
+    bool ResumeMovementOnce = false;
+    bool StopMovementOnce = false;
 
     private void Start()
     {
@@ -36,10 +38,10 @@ public class Noslek : Ghost
     {
         if (agent != null && agent.isStopped) return;
 
-        GhostAction();
+        GhostAction(Vector3.zero);
     }
 
-    public override void GhostAction(Transform other = null)
+    public override void GhostAction(Vector3 otherPos)
     {
         if (MovingTowardsPlayer)
         {
@@ -59,6 +61,7 @@ public class Noslek : Ghost
     public override void Scream()
     {
         base.Scream();
+        agent.enabled = false;
         gac.PlayAnimation(screamerAnimName);
     }
 
@@ -67,7 +70,13 @@ public class Noslek : Ghost
         if (!agent.isStopped)
         {
             agent.isStopped = true;
-            gac.PlayAnimation(idleAnimName);
+
+            if (!StopMovementOnce)
+            {
+                StopMovementOnce = true;
+                ResumeMovementOnce = false;
+                gac.PlayAnimation(idleAnimName);
+            }
         }
     }
 
@@ -76,14 +85,20 @@ public class Noslek : Ghost
         if (agent.isStopped)
         {
             agent.isStopped = false;
-            gac.PlayAnimation(walkAnimName);
+            
+            if (!ResumeMovementOnce)
+            {
+                StopMovementOnce = false;
+                ResumeMovementOnce = true;
+                gac.PlayAnimation(walkAnimName);
+            }
         }
     }
 
-    public void MoveToPlayer(Transform PlayerTransform)
+    public void MoveToPlayer(Vector3 playerPos)
     {
         ResumeMovement();
-        agent.destination = PlayerTransform.position;
+        agent.destination = playerPos;
         MovingTowardsPlayer = true;
         agent.isStopped = false;
     }
@@ -98,7 +113,7 @@ public class Noslek : Ghost
         agent.destination = hit.position;
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         if(agent != null)

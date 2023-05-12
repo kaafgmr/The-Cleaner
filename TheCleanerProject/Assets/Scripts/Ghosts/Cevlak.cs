@@ -70,7 +70,7 @@ public class Cevlak : Ghost
             cevlakParent.transform.LookAt(playerObj.transform, initialUp);
         }
     }
-    public override void GhostAction(Transform other = null)
+    public override void GhostAction(Vector3 otherPos)
     {
         for(int i=0; i<taskPoints.Length; i++)
         {
