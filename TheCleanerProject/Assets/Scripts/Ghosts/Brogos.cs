@@ -110,6 +110,7 @@ public class Brogos : Ghost
     void MoveToRecentTp()
     {
         agent.destination = recentTp;
+        timeToHide = true;
     }
 
     public void SetValueTimeToHide(bool value)
@@ -159,7 +160,6 @@ public class Brogos : Ghost
         MoveToRandomPoint();
         yield return new WaitForSeconds(4);
         Debug.Log("entro despues de los 4");
-        timeToHide = true;
         MoveToRecentTp();
         _coroutine = null;
     }    
