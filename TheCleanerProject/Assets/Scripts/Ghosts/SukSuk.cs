@@ -45,13 +45,13 @@ public class SukSuk : Ghost
         flashlightFOVAngle = flashLight.GetFOV();
     }
 
-    public override void GhostAction(Transform other = null)
+    public override void GhostAction(Vector3 otherPos)
     {
-        debugText.text ="inside: " + FOV.isInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform).ToString();
-        if (flashLight.isBeingHeld && FOV.isInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform))
+        debugText.text ="inside: " + FOV.IsInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform).ToString();
+        if (flashLight.isBeingHeld && FOV.IsInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform))
         {
             ResumeMovement();
-            agent.destination = other.position;
+            agent.destination = otherPos;
         }
     }
 

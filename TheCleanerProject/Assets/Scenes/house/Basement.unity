@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 346220563}
   - component: {fileID: 346220565}
   - component: {fileID: 346220564}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1381,7 +1381,7 @@ GameObject:
   - component: {fileID: 373531146}
   - component: {fileID: 373531148}
   - component: {fileID: 373531147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_6x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1547,7 +1547,7 @@ GameObject:
   - component: {fileID: 456590772}
   - component: {fileID: 456590774}
   - component: {fileID: 456590773}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_9x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1796,7 +1796,7 @@ GameObject:
   - component: {fileID: 553720014}
   - component: {fileID: 553720016}
   - component: {fileID: 553720015}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2294,7 +2294,7 @@ GameObject:
   - component: {fileID: 631005250}
   - component: {fileID: 631005252}
   - component: {fileID: 631005251}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Box_container_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2377,7 +2377,7 @@ GameObject:
   - component: {fileID: 632074384}
   - component: {fileID: 632074386}
   - component: {fileID: 632074385}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_stairs_basement_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2460,7 +2460,7 @@ GameObject:
   - component: {fileID: 634181619}
   - component: {fileID: 634181621}
   - component: {fileID: 634181620}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_3x_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2740,7 +2740,7 @@ GameObject:
   - component: {fileID: 738098263}
   - component: {fileID: 738098265}
   - component: {fileID: 738098264}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_E_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2989,7 +2989,7 @@ GameObject:
   - component: {fileID: 804346286}
   - component: {fileID: 804346288}
   - component: {fileID: 804346287}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Metal_box_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3155,7 +3155,7 @@ GameObject:
   - component: {fileID: 823416992}
   - component: {fileID: 823416994}
   - component: {fileID: 823416993}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3404,7 +3404,7 @@ GameObject:
   - component: {fileID: 845286363}
   - component: {fileID: 845286365}
   - component: {fileID: 845286364}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3487,7 +3487,7 @@ GameObject:
   - component: {fileID: 853734914}
   - component: {fileID: 853734913}
   - component: {fileID: 853734912}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3736,7 +3736,7 @@ GameObject:
   - component: {fileID: 947810752}
   - component: {fileID: 947810754}
   - component: {fileID: 947810753}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Box_container_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3902,7 +3902,7 @@ GameObject:
   - component: {fileID: 968314058}
   - component: {fileID: 968314060}
   - component: {fileID: 968314059}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Metal_box_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4151,7 +4151,7 @@ GameObject:
   - component: {fileID: 994643600}
   - component: {fileID: 994643602}
   - component: {fileID: 994643601}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_9x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4234,7 +4234,7 @@ GameObject:
   - component: {fileID: 1008637825}
   - component: {fileID: 1008637827}
   - component: {fileID: 1008637826}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4317,7 +4317,7 @@ GameObject:
   - component: {fileID: 1018030977}
   - component: {fileID: 1018030979}
   - component: {fileID: 1018030978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4400,7 +4400,7 @@ GameObject:
   - component: {fileID: 1025518530}
   - component: {fileID: 1025518532}
   - component: {fileID: 1025518531}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5479,7 +5479,7 @@ GameObject:
   - component: {fileID: 1220347968}
   - component: {fileID: 1220347970}
   - component: {fileID: 1220347969}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5562,7 +5562,7 @@ GameObject:
   - component: {fileID: 1237992390}
   - component: {fileID: 1237992392}
   - component: {fileID: 1237992391}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_3x_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5643,7 +5643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1243176182}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5894,7 +5894,7 @@ GameObject:
   - component: {fileID: 1250761456}
   - component: {fileID: 1250761458}
   - component: {fileID: 1250761457}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Box_container_B_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5977,7 +5977,7 @@ GameObject:
   - component: {fileID: 1258157425}
   - component: {fileID: 1258157427}
   - component: {fileID: 1258157426}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6060,7 +6060,7 @@ GameObject:
   - component: {fileID: 1285589861}
   - component: {fileID: 1285589863}
   - component: {fileID: 1285589862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_6x6_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6392,7 +6392,7 @@ GameObject:
   - component: {fileID: 1356335730}
   - component: {fileID: 1356335732}
   - component: {fileID: 1356335731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_E_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6641,7 +6641,7 @@ GameObject:
   - component: {fileID: 1392186905}
   - component: {fileID: 1392186907}
   - component: {fileID: 1392186906}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_3x_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6724,7 +6724,7 @@ GameObject:
   - component: {fileID: 1400250578}
   - component: {fileID: 1400250580}
   - component: {fileID: 1400250579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6807,7 +6807,7 @@ GameObject:
   - component: {fileID: 1431798659}
   - component: {fileID: 1431798661}
   - component: {fileID: 1431798660}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6890,7 +6890,7 @@ GameObject:
   - component: {fileID: 1435390093}
   - component: {fileID: 1435390095}
   - component: {fileID: 1435390094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Paint_bucket_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6973,7 +6973,7 @@ GameObject:
   - component: {fileID: 1436555259}
   - component: {fileID: 1436555261}
   - component: {fileID: 1436555260}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7388,7 +7388,7 @@ GameObject:
   - component: {fileID: 1521179830}
   - component: {fileID: 1521179832}
   - component: {fileID: 1521179831}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Metal_box_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7471,7 +7471,7 @@ GameObject:
   - component: {fileID: 1523640597}
   - component: {fileID: 1523640599}
   - component: {fileID: 1523640598}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_3x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7720,7 +7720,7 @@ GameObject:
   - component: {fileID: 1596858020}
   - component: {fileID: 1596858022}
   - component: {fileID: 1596858021}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7803,7 +7803,7 @@ GameObject:
   - component: {fileID: 1629954229}
   - component: {fileID: 1629954231}
   - component: {fileID: 1629954230}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_A_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7886,7 +7886,7 @@ GameObject:
   - component: {fileID: 1678987407}
   - component: {fileID: 1678987409}
   - component: {fileID: 1678987408}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8135,7 +8135,7 @@ GameObject:
   - component: {fileID: 1691196183}
   - component: {fileID: 1691196185}
   - component: {fileID: 1691196184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Wooden_crate_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8218,7 +8218,7 @@ GameObject:
   - component: {fileID: 1714330382}
   - component: {fileID: 1714330384}
   - component: {fileID: 1714330383}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_6x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8384,7 +8384,7 @@ GameObject:
   - component: {fileID: 1727698624}
   - component: {fileID: 1727698626}
   - component: {fileID: 1727698625}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_E_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8550,7 +8550,7 @@ GameObject:
   - component: {fileID: 1756740744}
   - component: {fileID: 1756740746}
   - component: {fileID: 1756740745}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_9x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8965,7 +8965,7 @@ GameObject:
   - component: {fileID: 1817568897}
   - component: {fileID: 1817568899}
   - component: {fileID: 1817568898}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9131,7 +9131,7 @@ GameObject:
   - component: {fileID: 1856622173}
   - component: {fileID: 1856622175}
   - component: {fileID: 1856622174}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9214,7 +9214,7 @@ GameObject:
   - component: {fileID: 1861472778}
   - component: {fileID: 1861472780}
   - component: {fileID: 1861472779}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9297,7 +9297,7 @@ GameObject:
   - component: {fileID: 1879642355}
   - component: {fileID: 1879642357}
   - component: {fileID: 1879642356}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9380,7 +9380,7 @@ GameObject:
   - component: {fileID: 1880996878}
   - component: {fileID: 1880996880}
   - component: {fileID: 1880996879}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9629,7 +9629,7 @@ GameObject:
   - component: {fileID: 1890551576}
   - component: {fileID: 1890551578}
   - component: {fileID: 1890551577}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_3x_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9795,7 +9795,7 @@ GameObject:
   - component: {fileID: 1905307718}
   - component: {fileID: 1905307720}
   - component: {fileID: 1905307719}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_C_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10044,7 +10044,7 @@ GameObject:
   - component: {fileID: 1934366504}
   - component: {fileID: 1934366506}
   - component: {fileID: 1934366505}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10210,7 +10210,7 @@ GameObject:
   - component: {fileID: 1945118860}
   - component: {fileID: 1945118862}
   - component: {fileID: 1945118861}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_3x_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10625,7 +10625,7 @@ GameObject:
   - component: {fileID: 2026656006}
   - component: {fileID: 2026656008}
   - component: {fileID: 2026656007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_9x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10708,7 +10708,7 @@ GameObject:
   - component: {fileID: 2030879831}
   - component: {fileID: 2030879833}
   - component: {fileID: 2030879832}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Metal_box_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10791,7 +10791,7 @@ GameObject:
   - component: {fileID: 2044332698}
   - component: {fileID: 2044332700}
   - component: {fileID: 2044332699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_1x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10874,7 +10874,7 @@ GameObject:
   - component: {fileID: 2072592066}
   - component: {fileID: 2072592068}
   - component: {fileID: 2072592067}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_3x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11043,7 +11043,7 @@ GameObject:
   - component: {fileID: 2101565386}
   - component: {fileID: 2101565388}
   - component: {fileID: 2101565387}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_3x_single_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11126,7 +11126,7 @@ GameObject:
   - component: {fileID: 2103996345}
   - component: {fileID: 2103996347}
   - component: {fileID: 2103996346}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Ceiling_wood_3x3_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11375,7 +11375,7 @@ GameObject:
   - component: {fileID: 2140137330}
   - component: {fileID: 2140137332}
   - component: {fileID: 2140137331}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_E_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11458,7 +11458,7 @@ GameObject:
   - component: {fileID: 2146575638}
   - component: {fileID: 2146575640}
   - component: {fileID: 2146575639}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SM_Cardboard_box_D_LOD0(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

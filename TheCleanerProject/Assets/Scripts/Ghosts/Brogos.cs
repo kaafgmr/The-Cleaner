@@ -34,10 +34,10 @@ public class Brogos : Ghost
     private void Update()
     {
         if (agent != null && agent.isStopped) return;
-        GhostAction();
+        GhostAction(Vector3.zero);
     }
 
-    public override void GhostAction(Transform other = null)
+    public override void GhostAction(Vector3 otherPos)
     {
         if (MovingTowardsPlayer)
         {
@@ -60,7 +60,7 @@ public class Brogos : Ghost
 
     public override void GhostCounter()
     {
-        StopCoroutine(Stalk(null));
+        StopCoroutine(Stalk(Vector3.zero));
         MoveToRecentTp();
     }
 
@@ -69,9 +69,9 @@ public class Brogos : Ghost
         throw new System.NotImplementedException();
     }
 
-    public void StartChanneling(Transform PlayerTransform=null)
+    public void StartChanneling(Vector3 playerPos)
     {
-        StartCoroutine(Stalk(PlayerTransform));
+        StartCoroutine(Stalk(playerPos));
     }
 
     public void StopMovement()
@@ -90,10 +90,10 @@ public class Brogos : Ghost
         }
     }
 
-    public void MoveToPlayer(Transform PlayerTransform)
+    public void MoveToPlayer(Vector3 playerPos)
     {
         ResumeMovement();
-        agent.destination = PlayerTransform.position;
+        agent.destination = playerPos;
         agent.isStopped = false;
     }
     public void MoveToRandomPoint()
@@ -144,7 +144,7 @@ public class Brogos : Ghost
         }
     }
 
-    IEnumerator Stalk(Transform PlayerPos)
+    IEnumerator Stalk(Vector3 PlayerPos)
     {
         if (timeToHide) { StopCoroutine(Stalk(PlayerPos)); }
         StopMovement();
