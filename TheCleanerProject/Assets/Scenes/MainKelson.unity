@@ -288,7 +288,7 @@ PrefabInstance:
     - target: {fileID: 532837269997306744, guid: 6b01e658ec751f940adf120ba60a69be,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.403
+      value: 5.874
       objectReference: {fileID: 0}
     - target: {fileID: 532837269997306744, guid: 6b01e658ec751f940adf120ba60a69be,
         type: 3}
@@ -329,6 +329,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Noslek
+      objectReference: {fileID: 0}
+    - target: {fileID: 877872074183875010, guid: 6b01e658ec751f940adf120ba60a69be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636622863176359771, guid: 6b01e658ec751f940adf120ba60a69be,
+        type: 3}
+      propertyPath: fovAngle
+      value: 179
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -1215,7 +1225,7 @@ PrefabInstance:
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
       propertyPath: scenesToUnload.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
@@ -1225,12 +1235,12 @@ PrefabInstance:
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
       propertyPath: scenesToUnload.Array.data[0]
-      value: LivingRoom
+      value: Kitchen
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
       propertyPath: scenesToUnload.Array.data[1]
-      value: MainCorridor
+      value: LivingRoom2
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
@@ -1275,7 +1285,7 @@ PrefabInstance:
     - target: {fileID: 5063577754221267032, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.238
+      value: -1.149
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267032, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}

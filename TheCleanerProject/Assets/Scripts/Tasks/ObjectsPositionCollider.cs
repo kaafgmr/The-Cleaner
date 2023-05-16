@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectsPositionCollider : MonoBehaviour
@@ -9,7 +7,7 @@ public class ObjectsPositionCollider : MonoBehaviour
         ObjectsToOrder _objects = other.GetComponent<ObjectsToOrder>();
         if (_objects != null)
         {
-            _objects.SetIsOnRealPosition(true);
+            _objects.SetIsOnRealPosition();
         }
     }
 }

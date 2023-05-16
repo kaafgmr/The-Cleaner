@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8844462465705067803}
   - component: {fileID: 3692137463980038679}
   m_Layer: 9
-  m_Name: XTidyUp
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 3618967715203028690}
   - component: {fileID: 6535709511059285980}
   m_Layer: 9
-  m_Name: XCloseTheWindows
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 8639329108674793085}
   - component: {fileID: 2421415702309279372}
   m_Layer: 9
-  m_Name: XPlushies
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,10 +369,10 @@ RectTransform:
   m_Father: {fileID: 4497911948388693983}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 738.6667, y: -530.1112}
-  m_SizeDelta: {x: 1477.3334, y: 71.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 71.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1467976481677963397
 CanvasRenderer:
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 6266905603690699803}
   - component: {fileID: 8995673563435988502}
   m_Layer: 9
-  m_Name: XWashTheDishes
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1113,10 +1113,10 @@ RectTransform:
   m_Father: {fileID: 4497911948388693983}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 738.6667, y: -192.9}
-  m_SizeDelta: {x: 1477.3334, y: 71.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 71.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3468721514939622328
 CanvasRenderer:
@@ -1249,10 +1249,10 @@ RectTransform:
   m_Father: {fileID: 4497911948388693983}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 738.6667, y: -305.83334}
-  m_SizeDelta: {x: 1477.3334, y: 71.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 71.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8689220286018812317
 CanvasRenderer:
@@ -1584,10 +1584,10 @@ RectTransform:
   m_Father: {fileID: 4497911948388693983}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 738.6667, y: -611.6668}
-  m_SizeDelta: {x: 1477.3334, y: 71.8}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 71.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &811662190124282340
 CanvasRenderer:
@@ -1782,7 +1782,7 @@ GameObject:
   - component: {fileID: 3932087530529177487}
   - component: {fileID: 2432241069568200338}
   m_Layer: 9
-  m_Name: XLightBulb
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2087,7 +2087,7 @@ GameObject:
   - component: {fileID: 8733538715163313094}
   - component: {fileID: 7332689111427340469}
   m_Layer: 9
-  m_Name: XScrub
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2226,7 +2226,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tidy up the child's room
+  m_text: Tidy up son's room
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de7728d9d2f1ab944ad6a7b9d1c99479, type: 2}
   m_sharedMaterial: {fileID: 7187872869066788802, guid: de7728d9d2f1ab944ad6a7b9d1c99479,
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect the plushies from the girl's room
+  m_text: Put the ducks on top of daughter's bed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de7728d9d2f1ab944ad6a7b9d1c99479, type: 2}
   m_sharedMaterial: {fileID: 7187872869066788802, guid: de7728d9d2f1ab944ad6a7b9d1c99479,
@@ -2443,7 +2443,7 @@ GameObject:
   - component: {fileID: 3857413386608291778}
   - component: {fileID: 4202714963146750799}
   m_Layer: 9
-  m_Name: XVacuum
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2527,7 +2527,7 @@ GameObject:
   - component: {fileID: 981139591205323188}
   - component: {fileID: 76637716823473486}
   m_Layer: 9
-  m_Name: XLeave
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,7 +2611,7 @@ GameObject:
   - component: {fileID: 2662630395422562076}
   - component: {fileID: 1629708412829749881}
   m_Layer: 9
-  m_Name: XCleanUp
+  m_Name: X
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

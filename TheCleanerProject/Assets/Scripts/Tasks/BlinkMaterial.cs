@@ -13,15 +13,20 @@ public class BlinkMaterial : MonoBehaviour
         SetAlpha(0f);
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        StopBlink();
+    }
+
     public void StartBlink()
     {
         SetAlpha(0f);
-        StartCoroutine(Blink());
+        StartCoroutine(Blink(false));
     }
 
     public void StopBlink()
     {
-        StopAllCoroutines();
+        StopCoroutine(Blink(true));
         SetAlpha(0f);
     }
 
@@ -33,12 +38,19 @@ public class BlinkMaterial : MonoBehaviour
         material.color = color;
     }
 
-    IEnumerator Blink()
+    IEnumerator Blink(bool forceStop)
     {
         SetAlpha((Time.time - startTime) * fadeSpeed);
 
         yield return new WaitForFixedUpdate();
 
-        StartCoroutine(Blink());
+        if (!forceStop)
+        {
+            StartCoroutine(Blink(forceStop));
+        }
+        else
+        {
+            SetAlpha(0f);
+        }
     }
 }

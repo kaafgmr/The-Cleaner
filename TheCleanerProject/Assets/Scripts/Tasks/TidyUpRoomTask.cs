@@ -1,16 +1,12 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class TidyUpRoomTask : Task
 {
-    public ObjectsTidiedUpController _objectsController;
-
     public List<ObjectsToOrder> objesctsList;
 
     public static TidyUpRoomTask instance;
 
-    int objectsInPlace = 0;
+    int objectsInPlace;
 
     private void Awake()
     {
@@ -22,6 +18,12 @@ public class TidyUpRoomTask : Task
         {
             Destroy(this);
         }
+        objectsInPlace = 0;
+    }
+
+    public override void internalStart()
+    {
+        base.internalStart();
     }
     public override void UpdateTask()
     {

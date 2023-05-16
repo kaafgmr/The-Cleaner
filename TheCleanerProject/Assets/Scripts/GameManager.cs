@@ -3,14 +3,15 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
+    public Light DebugDirectionalLight;
     public GameObject player;
     public GameObject playerFoot;
-    public Vector3 playerPos { get => playerFoot.transform.position; }
     public FlashlightBehaviour flashlight;
     public Transform ScreamerPoint;
     public string[] ScenesToLoadOnStart;
     public UnityEvent InitGame;
     public UnityEvent OnAllScenesLoaded;
+    [HideInInspector]public Vector3 playerPos { get => playerFoot.transform.position; }
     
     private Transform playerTransform;
     private float playerFOV;
@@ -27,8 +28,12 @@ public class GameManager : MonoBehaviour
             Destroy(this);
         }
 
-        playerTransform = Camera.main.transform;
-        playerFOV = Camera.main.fieldOfView;
+#if !UNITY_EDITOR
+        DebugDirectionalLight.enabled = false;
+#endif
+
+        playerTransform = player.transform;
+        playerFOV = player.GetComponent<Camera>().fieldOfView;
     }
 
 

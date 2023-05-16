@@ -12,7 +12,7 @@ public class FieldOfView : MonoBehaviour
     public UnityEvent ImBeingViewed;
     public UnityEvent OnNothingHappening;
 
-    GameObject player;
+    Transform playerTransform;
     float playerFOV;
 
     bool wanderingOnce = false;
@@ -24,18 +24,18 @@ public class FieldOfView : MonoBehaviour
 
     private void Start()
     {
-        player = GameManager.instance.GetPlayer();
+        playerTransform = GameManager.instance.GetPlayerTransform();
         playerFOV = GameManager.instance.GetPlayerFOV();
     }
 
     private void FixedUpdate()
     {
-        Vector3 myDir = (player.transform.position - transform.position).normalized;
+        Vector3 myDir = (playerTransform.position - transform.position).normalized;
 
-        if (ICouldBeSeenBy(player, myDir))
+        if (ICouldBeSeenBy(playerTransform.gameObject, myDir))
         {
             Vector3 itsDir = -myDir;
-            if (ImInsideItsFOV(itsDir, player.transform.forward, playerFOV))
+            if (ImInsideItsFOV(itsDir, playerTransform.forward, playerFOV))
             {
                 ImBeingViewed.Invoke();
                 wanderingOnce = false;

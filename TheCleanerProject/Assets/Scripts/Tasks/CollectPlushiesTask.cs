@@ -19,6 +19,12 @@ public class CollectPlushiesTask : Task
         {
             Destroy(this);
         }
+        plushiesInRightPlace = 0;
+    }
+
+    public override void internalStart()
+    {
+        base.internalStart();
     }
 
     public override void UpdateTask()

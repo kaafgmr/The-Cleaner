@@ -18,6 +18,7 @@ public class CleanWindowsTask : Task
         {
             Destroy(this);
         }
+        windowsCleaned = 0;
     }
 
     public override void internalStart()
@@ -27,15 +28,9 @@ public class CleanWindowsTask : Task
 
     public override void UpdateTask()
     {
-        windowsCleaned = 0;
-        for (int i = 0; i < windowsToClean.Count; i++)
-        {
-            if (!windowsToClean[i].finishedCleaning) return;
-            
-            windowsCleaned++;
-        }
+        windowsCleaned++;
 
-        if (windowsCleaned == windowsToClean.Count)
+        if (windowsCleaned >= windowsToClean.Count)
         {
             base.FinishTask();
             taskFinished = true;

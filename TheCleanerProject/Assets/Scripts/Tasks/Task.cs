@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -15,6 +13,7 @@ public abstract class Task : MonoBehaviour
     public virtual void FinishTask()
     {
         onTaskFinished.Invoke();
+        TaskManager.instance.UpdateTasksCounter();
     }
 
     private void Awake()
@@ -34,6 +33,6 @@ public abstract class Task : MonoBehaviour
 
     public virtual void internalStart()
     {
-        TaskManager._instance.tasksList.Add(this);
+        TaskManager.instance.tasksList.Add(this);
     }
 }
