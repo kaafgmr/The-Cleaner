@@ -67,11 +67,9 @@ Shader "TheCleaner/FresnelShader"
 
             float4 FShader(VSOutput i) : SV_Target
             {
-                fixed4 texColor = tex2D(_MainTex, i.uv);
+                float4 texColor = tex2D(_MainTex, i.uv);
 				
 				float colorIntensity = 1- dot(i.normal, -normalize(i.cameraDir));
-				
-				//return _ColorFresnel * colorIntensity;
 
                 return lerp(texColor,  texColor + _ColorFresnel * colorIntensity,_Intensidad);
             }
