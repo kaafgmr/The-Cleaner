@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Brogos : Ghost
 {
+    [Header("IA")]
     public List<Transform> possibleTpPoints;
     public Vector3 recentTp;
     [SerializeField] float distanceToUpdate = 0.5f;
@@ -13,7 +14,16 @@ public class Brogos : Ghost
     bool MovingTowardsPlayer = false;
     public bool timeToHide;
     int recentTpnum = 0;
-    Coroutine _coroutine=null;
+    Coroutine _coroutine = null;
+
+    [Header("Anims")]
+    GhostAnimController gac;
+    [SerializeField] private string walkAnimName;
+    [SerializeField] private string idleAnimName;
+    [SerializeField] private string screamerAnimName;
+    bool ResumeMovementOnce = false;
+    bool StopMovementOnce = false;
+    
 
     private void Start()
     {
@@ -29,6 +39,7 @@ public class Brogos : Ghost
         FOV.OnViewedByMe.AddListener(StartChanneling);
         FOV.ImBeingViewed.AddListener(GhostCounter);
         FOV.OnNothingHappening.AddListener(StartInspection);
+        gac = GetComponent<GhostAnimController>();
     }
 
     private void Update()
@@ -66,7 +77,9 @@ public class Brogos : Ghost
 
     public override void Scream()
     {
-        throw new System.NotImplementedException();
+        base.Scream();
+        agent.enabled = false;
+        gac.PlayAnimation(screamerAnimName);
     }
 
     public void StartChanneling(Vector3 playerPos)
@@ -79,14 +92,28 @@ public class Brogos : Ghost
         if (!agent.isStopped)
         {
             agent.isStopped = true;
+
+            if (!StopMovementOnce)
+            {
+                StopMovementOnce = true;
+                ResumeMovementOnce = false;
+                gac.PlayAnimation(idleAnimName);
+            }
         }
     }
 
     void ResumeMovement()
     {
-        if (agent.isStopped)
+        if (agent.isStopped && !screaming)
         {
             agent.isStopped = false;
+
+            if (!ResumeMovementOnce)
+            {
+                StopMovementOnce = false;
+                ResumeMovementOnce = true;
+                gac.PlayAnimation(walkAnimName);
+            }
         }
     }
 
@@ -98,6 +125,9 @@ public class Brogos : Ghost
     }
     public void MoveToRandomPoint()
     {
+        if (screaming)
+            return;
+
         ResumeMovement();
         if (agent.remainingDistance > distanceToUpdate) return;
 

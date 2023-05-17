@@ -242,13 +242,15 @@ GameObject:
   - component: {fileID: 64804245}
   - component: {fileID: 6895642261080309611}
   - component: {fileID: 64804243}
+  - component: {fileID: 1666823973380735940}
+  - component: {fileID: 6991135510634550436}
   m_Layer: 8
   m_Name: Brogos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6522598757767871621
 Transform:
   m_ObjectHideFlags: 0
@@ -356,3 +358,35 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &1666823973380735940
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894998261421844031}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: a503108d9db587246830ef34e1289475, type: 3}
+  m_Controller: {fileID: 9100000, guid: e9489fbb1be84ba428212dbbcdd4f9f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6991135510634550436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5894998261421844031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f31225ddad4234db80ddb143a89bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
