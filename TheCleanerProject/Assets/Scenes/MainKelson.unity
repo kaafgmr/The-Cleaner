@@ -1225,7 +1225,7 @@ PrefabInstance:
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
       propertyPath: scenesToUnload.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
@@ -1244,23 +1244,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
-      propertyPath: scenesToUnloadEnsured.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
-        type: 3}
-      propertyPath: scenesToUnloadEnsured.Array.data[0]
-      value: Kitchen
-      objectReference: {fileID: 0}
-    - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
-        type: 3}
-      propertyPath: scenesToUnloadEnsured.Array.data[1]
+      propertyPath: scenesToUnload.Array.data[2]
       value: DiningRoom
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
+      propertyPath: scenesToUnloadEnsured.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
+        type: 3}
+      propertyPath: scenesToUnloadEnsured.Array.data[0]
+      value: BasementHallway
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
+        type: 3}
+      propertyPath: scenesToUnloadEnsured.Array.data[1]
+      value: BasementHallway
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
+        type: 3}
       propertyPath: scenesToUnloadEnsured.Array.data[2]
-      value: LivingRoom2
+      value: BasementHallway
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
@@ -1391,8 +1396,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}
+      propertyPath: scenesToLoad.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
+        type: 3}
       propertyPath: scenesToUnload.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
+        type: 3}
+      propertyPath: scenesToLoad.Array.data[0]
+      value: LivingRoom2
       objectReference: {fileID: 0}
     - target: {fileID: 5063577754221267015, guid: 651c50e1edc4b8e44ab31313b4a9fa60,
         type: 3}

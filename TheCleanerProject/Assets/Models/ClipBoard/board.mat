@@ -30,7 +30,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Intensidad: 1
+    - _Intensidad: 0.577
     m_Colors:
     - _ColorFresnel: {r: 255.00008, g: 255.00008, b: 0, a: 255}
   m_BuildTextureStacks: []

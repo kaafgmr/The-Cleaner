@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1417833, g: 0.11500763, b: 0.042550877, a: 1}
+  m_IndirectSpecularColor: {r: 0.039341114, g: 0.028379958, b: 0.012013947, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7942,8 +7942,9 @@ MonoBehaviour:
   - MainVictor
   - LivingRoom
   - MainCorridor
-  - DiningRoom
   - MainHallway
+  - DiningRoom
+  - Kitchen
   - LivingRoom2
   InitGame:
     m_PersistentCalls:
@@ -9512,6 +9513,19 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 672243309, guid: e07f14b54c7e3ec46961e0461509ab49, type: 3}
+      propertyPath: baseSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 672243309, guid: e07f14b54c7e3ec46961e0461509ab49, type: 3}
+      propertyPath: runningSpeedIncrease
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 672243315, guid: e07f14b54c7e3ec46961e0461509ab49, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: bcbdeb00065b9114282be23c26ecab1c,
+        type: 2}
     - target: {fileID: 1286374978, guid: e07f14b54c7e3ec46961e0461509ab49, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -9538,7 +9552,7 @@ PrefabInstance:
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.6251636
+      value: 1.852
       objectReference: {fileID: 0}
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
@@ -9548,12 +9562,12 @@ PrefabInstance:
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.68999004
+      value: -4.082
       objectReference: {fileID: 0}
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
@@ -9563,7 +9577,7 @@ PrefabInstance:
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
@@ -9578,7 +9592,7 @@ PrefabInstance:
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3535007076252944722, guid: e07f14b54c7e3ec46961e0461509ab49,
         type: 3}
@@ -9589,6 +9603,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OculusInteractionSampleRigInGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936988103569550378, guid: e07f14b54c7e3ec46961e0461509ab49,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

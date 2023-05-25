@@ -53,6 +53,7 @@ Shader "TheCleaner/ColorBlind"
 
                 o.position = positionS;
                 o.uv = i.uv;
+                o.normal = i.normal;
 
                 return o;
             }

@@ -50,11 +50,11 @@ Shader "TheCleaner/FresnelURP"
 
                 float4 positionW = mul(UNITY_MATRIX_M, positionO);
 
-                float3 normalW = mul(UNITY_MATRIX_M, i.normal);
+                float4 normalW = float4(mul(UNITY_MATRIX_M, i.normal).xyz, 0);
 
                 float4 positionC = mul(UNITY_MATRIX_V, positionW);
 
-                float3 normalC = mul(UNITY_MATRIX_V, normalW);
+                float4 normalC = float4(mul(UNITY_MATRIX_V, normalW).xyz, 0);
 
                 o.cameraDir = positionC;
 

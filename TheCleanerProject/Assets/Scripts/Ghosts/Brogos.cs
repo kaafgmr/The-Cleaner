@@ -44,6 +44,8 @@ public class Brogos : Ghost
 
     private void Update()
     {
+        if (screaming)
+        
         if (agent != null && agent.isStopped) return;
         GhostAction(Vector3.zero);
     }
