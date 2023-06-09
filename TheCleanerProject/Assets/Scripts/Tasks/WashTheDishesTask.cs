@@ -8,7 +8,9 @@ public class WashTheDishesTask : Task
 {
     public static WashTheDishesTask _instance;
     public List<PlateInteraction> plates;
-    public Slider percentageBar;
+    public List<GameObject> platesFinalPoints;
+    public int nextFreePoint;
+    //public Slider percentageBar;
     public float progressOfTask;
     int washedPlates;
 
@@ -16,8 +18,9 @@ public class WashTheDishesTask : Task
     public override void InternalAwake()
     {
         base.InternalAwake();
+        nextFreePoint = 0;
 
-        if(_instance == null)
+        if (_instance == null)
         {
             _instance = this;
         }
@@ -35,6 +38,7 @@ public class WashTheDishesTask : Task
     public override void UpdateTask()
     {
         washedPlates++;
+        nextFreePoint++;
         UpdateProgress();
         if (washedPlates == plates.Count)
         {
@@ -46,7 +50,7 @@ public class WashTheDishesTask : Task
     {
         progressOfTask = washedPlates / plates.Count;
 
-        percentageBar.value = progressOfTask;
+        //percentageBar.value = progressOfTask;
     }
 
 }
