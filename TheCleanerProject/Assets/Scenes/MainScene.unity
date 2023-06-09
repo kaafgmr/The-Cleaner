@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1417833, g: 0.11500763, b: 0.042550877, a: 1}
+  m_IndirectSpecularColor: {r: 0.14177789, g: 0.11500136, b: 0.04255581, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -604,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &35684788
 Transform:
   m_ObjectHideFlags: 0
@@ -10281,7 +10281,7 @@ GameObject:
   - component: {fileID: 689156467}
   - component: {fileID: 689156466}
   - component: {fileID: 689156465}
-  m_Layer: 6
+  m_Layer: 13
   m_Name: lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18663,7 +18663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1274678054
 Transform:
   m_ObjectHideFlags: 0
