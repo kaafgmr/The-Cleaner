@@ -6124,6 +6124,7 @@ GameObject:
   - component: {fileID: 846008851}
   - component: {fileID: 846008853}
   - component: {fileID: 846008852}
+  - component: {fileID: 846008854}
   m_Layer: 3
   m_Name: SM_Kitchen_counter_sink_LOD0(Clone)
   m_TagString: Untagged
@@ -6198,6 +6199,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &846008854
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846008850}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: abc00000000004811139107981474016, type: 3}
 --- !u!1 &846315252
 GameObject:
   m_ObjectHideFlags: 0

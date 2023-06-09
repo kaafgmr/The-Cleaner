@@ -67,7 +67,8 @@ public class Cevlak : Ghost
 
         if (isStoped)
         {
-            cevlakParent.transform.LookAt(playerObj.transform, initialUp);
+            //cevlakParent.transform.LookAt(playerObj.transform, initialUp);
+            base.Scream();
         }
     }
     public override void GhostAction(Vector3 otherPos)
@@ -130,9 +131,9 @@ public class Cevlak : Ghost
 
         speed *= 0.995f;
 
-        if(speed <= 0.1f)
+        if(speed <= 0.05f)
         {
-            speed = 0.1f;
+            speed = 0.05f;
         }
     }
 
