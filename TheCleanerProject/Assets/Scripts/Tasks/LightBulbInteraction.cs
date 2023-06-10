@@ -4,58 +4,20 @@ using UnityEngine;
 
 public class LightBulbInteraction : MonoBehaviour // Script para la bombilla que hay que coger y llevar a donde la bombilla rota
 {
-    public bool hasBeenChanged;
-    private GameObject lightBulbToFix;
+    public Renderer[] bulbsRenderers;
+    private GrabObject grabInteractor;
 
-    void Start()
+    private void Awake()
     {
-        hasBeenChanged = false;
+        grabInteractor = GetComponent<GrabObject>();
     }
 
-    private void OnTriggerEnter(Collider obj)
+    public void ChangeBulb()
     {
-        lightBulbToFix = obj.gameObject;
-        if (obj.TryGetComponent(out ChangeLightBulbTask lightBulbTask))
+        foreach (Renderer bulbRenderer in bulbsRenderers)
         {
-            if (!lightBulbTask.CheckIfItsDone())
-            {
-                StartCoroutine(isGettingChanged());
-            }
+            bulbRenderer.enabled = false;
         }
-    }
-
-    private void OnTriggerExit(Collider obj)
-    {
-        if (obj.TryGetComponent(out ChangeLightBulbTask lightBulbTask))
-        {
-            if (!lightBulbTask.CheckIfItsDone())
-            {
-                StopCoroutine(isGettingChanged());
-            }
-        }
-    }
-
-    IEnumerator isGettingChanged()
-    {
-        yield return new WaitForSeconds(2);
-        hasBeenChanged = true;
-    }
-
-    private void Update()
-    {
-        if (hasBeenChanged)
-        {
-            ReplaceObj();
-        }
-    }
-
-    private void ReplaceObj()
-    {
-        // Objeto padre bombilla con la task y un hijo con el modelo 3D de la bombila y el script de ReplaceObj,
-        // finalizamos la tarea del padre y movemos la lámpara de la mano a donde estaba la rota y destruimos la anterior
-        lightBulbToFix.GetComponent<ChangeLightBulbTask>().taskFinished = true;
-        lightBulbToFix.transform.GetChild(0).GetComponent<ReplaceObj>().Replace(gameObject);
-        gameObject.GetComponent<GrabObject>().enabled = false;
-        this.enabled = false;
+        grabInteractor.enabled = false;
     }
 }

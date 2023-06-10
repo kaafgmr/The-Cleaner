@@ -6,50 +6,36 @@ using UnityEngine.AI;
 
 public class SukSuk : Ghost
 {
-    [SerializeField] private float speed = 3.5f;
-    [SerializeField] private Transform restingPos;
-
-    FlashlightBehaviour flashLight;
+    public float speed = 3.5f;
+    public Transform restingPos;
+    public FlashlightBehaviour flashLight;
     NavMeshAgent agent;
     FieldOfView FOV;
     float flashlightFOVAngle;
 
-
-
-    public TextMeshProUGUI debugText;
-
-
-
     private void Start()
     {
-
-        debugText = GameObject.Find("DebugText").GetComponent<TextMeshProUGUI>();
-        debugText.text = "";
-
-
-
         Init();
-
         CalculateBounds.instance.OnInit.AddListener(ResumeMovement);
     }
 
     private void Init()
     {
+        flashLight.Init();
         agent = GetComponent<NavMeshAgent>();
         agent.speed = speed;
         StopMovement();
         FOV = GetComponentInChildren<FieldOfView>();
         FOV.OnNothingHappening.AddListener(ReturnToSpawn);
         FOV.OnViewedByMe.AddListener(GhostAction);
-        flashLight = GameManager.instance.flashlight;
         flashlightFOVAngle = flashLight.GetFOV();
     }
 
     public override void GhostAction(Vector3 otherPos)
     {
-        debugText.text ="inside: " + FOV.IsInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform).ToString();
-        if (flashLight.isBeingHeld && FOV.IsInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform))
+        if (flashLight.isBeingHeld/* && FOV.IsInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform)*/)
         {
+            if (screaming) return;
             ResumeMovement();
             agent.destination = otherPos;
         }
@@ -57,36 +43,34 @@ public class SukSuk : Ghost
 
     public override void GhostCounter()
     {
-
     }
 
     public override void Scream()
     {
-        throw new System.NotImplementedException();
-    }
-    
-    void ReturnToSpawn()
-    {
-        if (agent.isStopped)
-        {
-            ResumeMovement();
-        }
-        agent.destination = restingPos.position;
+        // Implementa la funcionalidad aquí
     }
 
-    void ResumeMovement()
+    private void ReturnToSpawn()
     {
-        if (agent.isStopped)
-        {
-            agent.isStopped = false;
-        }
+        ResumeMovement();
+        agent.destination = restingPos.position;
     }
 
     public void StopMovement()
     {
-        if (!agent.isStopped)
+        agent.isStopped = true;
+    }
+
+    public void ResumeMovement()
+    {
+        agent.isStopped = false;
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        if (agent != null)
         {
-            agent.isStopped = true;
-        } 
+            Gizmos.DrawWireSphere(agent.destination, 0.5f);
+        }
     }
 }

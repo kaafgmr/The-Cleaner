@@ -7,7 +7,7 @@ public class FlashlightBehaviour : MonoBehaviour
     
     Light spotLight;
 
-    private void Start()
+    public void Init()
     {
         spotLight = GetComponentInChildren<Light>();
     }

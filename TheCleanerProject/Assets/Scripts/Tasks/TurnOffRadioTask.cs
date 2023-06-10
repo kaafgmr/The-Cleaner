@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class ChangeLightBulbTask : Task
+public class TurnOffRadioTask : Task
 {
-    public LightBulbInteraction lightBulb;
-    public InteractForXTime interactForXTime;
+    public Radio radio;
+    public MultipleColliderXTimeController MultipleColliderXTime;
 
     public override void UpdateTask()
     {
@@ -12,8 +12,7 @@ public class ChangeLightBulbTask : Task
     public override void DoTask()
     {
         taskFinished = true;
-        lightBulb.ChangeBulb();
+        radio.TurnOff();
         FinishTask();
     }
 }
-

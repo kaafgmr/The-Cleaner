@@ -6,7 +6,7 @@ public class Plushy : MonoBehaviour
     {
         CollectPlushiesTask.instance.listOfPlushies.Add(this);
     }
-    
+                
     public void CompleteTask()
     {
         CollectPlushiesTask.instance.UpdateTask();
