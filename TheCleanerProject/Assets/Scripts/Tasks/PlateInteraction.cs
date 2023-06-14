@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Oculus.Interaction.HandGrab;
 
 public class PlateInteraction : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlateInteraction : MonoBehaviour
     {
         if (!other.TryGetComponent(out WashTheDishesTask wt)) return;
 
+        gameObject.GetComponent<HandGrabInteractable>().enabled = false;
         transform.position = wt.platesFinalPoints[wt.nextFreePoint].transform.position;
         transform.rotation = Quaternion.identity;
         plateIsOrdered = true;
