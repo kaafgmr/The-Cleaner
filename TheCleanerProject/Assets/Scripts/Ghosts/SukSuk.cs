@@ -10,6 +10,7 @@ public class SukSuk : Ghost
     public Transform restingPos;
     public FlashlightBehaviour flashLight;
     NavMeshAgent agent;
+    public Transform playerpos;
     FieldOfView FOV;
     float flashlightFOVAngle;
 
@@ -30,24 +31,35 @@ public class SukSuk : Ghost
         FOV.OnViewedByMe.AddListener(GhostAction);
         flashlightFOVAngle = flashLight.GetFOV();
     }
-
-    public override void GhostAction(Vector3 otherPos)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (flashLight.isBeingHeld/* && FOV.IsInsideTheFOVOf(flashLight.GetAttachPoint(), flashlightFOVAngle, transform)*/)
+        if (collision.gameObject.TryGetComponent(out PointingMovement PM))
+        {
+            Debug.Log("lose1");
+            LoseGame();
+        }
+    }
+    public override void GhostAction(Vector3 otherpos)
+    {
+        if (flashLight.isBeingHeld)
         {
             if (screaming) return;
             ResumeMovement();
-            agent.destination = otherPos;
+            agent.destination = otherpos;
         }
     }
-
+    private void Update()
+    {
+        GhostAction(playerpos.position);
+    }
     public override void GhostCounter()
     {
     }
 
     public override void Scream()
     {
-        // Implementa la funcionalidad aquí
+        base.Scream();
+        base.LoseGame();
     }
 
     private void ReturnToSpawn()

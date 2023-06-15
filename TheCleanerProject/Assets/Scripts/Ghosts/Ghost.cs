@@ -18,6 +18,7 @@ public abstract class Ghost : MonoBehaviour
 
     public virtual void LoseGame()
     {
+        Debug.Log("lose");
         PlayerPrefs.SetInt("Win", 0);
         MenuControl.instance.LoadScene("GameFinished");
     }
@@ -26,7 +27,6 @@ public abstract class Ghost : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.TryGetComponent(out PointingMovement PM))
-        Scream();
+        if (collision.gameObject.TryGetComponent(out PointingMovement PM)) Scream();
     }
 }

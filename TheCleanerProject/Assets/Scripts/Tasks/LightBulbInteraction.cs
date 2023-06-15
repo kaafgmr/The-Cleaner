@@ -5,12 +5,7 @@ using UnityEngine;
 public class LightBulbInteraction : MonoBehaviour // Script para la bombilla que hay que coger y llevar a donde la bombilla rota
 {
     public Renderer[] bulbsRenderers;
-    private GrabObject grabInteractor;
-
-    private void Awake()
-    {
-        grabInteractor = GetComponent<GrabObject>();
-    }
+    public GameObject grabInteractor;
 
     public void ChangeBulb()
     {
@@ -18,6 +13,6 @@ public class LightBulbInteraction : MonoBehaviour // Script para la bombilla que
         {
             bulbRenderer.enabled = false;
         }
-        grabInteractor.enabled = false;
+        grabInteractor.SetActive(false);
     }
 }
