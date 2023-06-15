@@ -53,7 +53,7 @@ public class Cevlak : Ghost
                     isStoped = false;
                     SpeedAdjustment(1);
                     speedActivator = false;
-                    cevlakParent.transform.position += speed * Time.deltaTime * dir;
+                    cevlakParent.transform.position += speed/4 * Time.deltaTime * dir;
 
                     StopMovement();
                 }
@@ -69,6 +69,7 @@ public class Cevlak : Ghost
         {
             //cevlakParent.transform.LookAt(playerObj.transform, initialUp);
             base.Scream();
+            LoseGame();
         }
     }
     public override void GhostAction(Vector3 otherPos)
@@ -131,9 +132,9 @@ public class Cevlak : Ghost
 
         speed *= 0.995f;
 
-        if(speed <= 0.05f)
+        if(speed <= 0.01f)
         {
-            speed = 0.05f;
+            speed = 0.01f;
         }
     }
 
